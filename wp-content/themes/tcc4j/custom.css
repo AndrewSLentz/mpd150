@@ -2,6 +2,16 @@ body {
 	background-color:black;
 }
 
+h1 a, h1 a:visited, h2 a, h2 a:visited {
+	color:black;
+	text-decoration:none;
+}
+
+h1 a:hover, h2 a:hover {
+	color: #FD1410;
+	cursor:pointer;
+}
+
 /* Header */
 
 .site-branding {
@@ -32,7 +42,7 @@ body {
 .site-title {
 	padding:0px 50px;
 	font-size:35pt;
-
+	margin-top:42px;
 }
 
 .site-title a, 
@@ -47,25 +57,22 @@ body {
 
 /*Navigation*/
 
+#primary-menu {
+	text-align: left;
+    padding-left: 52px;
+}
+
 .main-navigation {
 	background-color: #FD1410;
-	border-top: 2px solid #313131;
-    border-bottom: 2px solid #313131;
-    text-align:center;
+ 
 }
 
 .main-navigation li {
     padding: 20px;
     font-size: 16pt;
-    border-right: 2px solid #313131;
     float:none;
     display:inline-block;
 }
-
-.main-navigation li:first-child {
-	border-left: 2px solid #313131;
-}
-
 
 .main-navigation li a{
 	color:black;
@@ -73,18 +80,26 @@ body {
 
 
 /* Content/Sidebar*/
+#content {
+	background-color: black;
+	
+}
+
+#primary {
+	background-color:black;
+}
+
+
 .content-area {
 	float: left;
-	margin: 0 -25% 0 0;
-	width: 100%;
+	width: 75%;
 }
-.site-main {
-	margin: 0 25% 0 0;
-}
+
 .site-content .widget-area {
 	float: right;
 	overflow: hidden;
 	width: 25%;
+	
 }
 .site-footer {
 	clear: both;
@@ -128,24 +143,30 @@ body {
 
 .section2 {
 	background-color: #536490;
-    padding-top: 40px;
-    height: 726px;
-}
+    padding: 1px 0 0 0;
+ }
 
 .section2 .past-posts {
 	text-align:center;
+	margin-bottom:50px;
+}
+
+.section2 h1 {
+	text-align:center;
+	color:black;
+	margin:20px 0;
 }
 
 .section2 .post-container {
-	width:200px;
+	width:250px;
 	display:inline-block;
-	margin:0 20px;
-	border:1px solid black;
+	margin:0 20px;	
 }
 
 .section2 .post-container img {
 	height:150px;
 	width:auto;
+	border:1px solid black;
 }
 
 .section2 .post-container a {
@@ -165,7 +186,7 @@ body {
 /* Sidebar */
 
 .site-content .widget-area {
-	margin-top:40px;
+	padding-top:20px;
 	background-color:white;
 }
 
@@ -174,12 +195,19 @@ body {
 }
 
 .widget h1 {
-	margin:0px 10px;
+	margin:0px 10px 15px 10px;
+	text-align:center;
 }
 
 .event-details {
 	margin-bottom:20px;
-	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.event-details img {
+	width: 70%;
+    margin: auto auto;
+    display: block;
 }
 
 .event-details p, .event-details h2 {
@@ -195,11 +223,75 @@ body {
 	color:black;
 }
 
-.event-details h2 a:hover {
+.event-details a:hover {
 	color:#FD1410;
 }
 
 #text-3 /*Facebook*/{
-	background-color:black;
+	background-color:white;
 	margin-bottom:0;
+	padding:0;
+	height: 634px;
+    overflow-y: hidden;
+}
+
+/* Allied Posts */
+
+.ally-posts {
+	background-color:black;
+	padding-top:1px;
+}
+
+.ally-posts h1 {
+	color:white;
+}
+
+.rss_container {
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    height: 370px;
+}
+
+.rss_container ul {
+	margin:0;
+}
+
+.rss_container ul li {
+	margin:5px 0;
+}
+
+.rss_container h2 a, .rss_container h2 a:visited {
+	color:black;
+	text-decoration:none;
+}
+
+.rss_container a:hover {
+	color:#FD1410;
+}
+
+/* Footer */
+
+footer {
+	background-color:#536490;
+	height:60px;
+	padding:10px;
+	margin-top:20px;
+}
+
+footer a, footer a:visited {
+	color:black;
+}
+
+footer a:hover {
+	color:#FD1410;
+}
+
+footer .site-info {
+	color:black;
+	margin-top:9px;
 }

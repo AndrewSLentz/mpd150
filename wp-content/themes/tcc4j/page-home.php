@@ -37,7 +37,9 @@ get_header(); ?>
 			</div>
 
 			<div class='section2'>
+				<h1> Articles by the Coaltion </h1>
 				<div class='past-posts'>
+					
 					<?php 
 
 					$args = array(
@@ -52,8 +54,10 @@ get_header(); ?>
 					while ( $the_query->have_posts() ) {
 						echo '<div class="post-container">';
 							$the_query->the_post();
+							echo '<a href="' . get_the_permalink() . '">';
 							echo get_the_post_thumbnail();
-							echo '<h2>' . get_the_title() . '</h2>';
+							echo '<h3>' . get_the_title() . '</h3>';
+							echo '</a>';
 							
 						echo '</div>';
 					}
@@ -62,8 +66,15 @@ get_header(); ?>
 			
 
 			<div class='ally-posts'>
-				<h1> Articles from other Groups </h1>
-					<?php echo do_shortcode('[wp-rss-aggregator]');?>
+				<h1> Articles by Other Groups </h1>
+					<div class='rss_container'>
+						<h2> <a href='https://twincitiesgdc.org/'>Twin Cities GDC </a></h2>
+						<?php RSSImport(5, 'https://twincitiesgdc.org/feed/'); ?>
+					</div>
+					<div class='rss_container'>
+						<h2> <a href='http://jimcrownorth.com/'> Jim Crow North </a></h2>
+						<?php RSSImport(5, 'http://jimcrownorth.com/feed/'); ?>
+					</div>
 			</div>
 
 			</div>

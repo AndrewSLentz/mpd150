@@ -47,22 +47,44 @@ echo $args['before_widget'];
 echo $args['before_title'] . $title . $args['after_title'];*/
 // This is where you run the code and display the output
 ?> <div class="upcoming-events">
-	<h1> Upcoming events </h1>
+	<h1> <a href='/events'>Upcoming Events </a></h1>
  <?php
-$loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 3, 'order' => 'ASC' )); 
+$loop = new WP_Query( array( 
+  'post_type' => 'event', 
+  'posts_per_page' => 2, 
+  'order' => 'ASC',
+  'orderby' => 'meta_value',
+  'meta_key' => 'start_date',
+  'meta_query' => array( // WordPress has all the results, now, return only the events after today's date
+            array(
+                'key' => 'start_date', // Check the start date field
+                'value' => date("Y-m-d"), // Set today's date (note the similar format)
+                'compare' => '>=', // Return the ones greater than today's date
+                'type' => 'NUMERIC,' // Let WordPress know we're working with numbers
+                )
+            ), )); 
  while ( $loop->have_posts() ) : $loop->the_post(); 
  ?>
  	<?php
 	 	$start_date= new DateTime(get_field('start_date', false, false));
+    $start_date=$start_date->format('M jS, ga');
 	 	$end_date= new DateTime(get_field('end_date', false, false));
+    $end_date=$end_date->format('ga');
+
+   
  	?>
     <div class="event-details">
 
-        <a href="<?php the_permalink(); ?>">
-        	<h2> <?php echo get_the_title();?> </h2>
-        	<img src=' <?php echo get_field("featured_image"); ?> '>	 
-        	<p> <?php echo get_field("start_date"); echo ' - '; echo get_field("end_date"); ; echo ', ' . get_field('location');  ?> </p>
-        </a>
+        	<h2> <a href="<?php the_permalink(); ?>">
+            <?php echo get_the_title();?> 
+          </a></h2>
+        	<a href="<?php the_permalink(); ?>">
+            <img src=' <?php echo get_field("featured_image"); ?> '>
+          </a>	 
+        	<a href="<?php the_permalink(); ?>">
+            <p> <?php echo $start_date; echo ' - '; echo $end_date; ; echo ', ' .  get_field('location');  ?> </p>
+          </a>
+        
     </div>
 
 <?php endwhile; wp_reset_query(); ?>
