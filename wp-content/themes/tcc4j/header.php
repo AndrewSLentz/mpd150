@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -36,17 +37,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			
-		
-				<div class='col1'>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php $description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-					<?php 
-					endif; ?>
-				</div>
 
-				<div class='col2'>
+				<div class='col1'>
 					<div class='img-container'>
 						<?php if ( get_theme_mod( 'tcc4j_logo' ) ) : ?>
 						    <div class='site-logo'>
@@ -56,6 +48,15 @@
 						    </div>
 						<?php endif; ?>
 					</div>
+				</div>
+
+				<div class='col2'>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php $description = get_bloginfo( 'description', 'display' );
+					if ( $description || is_customize_preview() ) : ?>
+						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+					<?php 
+					endif; ?>
 				</div>
 
 				<div class="clear"></div>

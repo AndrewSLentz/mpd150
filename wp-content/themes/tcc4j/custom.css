@@ -1,5 +1,6 @@
 body {
 	background-color:black;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1 a, h1 a:visited, h2 a, h2 a:visited {
@@ -20,22 +21,22 @@ h1 a:hover, h2 a:hover {
 
 .site-branding .col1{
 	float:left;
-	width:85%;
+	width:29%;
 	height:150px;
 }
 
 .site-branding .col2{
 	float:right;
-	width:14%;
+	width:70%;
 	height:150px;
 }
 
-.site-branding .col2 .img-container {
-	float:right;
+.site-branding .col1 .img-container {
+	float:left;
 	height:100%;
 }
 
-.site-branding .col2 .img-container img{
+.site-branding .col1 .img-container img{
 	height:150px;
 }
 
@@ -64,11 +65,14 @@ h1 a:hover, h2 a:hover {
 
 .main-navigation {
 	background-color: #FD1410;
- 
+}
+
+.main-navigation ul {
+	margin-left:4%;
 }
 
 .main-navigation li {
-    padding: 20px;
+    padding: 5px 20px;
     font-size: 16pt;
     float:none;
     display:inline-block;
@@ -92,15 +96,21 @@ h1 a:hover, h2 a:hover {
 
 .content-area {
 	float: left;
-	width: 75%;
+	width: 70%;
 }
 
 .site-content .widget-area {
 	float: right;
 	overflow: hidden;
-	width: 25%;
+	width: 30%;
+	border-top: 40px solid black;
 	
 }
+
+#event_widget-2 {
+	height:499px;
+}
+
 .site-footer {
 	clear: both;
 	width: 100%;
@@ -111,7 +121,7 @@ h1 a:hover, h2 a:hover {
 .section1 {
 	background-color:black;
 	padding:40px;
-
+	height:584px;
 }
 
 .featured-post {
@@ -119,6 +129,7 @@ h1 a:hover, h2 a:hover {
 	margin: 0 auto;
 	padding:20px;
 	background-color:white;
+	text-align:center;
 }
 
 .featured-post img{
@@ -142,13 +153,13 @@ h1 a:hover, h2 a:hover {
 /* Recent Posts */
 
 .section2 {
-	background-color: #536490;
+	background-color: #c7c7c7;
     padding: 1px 0 0 0;
  }
 
 .section2 .past-posts {
 	text-align:center;
-	margin-bottom:50px;
+	margin:50px 0;
 }
 
 .section2 h1 {
@@ -187,11 +198,11 @@ h1 a:hover, h2 a:hover {
 
 .site-content .widget-area {
 	padding-top:20px;
-	background-color:white;
+	background-color:#c7c7c7;
 }
 
 .widget {
-	padding:0px 10px;
+	padding:0;
 }
 
 .widget h1 {
@@ -200,14 +211,26 @@ h1 a:hover, h2 a:hover {
 }
 
 .event-details {
-	margin-bottom:20px;
-	border-top: 1px solid black;
+    height: 190px;
+    padding: 10px;
+}
+
+.event-details .text {
+	    width: 65%;
+    float: left;
+    padding: 0 10px;
+    margin-top: 35px;
+    text-align:center;
+    line-height:1.2;
+}
+
+.event-details .img-container {
+	width: 35%;
+    float: right;
 }
 
 .event-details img {
-	width: 70%;
-    margin: auto auto;
-    display: block;
+    margin-top: 41px;
 }
 
 .event-details p, .event-details h2 {
@@ -215,7 +238,11 @@ h1 a:hover, h2 a:hover {
 }
 
 .event-details h2 {
-	text-align:center;
+	font-size:21px;
+}
+
+.event-details p {
+	font-size:18px;
 }
 
 .event-details a, .event-details a:visited {
@@ -228,18 +255,25 @@ h1 a:hover, h2 a:hover {
 }
 
 #text-3 /*Facebook*/{
-	background-color:white;
-	margin-bottom:0;
-	padding:0;
-	height: 634px;
-    overflow-y: hidden;
+	background-color: #000000;
+    margin-bottom: 0;
+    padding: 0;
+    height: 714px;
+}
+
+.fb-comments, .fb-comments iframe[style], .fb-comments span {
+   width: 100% !important;
+}
+
+.fb-page, .fb-page iframe[style], .fb-page span {
+    width: 100% !important;
 }
 
 /* Allied Posts */
 
 .ally-posts {
 	background-color:black;
-	padding-top:1px;
+	padding-top:20px;
 }
 
 .ally-posts h1 {
@@ -251,7 +285,7 @@ h1 a:hover, h2 a:hover {
     display: inline-block;
     vertical-align: top;
     margin: 0 1%;
-    background-color: white;
+    background-color: #c7c7c7;
     padding: 10px;
     border: 2px solid black;
     height: 370px;
@@ -294,4 +328,150 @@ footer a:hover {
 footer .site-info {
 	color:black;
 	margin-top:9px;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width:1250px) {
+	.site-branding .col1 {
+		width:19%;
+	}
+
+	.site-branding .col2 {
+		width:80%;
+	}
+
+	.section2 .post-container {
+		width:200px;
+	}
+
+	.rss_container {
+		height:470px;
+	}
+
+	#text-3 {
+		background-color: #ffffff;	  
+ 	   height: 812px;
+	}
+
+
+}
+
+@media screen and (max-width:1030px) {
+	#text-3 {
+		height:1034px;
+	}
+
+	.section-1 {
+		height:604px;
+	}
+
+	#event-widget-2 {
+		height:520px;
+	}
+
+	
+	.site-title {
+		padding:0;
+	}
+
+	.site-branding .col2 {
+		height:200px;
+	}
+
+}
+
+@media screen and (max-width:827px) {
+	#primary, #secondary {
+		width:100%;
+	}
+
+	#event-widget-2, #text-3 {
+		height:auto;
+	}
+
+	.event-details .img-container {
+		width:23%;
+	}
+
+	#text-3 {
+		width: 500px;
+    	margin: 20px auto;
+	}
+
+	.site-branding .col2, .section1 {
+		height:auto;
+	}
+}
+
+
+@media screen and (max-width:600px) {
+	#primary-menu {
+		text-align: left;
+	    margin-top: 10px;
+	}
+
+	#site-navigation {
+		padding:10px 0;
+	}
+
+	.main-navigation ul {
+		margin-left:0;
+	}
+
+	.site-branding .col1 {
+		display:none;
+	}
+
+	.site-branding .col2 {
+		width:100%;
+		padding:0 30px;
+	}
+
+	.site-title {
+		font-size:24pt;
+	}
+
+	#primary-menu {
+		margin-top:0;
+	}
+
+	.section1 {
+		padding:20px;
+	}
+
+	.featured-post {
+		width:auto;
+	}
+
+	.ally-posts {
+		text-align:center;
+	}
+
+	.rss_container {
+		height:630px;
+	}
+
+	footer {
+		height:auto;
+		margin-top:0;
+	}
+}
+
+
+@media screen and (max-width:500px) {
+	.rss_container {
+		width:100%;
+		height:auto;
+	}
+
+	.ally-posts {
+		text-align:left;
+	}
+
+	#text-3 {
+		width:300px;
+	}
+
 }
