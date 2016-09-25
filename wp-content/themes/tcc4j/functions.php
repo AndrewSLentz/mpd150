@@ -105,6 +105,8 @@ function tcc4j_scripts() {
 	wp_enqueue_style( 'tcc4j-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'tcc4j-custom', get_template_directory_uri() . '/custom.css' );
+	wp_enqueue_style( 'tcc4j-generic', get_template_directory_uri() . '/generic.css' );
+	wp_enqueue_style( 'tcc4j-events', get_template_directory_uri() . '/events.css' );
 
 	wp_enqueue_script( 'tcc4j-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
