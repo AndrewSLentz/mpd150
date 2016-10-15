@@ -6,6 +6,7 @@ body {
 h1 a, h1 a:visited, h2 a, h2 a:visited {
 	color:black;
 	text-decoration:none;
+	pointer:cursor;
 }
 
 h1 a:hover, h2 a:hover {
@@ -329,6 +330,22 @@ footer .site-info {
 	color:black;
 	margin-top:9px;
 }
+
+
+/* Single Post View */
+.comments-title, .cat-links {
+	display:none;
+}
+
+.comment-body footer {
+	height:auto;
+	color:black;
+}
+
+.comment-form-url {
+	display:none;
+}
+
 
 
 

@@ -2,7 +2,7 @@
 	width:100%;
 }
 
-.generic-page article  {
+.generic-page article, .post-navigation, #comments  {
 	margin: 50px;
     background-color: #c7c7c7;
     padding: 30px;
