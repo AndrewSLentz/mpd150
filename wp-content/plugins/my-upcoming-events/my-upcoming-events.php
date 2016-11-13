@@ -38,6 +38,18 @@ if(function_exists("register_field_group"))
         'display_format' => 'dd/mm/yy',
         'first_day' => 1,
       ),
+       array (
+        'key' => 'field_58286d1c9ab07',
+        'label' => 'Start Time',
+        'name' => 'start_time',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
       array (
         'key' => 'field_58286b76aa5d0',
         'label' => 'End Date',
@@ -46,6 +58,18 @@ if(function_exists("register_field_group"))
         'date_format' => 'yymmdd',
         'display_format' => 'dd/mm/yy',
         'first_day' => 1,
+      ),
+       array (
+        'key' => 'field_58286d1c9ab08',
+        'label' => 'End Time',
+        'name' => 'end_time',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
       ),
       array (
         'key' => 'field_58286b71aa5cf',
@@ -162,7 +186,9 @@ $loop = new WP_Query( array(
             <?php echo get_the_title();?> 
           </a></h2>
           <a href="<?php the_permalink(); ?>">
-            <p> <?php echo $start_date; echo ' - '; echo $end_date; ; echo '<br>' . get_field('location');  ?> </p>
+            <p> <?php echo $start_date . ", " . get_field("start_time"); echo ' - '; 
+            echo $end_date . ", " . get_field("end_time");
+            echo '<br>' . get_field('location').get_field('address');  ?> </p>
           </a>
         </div>
         <div class='img-container'>
