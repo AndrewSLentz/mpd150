@@ -174,9 +174,9 @@ $loop = new WP_Query( array(
  ?>
  	<?php
 	 	$start_date= new DateTime(get_field('start_date', false, false));
-    $start_date=$start_date->format('M jS, g');
+    $start_date=$start_date->format('M jS');
 	 	$end_date= new DateTime(get_field('end_date', false, false));
-    $end_date=$end_date->format('ga');
+    $end_date=$end_date->format('M jS');
 
    
  	?>
