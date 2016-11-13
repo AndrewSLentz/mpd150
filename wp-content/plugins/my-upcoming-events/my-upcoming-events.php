@@ -187,7 +187,7 @@ $loop = new WP_Query( array(
           </a></h2>
           <a href="<?php the_permalink(); ?>">
             <p> <?php echo $start_date . ", " . get_field("start_time"); echo ' - '; 
-            echo $end_date . ", " . get_field("end_time");
+            echo get_field("end_time");
             echo '<br>' . get_field('location').get_field('address');  ?> </p>
           </a>
         </div>
