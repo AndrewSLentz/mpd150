@@ -166,7 +166,6 @@ h1 a:hover, h2 a:hover {
 .section2 .past-posts h3{
 	text-align:center;
 	margin:50px 0;
-	height:96px;
 	font-size:16px;
 }
 
@@ -181,6 +180,7 @@ h1 a:hover, h2 a:hover {
 	width:250px;
 	display:inline-block;
 	margin:0 20px;	
+	vertical-align:top;
 }
 
 .section2 .post-container img {
