@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Upcoming events Plugin for Vlad's Site
+Plugin Name: Upcoming events Plugin for TCC4J Site
 Description: Site specific code changes to add events to sidebar
 */
 /* Start Adding Functions Below this Line */
@@ -22,6 +22,88 @@ function create_post_type() {
 }
 
 
+// Creates Custom Post Type
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_events',
+    'title' => 'Events',
+    'fields' => array (
+      array (
+        'key' => 'field_58286b35aa5ce',
+        'label' => 'Start Date',
+        'name' => 'start_date',
+        'type' => 'date_picker',
+        'date_format' => 'yymmdd',
+        'display_format' => 'dd/mm/yy',
+        'first_day' => 1,
+      ),
+      array (
+        'key' => 'field_58286b76aa5d0',
+        'label' => 'End Date',
+        'name' => 'end_date',
+        'type' => 'date_picker',
+        'date_format' => 'yymmdd',
+        'display_format' => 'dd/mm/yy',
+        'first_day' => 1,
+      ),
+      array (
+        'key' => 'field_58286b71aa5cf',
+        'label' => 'Location',
+        'name' => 'location',
+        'type' => 'text',
+        'instructions' => 'The name of the location, not the address, unless there is only an address.',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_58286d1c9ab09',
+        'label' => 'Address',
+        'name' => 'address',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_58286ba5aa5d1',
+        'label' => 'Featured Image',
+        'name' => 'featured_image2',
+        'type' => 'image',
+        'save_format' => 'url',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'event',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+}
+
+
 
 
 // Creates Upcoming events Widget
@@ -37,6 +119,7 @@ __('Upcoming events', 'wpb_widget_domain'),
 array( 'description' => __( 'Widget for adding upcoming events', 'wpb_widget_domain' ), ) 
 );
 }
+
 // Creating widget front-end
 // This is where the action happens
 public function widget( $args, $instance ) {
@@ -84,7 +167,7 @@ $loop = new WP_Query( array(
         </div>
         <div class='img-container'>
         	<a href="<?php the_permalink(); ?>">
-            <img src=' <?php echo get_field("featured_image"); ?> '>
+            <img src=' <?php echo get_field("featured_image2"); ?> '>
           </a>	 
         </div>
         
