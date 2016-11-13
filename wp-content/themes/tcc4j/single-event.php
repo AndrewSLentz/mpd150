@@ -33,8 +33,10 @@ get_header(); ?>
 				        	<h2> <a href="<?php the_permalink(); ?>">
 				            <?php echo get_the_title();?> 
 				          </a></h2>
-				          <a href="<?php the_permalink(); ?>">
-				            <p> <?php echo $start_date; echo ' - '; echo $end_date; ; echo '<br>' . get_field('location'); . get_field('address');  ?> </p>
+				           <a href="<?php the_permalink(); ?>">
+				            <p> <?php echo $start_date . ", " . get_field("start_time"); echo ' - '; 
+				            echo get_field("end_time");
+				            echo '<br>' . get_field('location').get_field('address');  ?> </p>
 				          </a>
 				        </div>
 				        <div class='img-container'>

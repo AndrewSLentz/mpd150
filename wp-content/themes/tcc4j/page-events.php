@@ -45,7 +45,7 @@ get_header(); ?>
 				        </div>
 				        <div class='img-container'>
 				        	<a href="<?php the_permalink(); ?>">
-				            <img src=' <?php echo get_field("featured_image"); ?> '>
+				            <img src=' <?php echo get_field("featured_image2"); ?> '>
 				          </a>	 
 				        </div>
 				        
