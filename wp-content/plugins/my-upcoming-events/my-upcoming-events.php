@@ -158,7 +158,7 @@ echo $args['before_title'] . $title . $args['after_title'];*/
  <?php
 $loop = new WP_Query( array( 
   'post_type' => 'event', 
-  'posts_per_page' => 2, 
+  'posts_per_page' => 3, 
   'order' => 'ASC',
   'orderby' => 'meta_value',
   'meta_key' => 'start_date',
