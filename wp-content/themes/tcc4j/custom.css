@@ -377,7 +377,7 @@ footer .site-info {
 
 	#text-3 {
 		background-color: #ffffff;	  
- 	   height: 812px;
+ 	   height: 967px;
 	}
 
 	.event-details:nth-child(4) {
@@ -389,7 +389,7 @@ footer .site-info {
 
 @media screen and (max-width:1030px) {
 	#text-3 {
-		height:1034px;
+		height:808px;
 	}
 
 	.section-1 {
@@ -427,6 +427,7 @@ footer .site-info {
 	#text-3 {
 		width: 500px;
     	margin: 20px auto;
+    	height:auto;
 	}
 
 	.site-branding .col2, .section1 {
