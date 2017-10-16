@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../../dist/themes/timeline-gorilla.theme-6.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="icon" href="../favicon.png">
+
+    <title>Timeline Gorilla - Example 6</title>
+</head>
+<body>
+    <header>
+        <span class="label">Please select the theme: </span>
+
+        <select name="theme">
+            <option value="1">Theme 1</option>
+            <option value="2">Theme 2</option>
+            <option value="3">Theme 3</option>
+            <option value="4">Theme 4</option>
+            <option value="5">Theme 5</option>
+            <option value="6" selected>Theme 6</option>
+        </select>
+    </header>
+    
+    <div class="container">
+        <div class="header">
+            <h1>
+                <span class='name'>Matt</span> 
+                <span class="fa fa-heart"></span> 
+                <span class='name'>Emma</span>
+            </h1>
+        </div>
+
+        <div class="timeline">
+            <div data-type="small">
+                <span>
+                    <span class="fa fa-heart"></span>
+                    <span class="date">
+                        <span class="big">23</span>
+                        <span>03.12</span>
+                    </span>
+                </span>
+
+                <div class='timeline-content'>
+                    <img class="cover" src="img/1.png" alt="">
+
+                    <h2>Our First Met</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Integer ultrices malesuada ante quis pharetra. 
+                        Nullam notn bibendum dolor. Ut vel turpis accumsan, 
+                        efficitur dolor fermentum, tincidunt metus. 
+                        Etiam ut ultrices nibh.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>
+                    <span class="fa fa-heart"></span>
+                    <span class="date">
+                        <span class="big">12</span>
+                        <span>06.03</span>
+                    </span>
+                </span>
+
+                <div class='timeline-content'>
+                    <img class="cover" src="img/2.png" alt="">
+
+                    <h2>Our First Dating</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Integer ultrices malesuada ante quis pharetra. 
+                        Nullam notn bibendum dolor. Ut vel turpis accumsan, 
+                        efficitur dolor fermentum, tincidunt metus. 
+                        Etiam ut ultrices nibh.
+                    </p>
+                </div>
+
+                    <div class="inner">
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>
+                    <span class="fa fa-heart"></span>
+                    <span class="date">
+                        <span class="big">07</span>
+                        <span>01.14</span>
+                    </span>
+                </span>
+
+                <div class='timeline-content'>
+                    <img class="cover" src="img/3.png" alt="">
+
+                    <h2>He Proposed</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Integer ultrices malesuada ante quis pharetra. 
+                        Nullam notn bibendum dolor. Ut vel turpis accumsan, 
+                        efficitur dolor fermentum, tincidunt metus. 
+                        Etiam ut ultrices nibh.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>
+                    <span class="fa fa-heart"></span>
+                    <span class="date">
+                        <span class="big">30</span>
+                        <span>08.16</span>
+                    </span>
+                </span>
+
+                <div class='timeline-content'>
+                    <img class="cover" src="img/4.png" alt="">
+
+                    <h2>Love Ring</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Integer ultrices malesuada ante quis pharetra. 
+                        Nullam notn bibendum dolor. Ut vel turpis accumsan, 
+                        efficitur dolor fermentum, tincidunt metus. 
+                        Etiam ut ultrices nibh.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>
+                    <span class="fa fa-heart"></span>
+                    <span class="date">
+                        <span class="big">18</span>
+                        <span>04.17</span>
+                    </span>
+                </span>
+
+                <div class='timeline-content'>
+                    <img class="cover" src="img/5.png" alt="">
+
+                    <h2>We are getting married</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Integer ultrices malesuada ante quis pharetra. 
+                        Nullam notn bibendum dolor. Ut vel turpis accumsan, 
+                        efficitur dolor fermentum, tincidunt metus. 
+                        Etiam ut ultrices nibh.
+                    </p>
+                </div>
+
+                    <div class="inner">
+                </div>
+            </div>
+
+            <div data-type="milestone">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="../../dist/jquery.timeline-gorilla.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(function() {
+            $("select[name='theme']").on("change", function() {
+                window.location.href = "../" + $(this).val() + "/index.html"
+            });
+
+            $(".timeline").timelineGorilla({
+            });
+        });
+    </script>
+</body>
+</html>

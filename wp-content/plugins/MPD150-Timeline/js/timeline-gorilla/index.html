@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/index.css">
+
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>Timeline Gorilla</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="assets/favicon.ico" alt="Timeline Gorilla">
+
+        <p>Please select the theme</p>
+
+        <select name="theme">
+            <option>Select Theme</option>
+            <option value="1">Theme 1</option>
+            <option value="2">Theme 2</option>
+            <option value="3">Theme 3</option>
+            <option value="4">Theme 4</option>
+            <option value="5">Theme 5</option>
+            <option value="6">Theme 6</option>
+        </select>    
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("select[name='theme']").on("change", function() {
+                window.location.href = "./examples/" + $(this).val() + "/index.html"
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../../dist/themes/timeline-gorilla.theme-3.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="icon" href="../favicon.png">
+
+    <title>Timeline Gorilla - Example 3</title>
+</head>
+<body>
+    <header>
+        <span class="label">Please select the theme: </span>
+
+        <select name="theme">
+            <option value="1">Theme 1</option>
+            <option value="2">Theme 2</option>
+            <option value="3" selected>Theme 3</option>
+            <option value="4">Theme 4</option>
+            <option value="5">Theme 5</option>
+            <option value="6">Theme 6</option>
+        </select>
+    </header>
+    
+    <div class="container">
+        <div class="timeline">
+            <div data-type="milestone">
+                <span>2017</span>
+            </div>
+
+            <div data-type="small">
+                <span>323</span>
+                <div class='timeline-content'>
+                    <span class="city">Costa Rica</span>
+                    <h2>Do Your Self Realization <br> Quickly Fade</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum at est bibendum, ultricies purus tempus, 
+                        scelerisque est
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class='timeline-content'>
+                    <span class="city">Bulgaria</span>
+                    <h2>Upgrading To Microsoft Windows Vista Tips</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum at est bibendum, ultricies purus tempus, 
+                        scelerisque est
+                    </p>
+
+                    <div class="gallery">
+                        <img src="./img/1.png" alt="Sample image 1">
+                        <img src="./img/2.png" alt="Sample image 2">
+                        <img src="./img/3.png" alt="Sample image 3">
+                        <img src="./img/4.png" alt="Sample image 4">
+                        <img src="./img/5.png" alt="Sample image 5">
+                        <img src="./img/6.png" alt="Sample image 6">
+                        <img src="./img/7.png" alt="Sample image 7">
+                        <img src="./img/8.png" alt="Sample image 8">
+                        <img src="./img/9.png" alt="Sample image 9">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class='timeline-content'>
+                    <span class="city">Krakow</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Repellendus ipsam nobis expedita enim provident ad 
+                        reprehenderit modi, perspiciatis officiis alias!
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <span>2018</span>
+                <div class='timeline-content'>
+                    <span class="city">Sierra Leone</span>
+                    <img class="full-width" src="./img/10.png" alt="Sample image 10">
+                </div>
+            </div>
+
+            <div>
+                <div class='timeline-content'>
+                    <p>
+                        Healthy self esteem originates in the environment found in the: 
+                        family, school, peer group, work place, and community. There 
+                        are certain characteristics of your environment that need to 
+                        be present in order for self esteem to be fostered and grow.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="milestone">
+                <span>2016</span>
+            </div>
+
+
+            <div data-type="big">
+                <div class='timeline-content'>
+                    <span class="city">South Africa</span>
+
+                    <div class="iframe-wrapper">
+                        <iframe src="https://player.vimeo.com/video/145743834?portrait=0" 
+                                width="640" 
+                                height="360" 
+                                frameborder="0" 
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen>    
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="../../dist/jquery.timeline-gorilla.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(function() {
+            $("select[name='theme']").on("change", function() {
+                window.location.href = "../" + $(this).val() + "/index.html"
+            });
+
+            $(".timeline").timelineGorilla({
+                onAfterInit: function() {
+                    loadmoredata();
+                }
+            });
+
+
+            function loadmoredata() {
+                $(".timeline").css("padding-bottom", "80px")
+                              .after("<a class='load-more' href='javascript:void(0)'>Load More</a>");
+
+                $("a.load-more").on("click", function() {
+                    var btn = $(this);
+                    if (!btn.hasClass("on-progress")) {
+                        btn.addClass("on-progress");
+
+                        $.ajax({
+                            cache: false,
+                            url: '../sample-data.json',
+                            success: function(resp) {
+                                $(".timeline").timelineGorilla("addItems", resp);
+                                btn.fadeOut(1000, function() {
+                                    btn.remove();
+                                    $(".timeline").css("padding-bottom", "")
+                                })
+                            }
+                        });
+                    }
+                })
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../../dist/themes/timeline-gorilla.theme-5.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="icon" href="../favicon.png">
+
+    <title>Timeline Gorilla - Example 5</title>
+</head>
+<body>
+    <header>
+        <span class="label">Please select the theme: </span>
+
+        <select name="theme">
+            <option value="1">Theme 1</option>
+            <option value="2">Theme 2</option>
+            <option value="3">Theme 3</option>
+            <option value="4">Theme 4</option>
+            <option value="5" selected>Theme 5</option>
+            <option value="6">Theme 6</option>
+        </select>
+    </header>
+    
+    <div class="container">
+        <div class="timeline">
+            <div data-type="milestone">
+                <span>
+                    <span class="img" style="background-image: url('img/1.png')"></span>
+                    <span class="title">Gilbert Kelley</span>
+                </span>
+            </div>
+
+            <div data-type="small">
+                <span>1975</span>
+                <div class='timeline-content'>
+                    <h2>Born</h2>
+                    <p>
+                        Born on January 5, 1975, in Philadelphia, Bradley Cooper 
+                        made his television debut with a guest spot on Sex and 
+                        the City.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>1997</span>
+                <div class='timeline-content'>
+                    <h2>University</h2>
+                    <p>
+                        Cooper put his culinary ambitions aside, however, after 
+                        graduating from Georgetown University in 1997 with an 
+                        English degree.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>2001</span>
+                <div class='timeline-content'>
+                    <h2>Film Career</h2>
+                    <p>
+                        Cooper next appeared in the short-lived drama, 
+                        The treet, set in the financial world. Around this time, 
+                        he made his first feature film appearance in the 2001 
+                        comedy Wet Hot American Summer.
+                    </p>
+
+                    <div>
+                        <img src="img/2.png" alt="">
+                        <img src="img/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>2002</span>
+                <div class='timeline-content'>
+                    <h2>My Little Eye</h2>
+                    <p>
+                        During his time on Alias, Cooper made the independent 
+                        drama Carnival Knowledge (2002) and the thriller 
+                        My Little Eye (2002).
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>2006</span>
+                <div class='timeline-content'>
+                    <h2>Commercial Success</h2>
+                    <p>
+                        After the success of Wedding Crashers (2005), 
+                        Cooper landed more comedic film roles. He appeared in 
+                        the romantic comedy Failure to Launch (2006) with 
+                        Matthew McConaughey 
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>2011</span>
+                <div class='timeline-content'>
+                    <h2>Oscar-Nominated Roles</h2>
+                    <p>
+                        The crossover into more action-packed roles continued 
+                        with Cooper's role in the film Limitless, 
+                        which was released in 2011.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <span>2015</span>
+                <div class='timeline-content'>
+                    <h2>Personal Life</h2>
+                    <p>
+                        Cooper was married to actress Jennifer Esposito from 
+                        2006 to 2007. He has reportedly dated actresses 
+                        Renée Zellweger, Zoe Saldana and model Suki Waterhouse.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="../../dist/jquery.timeline-gorilla.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(function() {
+            $("select[name='theme']").on("change", function() {
+                window.location.href = "../" + $(this).val() + "/index.html"
+            });
+
+            $(".timeline").timelineGorilla({
+                onAfterInit: function() {
+                    loadmoredata();
+                }
+            });
+
+
+            function loadmoredata() {
+                $(".timeline").css("padding-bottom", "80px")
+                              .after("<a class='load-more' href='javascript:void(0)'>Load More</a>");
+
+                $("a.load-more").on("click", function() {
+                    var btn = $(this);
+                    if (!btn.hasClass("on-progress")) {
+                        btn.addClass("on-progress");
+
+                        $.ajax({
+                            cache: false,
+                            url: '../sample-data.json',
+                            success: function(resp) {
+                                $(".timeline").timelineGorilla("addItems", resp);
+                                btn.fadeOut(1000, function() {
+                                    btn.remove();
+                                    $(".timeline").css("padding-bottom", "")
+                                })
+                            }
+                        });
+                    }
+                })
+            }
+        });
+    </script>
+</body>
+</html>

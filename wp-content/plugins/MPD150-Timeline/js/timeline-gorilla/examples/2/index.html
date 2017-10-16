@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../../dist/themes/timeline-gorilla.theme-2.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="icon" href="../favicon.png">
+
+    <title>Timeline Gorilla - Example 2</title>
+</head>
+<body>
+    <header>
+        <span class="label">Please select the theme: </span>
+
+        <select name="theme">
+            <option value="1">Theme 1</option>
+            <option value="2" selected>Theme 2</option>
+            <option value="3">Theme 3</option>
+            <option value="4">Theme 4</option>
+            <option value="5">Theme 5</option>
+            <option value="6">Theme 6</option>
+        </select>
+    </header>
+
+    <div class="container">
+        <div class="timeline">
+            <div data-type="milestone">
+                <span>January</span>
+            </div>
+
+            <div data-type="small">
+                <div class='timeline-content'>
+                    <div class="header">
+                        <img src="img/1.png" alt="">
+                        <div class="name">Kyle Stephens</div>
+                        <div class="date">02/21/2017</div>
+                    </div>
+
+                    <img class="full-width" src="img/2.png" alt="">
+                    <p>
+                        Healthy self esteem originates in the environment 
+                        found in the: family, school, peer group, work place, 
+                        and community.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <div class='timeline-content'>
+                    <div class="header">
+                        <img src="img/1.png" alt="">
+                        <div class="name">Kyle Stephens</div>
+                        <div class="date">02/21/2017</div>
+                    </div>
+
+                    <p>
+                        Healthy self esteem originates in the environment 
+                        found in the: family, school, peer group, work place, 
+                        and community.
+                    </p>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <div class='timeline-content'>
+                    <div class="header">
+                        <img src="img/1.png" alt="">
+                        <div class="name">Kyle Stephens</div>
+                        <div class="date">02/21/2017</div>
+                    </div>
+
+                    <div class="gradient-status">
+                        How Do I Know If I M Getting Any
+                        Of This Law Of Attraction Stuff
+                    </div>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <div class='timeline-content'>
+                    <div class="header">
+                        <img src="img/1.png" alt="">
+                        <div class="name">Kyle Stephens</div>
+                        <div class="date">02/21/2017</div>
+                    </div>
+
+                    <div class="iframe-wrapper">
+                        <iframe src="https://player.vimeo.com/video/145743834?portrait=0" 
+                                width="640" 
+                                height="360" 
+                                frameborder="0" 
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen>    
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class='timeline-content'>
+                    <div class="header">
+                        <img src="img/1.png" alt="">
+                        <div class="name">Kyle Stephens</div>
+                        <div class="date">02/21/2017</div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum at est bibendum, ultricies purus tempus, 
+                        scelerisque est
+                    </p>
+
+                    <img class="full-width" src="img/3.png" alt="">
+
+                    <div class="gallery">
+                        <img src="./img/4.png" alt="Sample image 1">
+                        <img src="./img/5.png" alt="Sample image 2">
+                        <img src="./img/6.png" alt="Sample image 4">
+                    </div>
+                </div>
+            </div>
+
+            <div data-type="small">
+                <div class='timeline-content'>
+                    <div class="header">
+                        <img src="img/1.png" alt="">
+                        <div class="name">Kyle Stephens</div>
+                        <div class="date">02/21/2017</div>
+                    </div>
+
+                    <p>
+                        Healthy self esteem originates in the environment 
+                        found in the: family, school, peer group, work place, 
+                        and community.
+                    </p>
+
+                    <p>
+                        <a href="https://codecanyon.net/item/nextpost-auto-post-schedule-manage-your-instagram-multi-accounts-php-script/19456996?ref=postcode" target="_blank">Buy NextPost - Instagram Scheduler</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="../../dist/jquery.timeline-gorilla.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(function() {
+            $("select[name='theme']").on("change", function() {
+                window.location.href = "../" + $(this).val() + "/index.html"
+            });
+            
+            $(".timeline").timelineGorilla({
+                onAfterInit: function() {
+                    loadmoredata();
+                }
+            });
+
+
+            function loadmoredata() {
+                $(".timeline").css("padding-bottom", "80px")
+                              .after("<a class='load-more' href='javascript:void(0)'>Load More</a>");
+
+                $("a.load-more").on("click", function() {
+                    var btn = $(this);
+                    if (!btn.hasClass("on-progress")) {
+                        btn.addClass("on-progress");
+
+                        $.ajax({
+                            cache: false,
+                            url: '../sample-data.json',
+                            success: function(resp) {
+                                $(".timeline").timelineGorilla("addItems", resp);
+                                btn.fadeOut(1000, function() {
+                                    btn.remove();
+                                    $(".timeline").css("padding-bottom", "")
+                                })
+                            }
+                        });
+                    }
+                })
+            }
+        });
+    </script>
+</body>
+</html>
