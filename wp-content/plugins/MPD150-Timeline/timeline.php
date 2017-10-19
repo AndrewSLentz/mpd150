@@ -37,24 +37,71 @@ function display_timeline_events() {
 	));
 
 
-	$html = "<div class='timeline'>";
+	?>
+	<!-- Created by MPD150-Timeline Plugin -->
+	<div class='timeline'><?php
 
 	if( $posts ): 
 		foreach( $posts as $post ):
-			setup_postdata($post);
-			$html .= sprintf("<div><span class='preview-title'>%s</span>", (get_field("display-title")?get_field("display-title"):get_the_title()) );  //adds the display title if it exists, otherwise adds the default title
-			$html .= sprintf("<div class='preview-content'>%s</div></div>",get_field('summary'));
-		endforeach;
+
+			setup_postdata($post); ?>
+	
+			<div> <!--containing div for timeline gorilla -->
+				<span class='preview-title'>
+					<h2>
+						<?php the_title(); ?>
+					</h2>
+				</span>
+			
+				<div <?php post_class('preview_content')?> >
+					<div class='summary'>
+						<?php the_field('summary'); ?>
+					</div>
+					<button class='btn btn-info btn-lg' data-toggle='modal' data-target='#modal-<?php the_id();?>'>
+						Read More
+					</button>
+				</div>
+			</div>
+
+		<?php endforeach;
 		wp_reset_postdata();
+
 	endif;
 
-	$html .= "</div>";
-	$html .= "<script>
-				jQuery(document).ready( function($) {
-					$('.timeline').timelineGorilla();
-				})
-			</script>";
-	echo $html;
+	?>
+	</div> <!-- Timeline -->
+
+	<?php 
+	if( $posts ): 
+		foreach( $posts as $post ):?>
+			<div id='modal-<?php the_id();?>' class='modal fade' role='dialog'>
+				<div class="modal-dialog">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2>
+							<?php the_title(); ?>
+						</h2>
+					</div>
+					<div class="modal-body">
+						<?php the_field('content'); ?>
+					</div>
+				    <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php endforeach;
+		wp_reset_postdata();
+	endif; ?>
+
+	<script>
+			jQuery(document).ready( function($) {
+				$('.timeline').timelineGorilla();
+			})
+	</script>
+	
+<?php 
 }
 
 add_shortcode("timeline", "display_timeline_events");
