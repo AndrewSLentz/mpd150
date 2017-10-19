@@ -26,3 +26,10 @@ function create_posttype_interview() {
     );
 }
 add_action( 'init', 'create_posttype_interview' );
+
+
+function display_interviews() {
+	
+}
+
+add_shortcode("interviews", "display_interviews");
