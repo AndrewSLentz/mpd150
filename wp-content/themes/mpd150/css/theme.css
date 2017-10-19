@@ -9133,8 +9133,9 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
-.btn-primary {
-  background-color: #7852B2; }
+/* Modals */
+.modal-dialog {
+  background-color: white; }
 
 /*
 * Use existing Bootstrap 4 classes and
