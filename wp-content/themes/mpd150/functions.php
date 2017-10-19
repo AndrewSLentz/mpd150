@@ -72,9 +72,4 @@ require get_template_directory() . '/inc/woocommerce.php';
  */
 require get_template_directory() . '/inc/editor.php';
 
-/* Load Styles + Scripts */
-
-function my_theme_scripts() {
-    wp_enqueue_script( 'sidebar-menu', '/wp-content/themes/storefront-child/js/sidebar-menu.js', array( 'jquery' ), '1.0.0', true );
-}
 
