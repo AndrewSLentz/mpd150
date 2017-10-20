@@ -4,5 +4,12 @@
 /* Modals */
 .modal-dialog {
 	background-color:white;
+
+	&.modal-full {
+	    max-width: 90%;
+		margin: 60px auto;
+	}
 }
+	
+
 

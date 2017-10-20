@@ -9136,6 +9136,9 @@ a.skip-link {
 /* Modals */
 .modal-dialog {
   background-color: white; }
+  .modal-dialog.modal-full {
+    max-width: 90%;
+    margin: 60px auto; }
 
 /*
 * Use existing Bootstrap 4 classes and
