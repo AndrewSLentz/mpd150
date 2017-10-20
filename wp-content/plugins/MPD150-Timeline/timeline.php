@@ -31,9 +31,26 @@ add_action( 'init', 'create_posttype_timeline_event' );
 
 function display_timeline_events() {
 	global $post;
+	$modal_html = '';
+
+
+
+	$meta_query = array(
+		array(	
+			'key' => 'date',
+			'value' => date('Ymd'),
+			'type' => 'DATE',
+			'compare' => '<='
+			)
+	);
+
+
 	$posts = get_posts(array(
 		'posts_per_page'	=> -1,
-		'post_type'			=> 'timeline-events'
+		'post_type'			=> 'timeline-events',
+		'orderby' => 'meta_value',
+		'meta_key' => 'date',
+		'order'	=> 'ASC',
 	));
 
 
@@ -44,12 +61,18 @@ function display_timeline_events() {
 	if( $posts ): 
 		foreach( $posts as $post ):
 
-			setup_postdata($post); ?>
+			setup_postdata($post); 
+			$slug = sanitize_title(get_the_title());
+			$date = get_field('date', false, false);
+			$date = new DateTime($date);
+			$year = $date->format('Y');
+
+			?>
 	
 			<div> <!--containing div for timeline gorilla -->
-				<span class='preview-title'>
+				<span class='date'>
 					<h2>
-						<?php the_title(); ?>
+						<?php echo ($year); ?>
 					</h2>
 				</span>
 			
@@ -57,13 +80,34 @@ function display_timeline_events() {
 					<div class='summary'>
 						<?php the_field('summary'); ?>
 					</div>
-					<button class='btn btn-info btn-lg' data-toggle='modal' data-target='#modal-<?php the_id();?>'>
+					<button class='btn btn-info btn-lg' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
 						Read More
 					</button>
 				</div>
 			</div>
 
-		<?php endforeach;
+
+
+			<?php ob_start(); /* Captures HTML for modal for later output */?> 
+				<div id='<?php echo($slug); ?>' class='modal fade' role='dialog'>
+					<div class="modal-dialog modal-full">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h2>
+								<?php the_title(); ?>
+							</h2>
+						</div>
+						<div class="modal-body">
+							<?php the_field('content'); ?>
+						</div>
+					    <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			<?php $modal_html .= ob_get_clean(); 
+
+		endforeach;
 		wp_reset_postdata();
 
 	endif;
@@ -71,28 +115,7 @@ function display_timeline_events() {
 	?>
 	</div> <!-- Timeline -->
 
-	<?php 
-	if( $posts ): 
-		foreach( $posts as $post ):?>
-			<div id='modal-<?php the_id();?>' class='modal fade' role='dialog'>
-				<div class="modal-dialog">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h2>
-							<?php the_title(); ?>
-						</h2>
-					</div>
-					<div class="modal-body">
-						<?php the_field('content'); ?>
-					</div>
-				    <div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		<?php endforeach;
-		wp_reset_postdata();
-	endif; ?>
+	<?php echo($modal_html); ?>
 
 	<script>
 			jQuery(document).ready( function($) {
@@ -108,7 +131,8 @@ add_shortcode("timeline", "display_timeline_events");
 function timeline_scriptsandstyles() {
 	if (is_page("6")) {
     	wp_enqueue_script( 'timeline-gorilla', '/wp-content/plugins/MPD150-Timeline/js/timeline-gorilla/dist/jquery.timeline-gorilla.js', array( 'jquery' ), '1.0.0', true );
-    	wp_enqueue_style("timeline-gorilla", '/wp-content/plugins/MPD150-Timeline/js/timeline-gorilla/dist/themes/timeline-gorilla.theme-2.css');
+    	wp_enqueue_style("timeline-gorilla", '/wp-content/plugins/MPD150-Timeline/js/timeline-gorilla/dist/themes/timeline-gorilla.theme-4.css');
+    	wp_enqueue_script("mpd150_timeline", '/wp-content/plugins/MPD150-Timeline/js/mpd150_timeline.js', array( 'jquery' ), '1.0.0', true );
 	}
 }
 

@@ -21,7 +21,7 @@ function create_posttype_future() {
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'Futures'), 
-            'supports' => array('editor','title','author')
+            'supports' => array('title','author')
         )
     );
 }
