@@ -132,7 +132,6 @@ function timeline_scriptsandstyles() {
 	if (is_page("6")) {
     	wp_enqueue_script( 'timeline-gorilla', '/wp-content/plugins/MPD150-Timeline/js/timeline-gorilla/dist/jquery.timeline-gorilla.js', array( 'jquery' ), '1.0.0', true );
     	wp_enqueue_style("timeline-gorilla", '/wp-content/plugins/MPD150-Timeline/js/timeline-gorilla/dist/themes/timeline-gorilla.theme-4.css');
-    	wp_enqueue_script("mpd150_timeline", '/wp-content/plugins/MPD150-Timeline/js/mpd150_timeline.js', array( 'jquery' ), '1.0.0', true );
 	}
 }
 

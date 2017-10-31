@@ -72,4 +72,18 @@ require get_template_directory() . '/inc/woocommerce.php';
  */
 require get_template_directory() . '/inc/editor.php';
 
+/* One-time PHP script for importing interview data from Dedoose export file */
+
+if ( current_user_can( 'manage_options' ) ) {
+
+
+   /* if( ! file_exists( get_template_directory() . '/inc/one-time/import_interview_excerpts.php' )); //name changes after script is run
+   		echo "file DNE";
+      	return;*/
+
+/*    include get_template_directory() . '/inc/one-time/import_interview_excerpts.php';*/
+
+
+}
+
 

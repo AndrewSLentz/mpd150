@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* colors */
+/*typography */
+/* breakpoints */
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -9133,6 +9136,48 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+/* Overall */
+body {
+  background-color: white; }
+
+/* Typography */
+.main-heading, .nav-link, h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik", sans-serif; }
+
+p {
+  font-family: "Karma", serif; }
+
+.main-heading {
+  font-size: 156pt; }
+
+h1 {
+  font-size: 52pt; }
+
+h2 {
+  font-size: 42pt; }
+
+h3 {
+  font-size: 30pt; }
+
+h4, .nav-link {
+  font-size: 18pt; }
+
+p {
+  font-size: 12pt; }
+
+.nav-link {
+  font-weight: 200; }
+
+/* Navigation */
+.nav-link {
+  color: #000; }
+
+.nav-link:hover {
+  color: #5c96b1; }
+
+.navbar-collapse {
+  justify-content: center; }
+
 /* Modals */
 .modal-dialog {
   background-color: white; }
@@ -9163,3 +9208,26 @@ a.skip-link {
   .wpcf7 .wpcf7-validation-errors {
     color: #dc3545;
     border: 1px solid #e9ecef; }
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.card-container .card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #5c96b1;
+  color: white; }
+
+@media (min-width: 1200px) {
+  .card-container .card {
+    width: 28%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card-container .card {
+    width: 45%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-container .card {
+    width: 90%; } }

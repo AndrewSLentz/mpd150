@@ -1,10 +1,13 @@
+/* enables linking to modals and history events on modal show/hide */
+
 jQuery(document).ready(function($) {
 
 	/* Enable Direct Links to events by query string */
-	var searchParams = new URLSearchParams(window.location.search);
-	event = searchParams.get("event");
-	if (event) {
-		$('#' + event).modal('show');
+	var url = window.location.href;
+	var anchor = url.split('#')[1];
+	console.log(anchor);
+	if (anchor) {
+		$('#' + anchor).modal('show');
 	}
 
 	/* Making activating modals change history event (and URL) */

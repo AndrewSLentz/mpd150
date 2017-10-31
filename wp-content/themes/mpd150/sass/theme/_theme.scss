@@ -1,6 +1,63 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 @import "timeline";
 
+/* Overall */
+
+body {
+	background-color: $theme-color-one;
+}
+
+/* Typography */
+.main-heading, .nav-link, h1, h2, h3, h4, h5, h6 {
+	font-family:$Rubik;
+}
+
+p {
+	font-family:$Karma;
+}
+
+.main-heading {
+	font-size:156pt;
+}
+
+h1 {
+	font-size: 52pt;
+}
+
+h2 {
+	font-size: 42pt;
+}
+
+h3 {
+	font-size:30pt;
+}
+
+h4, .nav-link {
+	font-size:18pt;
+}
+
+p {
+	font-size:12pt;
+}
+
+.nav-link {
+	font-weight:200;
+}
+
+/* Navigation */
+
+.nav-link{
+	color:$nav-link-color;
+}
+
+.nav-link:hover {
+	color:$nav-link-hover-color;
+}
+
+.navbar-collapse {
+	justify-content:center;
+}
+
 /* Modals */
 .modal-dialog {
 	background-color:white;
