@@ -86,4 +86,6 @@ if ( current_user_can( 'manage_options' ) ) {
 
 }
 
+define('ACF_EARLY_ACCESS', '5'); //allows upgrading to ACF 5
+
 

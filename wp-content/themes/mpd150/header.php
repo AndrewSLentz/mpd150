@@ -10,8 +10,36 @@
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
+
+
 <html <?php language_attributes(); ?>>
 <head>
+		<?php
+		if (is_page('4655')) {
+			add_action('acf/save_post', 'custom_acf_save_post', 20);
+			function custom_acf_save_post( $post_id ) {
+
+				file_put_contents('acf_save.txt', print_r($_POST['acf'], true));
+		
+				// bail early if no ACF data
+				if( empty($_POST['acf']) ) {
+					
+					return;
+				}
+
+				$data['ID'] = $post_id;
+				// Combine first name and last name to create a title
+				$title = trim($_POST['acf']['content']);
+				$data['post_title'] = $title;
+				$data['post_name'] = sanitize_title( $title );
+
+				wp_update_post( $data );
+
+			}
+			// Loading form submit code
+			acf_form_head();
+		}
+	?> 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

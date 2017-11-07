@@ -101,7 +101,7 @@ function display_interviews() {
 add_shortcode("interviews", "display_interviews");
 
 // Register Custom Taxonomy
-function custom_taxonomy() {
+function codes_taxonomy() {
 
     $labels = array(
         'name'                       => _x( 'Codes', 'Taxonomy General Name', 'text_domain' ),
@@ -137,7 +137,7 @@ function custom_taxonomy() {
     register_taxonomy( 'excerpt-codes', array( 'interviewexcerpts' ), $args );
 
 }
-add_action( 'init', 'custom_taxonomy', 0 );
+add_action( 'init', 'codes_taxonomy', 0 );
 
 /*function timeline_scriptsandstyles() {
     if (is_page("30")) {
