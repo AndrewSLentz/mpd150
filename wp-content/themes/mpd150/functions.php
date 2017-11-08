@@ -88,4 +88,10 @@ if ( current_user_can( 'manage_options' ) ) {
 
 define('ACF_EARLY_ACCESS', '5'); //allows upgrading to ACF 5
 
+function pull_quote($atts=[],$content=null) {
+	$content = "<span class='pull-quote'>" . $content . "</span>";
+	return $content;
+}
+
+add_shortcode("pull_quote", "pull_quote");
 

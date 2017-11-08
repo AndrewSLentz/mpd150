@@ -7,6 +7,10 @@ body {
 	background-color: $theme-color-one;
 }
 
+.aligncenter {
+	display:block; //needed to align images properly
+}
+
 /* Typography */
 .main-heading, .nav-link, h1, h2, h3, h4, h5, h6 {
 	font-family:$Rubik;
@@ -40,9 +44,24 @@ p {
 	font-size:12pt;
 }
 
+.pull-quote {
+	display:block;
+	line-height:100%;
+	font-size:2.5em;
+	font-weight:bold;
+	text-align:center;
+	margin:2em 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6 {  //Center headers by default
+	display:block;
+	text-align:center;
+}
+
 .nav-link {
 	font-weight:200;
 }
+
 
 /* Navigation */
 
@@ -59,6 +78,16 @@ p {
 }
 
 /* Modals */
+.modal-header {
+	display:block;
+	border-bottom:none;
+
+	button {
+		float:right;
+	}
+
+}
+
 .modal-dialog {
 	background-color:white;
 
@@ -68,5 +97,8 @@ p {
 	}
 }
 	
-
+/* Footer */
+#wrapper-footer-full {
+	background-color:white;
+}
 

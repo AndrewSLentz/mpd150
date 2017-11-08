@@ -9140,6 +9140,9 @@ a.skip-link {
 body {
   background-color: white; }
 
+.aligncenter {
+  display: block; }
+
 /* Typography */
 .main-heading, .nav-link, h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik", sans-serif; }
@@ -9165,6 +9168,18 @@ h4, .nav-link {
 p {
   font-size: 12pt; }
 
+.pull-quote {
+  display: block;
+  line-height: 100%;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 2em 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  text-align: center; }
+
 .nav-link {
   font-weight: 200; }
 
@@ -9179,11 +9194,21 @@ p {
   justify-content: center; }
 
 /* Modals */
+.modal-header {
+  display: block;
+  border-bottom: none; }
+  .modal-header button {
+    float: right; }
+
 .modal-dialog {
   background-color: white; }
   .modal-dialog.modal-full {
     max-width: 90%;
     margin: 60px auto; }
+
+/* Footer */
+#wrapper-footer-full {
+  background-color: white; }
 
 /*
 * Use existing Bootstrap 4 classes and
@@ -9232,5 +9257,16 @@ p {
   .card-container .card {
     width: 90%; } }
 
+.acf-field--post-title, .acf-field-taxonomy {
+  display: none; }
+
 #futures .modal {
   color: black; }
+
+#general-signup-1 .label-inline {
+  width: 33.33333%; }
+
+#general-signup-1 .submit-button-inline-label {
+  display: block;
+  margin: 0 auto;
+  float: none; }

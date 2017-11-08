@@ -14,28 +14,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <html <?php language_attributes(); ?>>
 <head>
-		<?php
+				<?php
+
 		if (is_page('4655')) {
-			add_action('acf/save_post', 'custom_acf_save_post', 20);
-			function custom_acf_save_post( $post_id ) {
-
-				file_put_contents('acf_save.txt', print_r($_POST['acf'], true));
-		
-				// bail early if no ACF data
-				if( empty($_POST['acf']) ) {
-					
-					return;
+					function my_kses_post( $value ) {
+				
+				// is array
+				if( is_array($value) ) {
+				
+					return array_map('my_kses_post', $value);
+				
 				}
-
-				$data['ID'] = $post_id;
-				// Combine first name and last name to create a title
-				$title = trim($_POST['acf']['content']);
-				$data['post_title'] = $title;
-				$data['post_name'] = sanitize_title( $title );
-
-				wp_update_post( $data );
+				
+				
+				// return
+				return wp_kses_post( $value );
 
 			}
+
+
 			// Loading form submit code
 			acf_form_head();
 		}
