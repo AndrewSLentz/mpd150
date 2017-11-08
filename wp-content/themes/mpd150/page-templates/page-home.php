@@ -32,7 +32,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							Learn More
 						</h2>
 					</div>
-
+					<h2> News </h2>
+					<?php masterslider(1);?>
 				</main><!-- #main -->
 
 			</div><!-- #primary -->
