@@ -3,8 +3,14 @@
 
 /* Overall */
 
+html {
+	font-size:16px;
+	margin:16px;
+	padding:16px;
+}
+
 body {
-	background-color: $theme-color-one;
+	background-color: #C8D3F4;
 }
 
 .aligncenter {
@@ -14,6 +20,7 @@ body {
 /* Typography */
 .main-heading, .nav-link, h1, h2, h3, h4, h5, h6 {
 	font-family:$Rubik;
+	color:$font-black;
 }
 
 p {
@@ -21,36 +28,48 @@ p {
 }
 
 .main-heading {
-	font-size:156pt;
+	font-size:8rem;
+	margin-bottom:1rem;
+}
+
+.sub-heading {
+	font-size:6rem;
 }
 
 h1 {
-	font-size: 52pt;
+	font-size: 4rem;
+	margin-bottom:1rem;
 }
 
 h2 {
-	font-size: 42pt;
+	font-size: 3.5rem;
 }
 
 h3 {
-	font-size:30pt;
+	font-size:2.5rem;
+	margin-bottom:1rem;
 }
 
-h4, .nav-link {
-	font-size:18pt;
+h4,  {
+	font-size:1.5rem;
+	margin-bottom:1rem;
+}
+
+.nav-link {
+	font-size:1.5rem;
 }
 
 p {
-	font-size:12pt;
+	font-size:1rem;
 }
 
 .pull-quote {
 	display:block;
 	line-height:100%;
-	font-size:2.5em;
+	font-size:2.5rem;
 	font-weight:bold;
 	text-align:center;
-	margin:2em 1.5em;
+	margin:2em 1.5rem;
 }
 
 h1,h2,h3,h4,h5,h6 {  //Center headers by default
@@ -65,12 +84,21 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 
 /* Navigation */
 
+.navbar-nav {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .nav-link{
-	color:$nav-link-color;
+	color:$font-black;
+	text-transform:uppercase;
+	margin:1rem 1rem 0 1rem;
+	padding:0;
 }
 
 .nav-link:hover {
-	color:$nav-link-hover-color;
+	color:black;
 }
 
 .navbar-collapse {
@@ -90,11 +118,19 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 
 .modal-dialog {
 	background-color:white;
+	color:black;
 
 	&.modal-full {
 	    max-width: 90%;
 		margin: 60px auto;
 	}
+}
+
+/* buttons */
+
+.btn-default {
+	background-color:rgba(81,79,76,.2);
+	border:5px solid #514F4C;
 }
 	
 /* Footer */

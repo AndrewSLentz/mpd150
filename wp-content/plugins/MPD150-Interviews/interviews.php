@@ -91,7 +91,42 @@ function display_interviews() {
             $slug = sanitize_title(get_the_title());
             ?>
                 <div <?php post_class('card')?> >
-                    <?php the_title(); ?>
+                    <?php the_title(); 
+                    $interview_file_name_doc = get_field('media_title');
+                    $interview_file_name_txt = substr($interview_file_name_doc, 0, strpos($interview_file_name_doc,".")) . ".txt";
+                    $interview_file_name_txt = str_replace([" ", "#"], "", $interview_file_name_txt);
+                    $interview_file_name_txt = urlencode($interview_file_name_txt);
+                    $interview_url= $_SERVER['DOCUMENT_ROOT'] . "/wp-content/uploads/interviews/" . $interview_file_name_txt;
+                    $interview = file_exists($interview_url);
+
+                    if ($interview) {
+                        ?><button class='btn btn-info btn-lg' data-toggle='modal' data-target='#<?php echo $slug ?>'>
+                            Read full interview
+                        </button>
+                        <div id='<?php echo($slug); ?>' class='modal fade' role='dialog'>
+                            <div class="modal-dialog modal-full">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2>
+                                        Full Interview Transcript
+                                    </h2>
+                                </div>
+                                <div class="modal-body">
+                                    <?php include($interview_url) ?>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                         <?php
+                    }
+
+
+                   
+                    ?>
+
+
                 </div>
         <?php endforeach;
     endif; 
