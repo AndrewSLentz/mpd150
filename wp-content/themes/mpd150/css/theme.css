@@ -6723,9 +6723,6 @@ a.text-dark:focus, a.text-dark:hover {
   float: right;
   margin-left: 1.5em; }
 
-.aligncenter {
-  margin: 0px auto; }
-
 .entry-footer span {
   padding-right: 10px; }
 
@@ -9143,10 +9140,38 @@ html {
   padding: 16px; }
 
 body {
-  background-color: #C8D3F4; }
+  background-color: #DC965A;
+  font-family: "Karma", serif; }
 
 .aligncenter {
+  margin-left: auto;
+  margin-right: auto;
   display: block; }
+
+/* Margins + Padding + Border*/
+.margin-none {
+  margin: 0; }
+
+.margin-xs {
+  margin-bottom: 0.5rem; }
+
+.margin-sm {
+  margin-bottom: 1rem; }
+
+.margin-md {
+  margin-bottom: 1.5rem; }
+
+.margin-lg {
+  margin-bottom: 2rem; }
+
+.margin-xl {
+  margin-bottom: 3rem; }
+
+.padding-none {
+  padding: 0; }
+
+.border-black {
+  border: 5px solid #514F4C; }
 
 /* Typography */
 .main-heading, .nav-link, h1, h2, h3, h4, h5, h6 {
@@ -9158,14 +9183,15 @@ p {
 
 .main-heading {
   font-size: 8rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-weight: 900; }
 
 .sub-heading {
   font-size: 6rem; }
 
 h1 {
   font-size: 4rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1.8rem; }
 
 h2 {
   font-size: 3.5rem; }
@@ -9182,7 +9208,7 @@ h4 {
   font-size: 1.5rem; }
 
 p {
-  font-size: 1rem; }
+  font-size: .9rem; }
 
 .pull-quote {
   display: block;
@@ -9232,13 +9258,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 60px auto; }
 
 /* buttons */
+.btn, .wpcf7 input[type=submit] {
+  margin-bottom: 3rem; }
+
 .btn-default {
-  background-color: rgba(81, 79, 76, 0.2);
-  border: 5px solid #514F4C; }
+  border: 5px solid #514F4C;
+  background-color: rgba(255, 249, 242, 0.2); }
 
 /* Footer */
 #wrapper-footer-full {
-  background-color: white; }
+  background-color: transparent;
+  padding: 0 0 30px 0; }
 
 /*
 * Use existing Bootstrap 4 classes and
@@ -9301,6 +9331,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   float: none; }
 
+#general-signup-1 .yikes-easy-mc-submit-button {
+  background-color: #C8D3F4;
+  color: black;
+  padding: 11px 0 9px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold; }
+
 .main-heading {
   color: #FFF9F2;
   background-color: #514F4C;
@@ -9309,3 +9346,37 @@ h1, h2, h3, h4, h5, h6 {
 
 #tagline {
   margin-bottom: 4rem; }
+
+body .ms-container {
+  margin-bottom: 3rem; }
+
+.ms-basic-view {
+  border: 5px solid #514F4C; }
+
+.ms-bullets {
+  bottom: -25px !important;
+  z-index: 5; }
+
+.ms-info p {
+  text-align: center;
+  margin-bottom: 0; }
+
+@media (max-width: 1199px) {
+  .main-heading {
+    font-size: 6rem; } }
+
+@media (max-width: 767px) {
+  .main-heading {
+    font-size: 5rem; }
+  #general-signup-1 .label-inline {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none; } }
+
+@media (max-width: 575px) {
+  .main-heading {
+    font-size: 4rem; }
+  .btn-default h3 {
+    font-size: 1.5rem; } }

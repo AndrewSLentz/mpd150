@@ -10,11 +10,48 @@ html {
 }
 
 body {
-	background-color: #C8D3F4;
+	background-color: #DC965A;
+	font-family:$Karma;
 }
 
 .aligncenter {
+	margin-left:auto;
+	margin-right:auto;
 	display:block; //needed to align images properly
+}
+
+/* Margins + Padding + Border*/
+
+.margin-none {
+	margin:0;
+}
+
+.margin-xs {
+	margin-bottom:0.5rem;
+}
+
+.margin-sm {
+	margin-bottom: 1rem;
+}
+
+.margin-md {
+	margin-bottom:1.5rem;
+}
+
+.margin-lg {
+	margin-bottom:2rem;
+}
+
+.margin-xl {
+	margin-bottom:3rem
+}
+
+.padding-none {
+	padding:0;
+}
+
+.border-black {
+	border: 5px solid #514F4C;
 }
 
 /* Typography */
@@ -30,6 +67,7 @@ p {
 .main-heading {
 	font-size:8rem;
 	margin-bottom:1rem;
+	font-weight:900;
 }
 
 .sub-heading {
@@ -38,7 +76,7 @@ p {
 
 h1 {
 	font-size: 4rem;
-	margin-bottom:1rem;
+	margin-bottom:1.8rem;
 }
 
 h2 {
@@ -60,7 +98,7 @@ h4,  {
 }
 
 p {
-	font-size:1rem;
+	font-size:.9rem;
 }
 
 .pull-quote {
@@ -127,14 +165,19 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 }
 
 /* buttons */
+.btn {
+	margin-bottom:3rem;
+}
 
 .btn-default {
-	background-color:rgba(81,79,76,.2);
 	border:5px solid #514F4C;
+	background-color:rgba(255, 249, 242, 0.2);
 }
+
 	
 /* Footer */
 #wrapper-footer-full {
-	background-color:white;
+	background-color:transparent;
+	padding: 0 0 30px 0;
 }
 

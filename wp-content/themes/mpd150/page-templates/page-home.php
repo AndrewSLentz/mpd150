@@ -23,21 +23,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</h1>
 						</div>
 						<div class='row justify-content-center'>
-							<div class='col-12 col-md 10 col-lg-8'>
+							<div class='col-12 col-md-10 col-lg-8'>
 								<h3 id='tagline' class='text-center'><strong> 
 									A people's project evaluating policing 
 								</strong></h3>
-								<h1 id='report-title'><strong>Enough is Enough</strong></h1>
-								<h4>
+								<h1 id='report-title' class='margin-sm'><strong>Enough is Enough</strong></h1>
+								<img id= 'report-title-img' src='/wp-content/uploads/2017/10/squad-car.jpg' class="col-10 col-md-8 col-lg-4 margin-sm aligncenter border-black padding-none">
+								<p class='aligncenter text-center'>
 									MPD150 is an independent community-based initiative to evaluate the first 150 years of the Minneapolis Police Department. Through historical investigation, interviews and research into viable alternatives we have produced a performance review that examines the department's past – its track record since 1867 including the failure of reform efforts; its present – its current practices and impact on community life; and the future – the necessity of dismantling its overbearing political and paramilitary power and the transfer of its resources into alternative models of community safety, well-being and resilience.
-								</h4>
+								</p>
 								<div id='learn-more' class='text-center'>
-									<button type='button' class='btn btn-default'>
-										Read the Report
+									<button type='button' class='btn btn-default col-12 col-lg-6'>
+										<h3 class='margin-none'>Read the Report</h3>
 									</button>
 								</div>
-								<h2> News </h2>
-								<?php masterslider(1);?>
+								<h2 class='margin-xs'> News </h2>
+								<div id='news-slider' class='margin-none'>
+									<?php masterslider(1);?>
+								</div>
 							</div>
 						</div>
 						
