@@ -9,7 +9,20 @@
 
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
+
+	#full-width-page-wrapper {
+		padding-top:0;
+	}
+
+	.navbar-toggler {
+		font-size:3rem;
+	}
+
+	.navbar-collapse.show {
+		margin-bottom:2rem;
+	} 
+
 	.main-heading{
 		font-size:5rem;
 	}

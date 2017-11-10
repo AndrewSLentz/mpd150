@@ -66,8 +66,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="container">
 			<?php endif; ?>
 
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+					<button class="navbar-toggler aligncenter" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</span>
 					</button>
 
 					<!-- The WordPress Menu goes here -->
