@@ -92,3 +92,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- .wrapper-navbar end -->
 	</div>
+	<div class='row justify-content-center' >
+			<h1 class="main-heading text-center">
+				MPD150
+			</h1>
+	</div>

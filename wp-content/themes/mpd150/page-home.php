@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Homepage
-*/
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
@@ -17,11 +14,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<main class="site-main" id="main" role="main">
 					<div id='main-heading-container'>
-						<div class='row justify-content-center' >
-							<h1 class="main-heading text-center col-10 col-md-8 col-lg-6">
-								MPD150
-							</h1>
-						</div>
 						<div class='row justify-content-center'>
 							<div class='col-12 col-md-10 col-lg-8'>
 								<h3 id='tagline' class='text-center'><strong> 
@@ -33,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									MPD150 is an independent community-based initiative to evaluate the first 150 years of the Minneapolis Police Department. Through historical investigation, interviews and research into viable alternatives we have produced a performance review that examines the department's past – its track record since 1867 including the failure of reform efforts; its present – its current practices and impact on community life; and the future – the necessity of dismantling its overbearing political and paramilitary power and the transfer of its resources into alternative models of community safety, well-being and resilience.
 								</p>
 								<div id='learn-more' class='text-center'>
-									<button type='button' class='btn btn-default col-12 col-lg-6'>
+									<button type='button' class='btn btn-default col-12 col-lg-6 margin-lg'>
 										<h3 class='margin-none'>Read the Report</h3>
 									</button>
 								</div>

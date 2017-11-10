@@ -95,3 +95,6 @@ function pull_quote($atts=[],$content=null) {
 
 add_shortcode("pull_quote", "pull_quote");
 
+if ( is_page_template( 'page-templates/my-template.php' ) ) {
+    include_once 'page-templates/my-template.php';
+}

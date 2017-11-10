@@ -19,10 +19,6 @@
 		font-size:3rem;
 	}
 
-	.navbar-collapse.show {
-		margin-bottom:2rem;
-	} 
-
 	.main-heading{
 		font-size:5rem;
 	}
@@ -33,6 +29,15 @@
 	    margin-right: auto;
 	    display: block;
 	    float: none;
+	}
+
+	.tg-track {
+		display:none;
+	}
+
+	.tg-mobile .tg-small .tg-content {
+		margin-left:0;
+		margin-right:0;
 	}
 }
 

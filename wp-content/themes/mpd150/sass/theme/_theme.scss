@@ -20,6 +20,16 @@ body {
 	display:block; //needed to align images properly
 }
 
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 1400px;
+	}
+}
+
+#full-width-page-wrapper {
+	padding-bottom:0;
+}
+
 /* Margins + Padding + Border*/
 
 .margin-none {
@@ -126,6 +136,7 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom:2rem;
 }
 
 .nav-link{
@@ -164,14 +175,16 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	}
 }
 
-/* buttons */
-.btn {
-	margin-bottom:3rem;
+[data-toggle="modal"] {
+	cursor:pointer;
 }
+
+/* buttons */
 
 .btn-default {
 	border:5px solid #514F4C;
 	background-color:rgba(255, 249, 242, 0.2);
+	line-height:1;
 }
 
 	

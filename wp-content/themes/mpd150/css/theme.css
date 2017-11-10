@@ -9133,6 +9133,17 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+.tg-content {
+  background-color: transparent;
+  border: 3px solid #282826;
+  padding: .5rem; }
+
+.tg-label {
+  display: none; }
+
+.tg-track {
+  background-color: #282826; }
+
 /* Overall */
 html {
   font-size: 16px;
@@ -9147,6 +9158,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px; } }
+
+#full-width-page-wrapper {
+  padding-bottom: 0; }
 
 /* Margins + Padding + Border*/
 .margin-none {
@@ -9229,7 +9247,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 2rem; }
 
 .nav-link {
   color: #282826;
@@ -9257,13 +9276,14 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 90%;
     margin: 60px auto; }
 
-/* buttons */
-.btn, .wpcf7 input[type=submit] {
-  margin-bottom: 3rem; }
+[data-toggle="modal"] {
+  cursor: pointer; }
 
+/* buttons */
 .btn-default {
   border: 5px solid #514F4C;
-  background-color: rgba(255, 249, 242, 0.2); }
+  background-color: rgba(255, 249, 242, 0.2);
+  line-height: 1; }
 
 /* Footer */
 #wrapper-footer-full {
@@ -9293,6 +9313,17 @@ h1, h2, h3, h4, h5, h6 {
   .wpcf7 .wpcf7-validation-errors {
     color: #dc3545;
     border: 1px solid #e9ecef; }
+
+.tg-content {
+  background-color: transparent;
+  border: 3px solid #282826;
+  padding: .5rem; }
+
+.tg-label {
+  display: none; }
+
+.tg-track {
+  background-color: #282826; }
 
 .card-container {
   display: flex;
@@ -9345,7 +9376,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 10px solid #FFF9F2; }
 
 #tagline {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  margin-top: -2rem; }
 
 body .ms-container {
   margin-bottom: 3rem; }
@@ -9370,8 +9402,6 @@ body .ms-container {
     padding-top: 0; }
   .navbar-toggler {
     font-size: 3rem; }
-  .navbar-collapse.show {
-    margin-bottom: 2rem; }
   .main-heading {
     font-size: 5rem; }
   #general-signup-1 .label-inline {
@@ -9379,10 +9409,27 @@ body .ms-container {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    float: none; } }
+    float: none; }
+  .tg-track {
+    display: none; }
+  .tg-mobile .tg-small .tg-content {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media (max-width: 575px) {
   .main-heading {
     font-size: 4rem; }
   .btn-default h3 {
     font-size: 1.5rem; } }
+
+/* contains styles for generic pages */
+/* Report Overview Page */
+/* #overview-container .col-md-4 {
+	border-bottom:5px solid $font-black;
+	border-left:5px solid $font-black;
+	border-top:5px solid $font-black;
+}
+
+#overview-container .col-md-4:last-child {  //preventing doubling borders
+	border-right:5px solid $font-black;
+} */
