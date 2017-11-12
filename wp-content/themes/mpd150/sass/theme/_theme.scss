@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	}
 }
 
-[data-toggle="modal"] {
+[data-toggle="modal"], [data-dismiss="modal"] {
 	cursor:pointer;
 }
 
@@ -185,6 +185,8 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	border:5px solid #514F4C;
 	background-color:rgba(255, 249, 242, 0.2);
 	line-height:1;
+	cursor:pointer;
+	padding: 12px 10px 8px 10px;
 }
 
 	

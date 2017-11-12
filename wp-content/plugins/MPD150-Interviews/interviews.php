@@ -42,8 +42,9 @@ function display_codes() {
     foreach ($topics as $topic) {
         $name = $topic->name;
         $slug = $topic->slug;
-        echo sprintf("<input type='radio' id='%s' name='topic'><label for='%s'>%s</label>",$slug,$slug,$name);
+        echo sprintf("<div><input type='radio' id='%s' name='topic'><label for='%s'>%s</label></div>",$slug,$slug,$name);
     }?>
+    </form>
    <?php
 
     /* Get all role codes */
@@ -58,9 +59,10 @@ function display_codes() {
     foreach ($roles as $role) {
         $name = $role->name;
         $slug = $role->slug;
-        echo sprintf("<input type='radio' id='%s' name='role'><label for='%s'>%s</label>",$slug,$slug,$name);
+        echo sprintf("<div><input type='radio' id='%s' name='role'><label for='%s'>%s</label></div>",$slug,$slug,$name);
     }?>
-    <button id="show-all" type="button"> Show All </button>
+    </form>
+    <button id="show-all" type="button" class='btn-default btn aligncenter margin-md'> Show All </button>
     </div> <!-- interview codes -->
     <script src="/wp-content/plugins/MPD150-Interviews/interviews.js"></script>
 
@@ -91,7 +93,8 @@ function display_interviews() {
             $slug = sanitize_title(get_the_title());
             ?>
                 <div <?php post_class('card')?> >
-                    <?php the_title(); 
+                    <div class='margin-md'><?php the_title()?></div>
+                    <?php 
                     $interview_file_name_doc = get_field('media_title');
                     $interview_file_name_txt = substr($interview_file_name_doc, 0, strpos($interview_file_name_doc,".")) . ".txt";
                     $interview_file_name_txt = str_replace([" ", "#"], "", $interview_file_name_txt);
@@ -100,9 +103,8 @@ function display_interviews() {
                     $interview = file_exists($interview_url);
 
                     if ($interview) {
-                        ?><button class='btn btn-info btn-lg' data-toggle='modal' data-target='#<?php echo $slug ?>'>
-                            Read full interview
-                        </button>
+                        ?><h4 class="alignleft margin-xs" data-toggle='modal' data-target='#<?php echo $slug ?>'>Read full interview >
+                        </h4>
                         <div id='<?php echo($slug); ?>' class='modal fade' role='dialog'>
                             <div class="modal-dialog modal-full">
                                 <div class="modal-header">

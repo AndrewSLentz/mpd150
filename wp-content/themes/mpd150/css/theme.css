@@ -9276,14 +9276,16 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 90%;
     margin: 60px auto; }
 
-[data-toggle="modal"] {
+[data-toggle="modal"], [data-dismiss="modal"] {
   cursor: pointer; }
 
 /* buttons */
 .btn-default {
   border: 5px solid #514F4C;
   background-color: rgba(255, 249, 242, 0.2);
-  line-height: 1; }
+  line-height: 1;
+  cursor: pointer;
+  padding: 12px 10px 8px 10px; }
 
 /* Footer */
 #wrapper-footer-full {
@@ -9334,6 +9336,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px;
   padding: 20px;
   background-color: #7E9B7B;
+  color: white; }
+
+form#topics, form#roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  form#topics div, form#roles div {
+    margin-right: 1.5rem; }
+
+.interviewexcerpts h4.alignleft {
+  margin-left: -25px;
   color: white; }
 
 @media (min-width: 1200px) {

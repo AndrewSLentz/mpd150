@@ -201,41 +201,7 @@
  * Timeline Item Content
  * Feel free to edit
  */
-body{font-size: 100%; padding: 0; margin:0; font-family: 'Open Sans', sans-serif; 
-    background-color: #F6F7F9;; color: #000000;}
-
-
-header {
-    padding: 20px;
-    text-align: center;
-}
-
-
-.container{margin: 50px auto; padding: 0 20px; max-width: 940px;}
-
-
-
-.header{
-    margin: 20px auto;
-    max-width: 400px;
-}
-.header h1 {
-    margin: 0;
-    color: #3D4144;
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 59px;
-}
-.header p {
-    margin-top: 10px;
-    color: #9B9B9B;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    width: auto;
-}
-
+\
 
 .timeline {}
 
@@ -273,21 +239,7 @@ header {
 }
 
 
-h2 {
-    margin-top: 30px;
-    color: #3D4144;
-    font-family: Poppins;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: normal;
-}
 
-p {
-    width: 268px;
-    color: #9B9B9B;
-    font-size: 12px;
-    line-height: 23px;
-}
 
 .iframe-wrapper {
     position: relative;
@@ -303,11 +255,6 @@ p {
     height: 100%;
 }
 
-img.full-width {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 .gradient-status {
     margin: 1em -0px;

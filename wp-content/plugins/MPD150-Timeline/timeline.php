@@ -69,18 +69,19 @@ function display_timeline_events() {
 
 			?>
 	
-			<div> <!--containing div for timeline gorilla -->
-				<span class='date'>
-					<h2>
-						<?php echo ($year); ?>
-					</h2>
-				</span>
+			<div class='margin-xl'> <!--containing div for timeline gorilla -->
+			
 			
 				<div <?php post_class('preview_content')?> >
-					<div class='summary'>
+					<div class='img-container margin-sm'>
+						<img src="<?php the_field('featured_image')?>">
+					</div>
+					<h4 class='margin-none aligncenter text-center'><?php echo $year ?></h4>
+					<h4 class='margin-xs aligncenter text-center'><?php the_title() ?></h4>
+					<div class='summary aligncenter text-center margin-md'>
 						<?php the_field('summary'); ?>
 					</div>
-					<button class='btn btn-info btn-lg' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
+					<button class='btn btn-default aligncenter margin-md' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
 						Read More
 					</button>
 				</div>

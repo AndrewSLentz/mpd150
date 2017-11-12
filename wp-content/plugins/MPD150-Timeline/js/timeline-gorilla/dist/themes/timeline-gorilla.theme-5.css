@@ -291,15 +291,6 @@
  * Timeline Item Content
  * Feel free to edit
  */
-body{font-size: 100%; padding: 0; margin:0; font-family: 'Open Sans', sans-serif; 
-    background-color: #fff; color: #000000;}
-
-header {
-    padding: 20px;
-    text-align: center;
-}
-
-.container{margin: 50px auto; padding: 0 20px; max-width: 940px;}
 
 
 .timeline {}
@@ -309,21 +300,6 @@ header {
 .timeline-content.no-padding{padding: 0;}
 
 
-h2 {
-    margin-top: 0;
-
-    color: #4BD063;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 20px;
-}
-
-p {
-    color: #3D4144;
-    font-size: 14px;
-    line-height: 23px;
-}
 
 .iframe-wrapper {
     position: relative;
