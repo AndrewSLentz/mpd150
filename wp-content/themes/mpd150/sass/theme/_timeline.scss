@@ -1,6 +1,10 @@
+.timeline {
+	margin-top:4rem;
+}
+
 .tg-content {
 	background-color:transparent;
-	border: 3px solid $font-black;
+	border:  3px solid $font-black;
 	padding:.5rem;
 }
 
@@ -10,4 +14,16 @@
 
 .tg-track {
 	background-color:$font-black;
+}
+
+.tg-left .tg-content .year {
+	position: absolute;
+    right: 0;
+    top: -45px;
+}
+
+.tg-right .tg-content .year {
+	position: absolute;
+    left: 0;
+    top: -45px;
 }

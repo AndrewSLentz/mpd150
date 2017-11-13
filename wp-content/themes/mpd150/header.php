@@ -54,8 +54,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div class='row justify-content-center'>
-		<div class="wrapper-fluid wrapper-navbar col-10 col-md-8 col-lg-6" id="wrapper-navbar">
+	<div class='toprow row justify-content-center color6'>
+		<div class="wrapper-fluid wrapper-navbar col-10" id="wrapper-navbar">
 
 			<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 			'understrap' ); ?></a>
@@ -84,6 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'walker'          => new WP_Bootstrap_Navwalker(),
 						)
 					); ?>
+
 				<?php if ( 'container' == $container ) : ?>
 				</div><!-- .container -->
 				<?php endif; ?>
@@ -92,7 +93,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- .wrapper-navbar end -->
 	</div>
-	<div class='row justify-content-center' >
+	<div class='row justify-content-center color4' >
 			<h1 class="main-heading text-center">
 				MPD150
 			</h1>
