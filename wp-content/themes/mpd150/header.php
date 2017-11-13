@@ -78,7 +78,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'theme_location'  => 'primary',
 							'container_class' => 'collapse navbar-collapse',
 							'container_id'    => 'navbarNavDropdown',
-							'menu_class'      => 'navbar-nav',
+							'menu_class'      => 'navbar-nav color6',
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu',
 							'walker'          => new WP_Bootstrap_Navwalker(),
@@ -93,7 +93,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- .wrapper-navbar end -->
 	</div>
-	<div class='row justify-content-center color4' >
+	<div class='row justify-content-center main-heading-row' >
 			<h1 class="main-heading text-center">
 				MPD150
 			</h1>

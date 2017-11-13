@@ -34,14 +34,23 @@ body {
 
 .row {
 	padding-top:2rem;
+	margin:auto 0;
 }
 
 .row.toprow {
 	padding-top:0;
 }
 
-.row.nopadding {
+.nopadding {
 	padding:0;
+}
+
+.main-heading-row {
+	background-color:$theme-color-six;
+}
+
+.home .main-heading-row {
+	background-color:$theme-color-four;
 }
 
 
@@ -72,6 +81,10 @@ body {
 	margin-bottom:3rem
 }
 
+.margin-xxl {
+	margin-bottom:4.5rem;
+}
+
 .padding-none {
 	padding:0;
 }
@@ -83,6 +96,10 @@ body {
 /* Typography */
 .main-heading, .nav-link, h1, h2, h3, h4, h5, h6 {
 	font-family:$Rubik;
+	color:$font-black;
+}
+
+.font-black {
 	color:$font-black;
 }
 
@@ -124,7 +141,7 @@ h4,  {
 }
 
 p {
-	font-size:.9rem;
+	font-size:1rem;
 }
 
 .pull-quote {
@@ -150,7 +167,7 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 
 //colors
 
-.color1,.color2,.color3,.color4,.color5,.color6 {
+.color1,.color2,.color3,.color4,.color5,.color6, .dropdown-menu, .main-heading-row {
 	background: url(../img/textures/texture4.png);
 }
 
@@ -178,7 +195,11 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	background-color:$theme-color-six!important;
 }
 
-
+.trans-white {
+	background-color:rgba($white, .3);
+	width:auto;
+	padding:1.5rem;
+}
 
 
 
@@ -196,19 +217,30 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	text-transform:uppercase;
 	margin:1rem 1rem 0 1rem;
 	padding:0;
+
+	&:hover {
+		text-decoration:underline;
+		color:$font-black;
+	}
 }
 
-.nav-link:hover {
-	color:black;
-}
 
 .navbar-collapse {
 	justify-content:center;
 }
 
+.social-icons:hover {
+	text-decoration:none!important;
+}
+
 .social-icons a {
 	color:$font-black;
 	font-size: 1.5rem;
+	margin: 0 2rem;
+
+	&:hover {
+		text-decoration:none!important;
+	}
 }
 
 .dropdown-menu {
@@ -219,6 +251,7 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	display:block;
 	padding:0;
 	border:none;
+	
 
 }
 
@@ -227,7 +260,9 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 	height:auto;
 	padding:.5rem 0;
 	border:1px solid rgba(0,0,0,.15);
+	background-color:darken(rgba($theme-color-six, .9),10%);
 }
+
 
 /* Modals */
 .modal-header {

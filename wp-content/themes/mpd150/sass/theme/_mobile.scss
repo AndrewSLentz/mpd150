@@ -11,6 +11,33 @@
 
 @media (max-width: 767px) {
 
+/* 	html{
+		font-size:20px;
+	}
+ */
+
+ 	.social-icons {
+		text-align:center;
+		margin-bottom:2rem;
+		
+		a {
+			text-align:center;
+		}
+
+		i {
+			font-size:2.5rem;
+
+		}
+	}
+
+	.toprow.color6 {
+		background-color:$theme-color-four!important;
+	}
+
+	#learn-more, .learn-more-tri {
+		display:none;
+	}
+
 	#full-width-page-wrapper {
 		padding-top:0;
 	}
@@ -20,7 +47,11 @@
 	}
 
 	.main-heading{
-		font-size:5rem;
+		font-size:5rem;		
+	}
+
+	.home .main-heading {
+		margin-top:0;
 	}
 
 	#general-signup-1 .label-inline { //mailchimp signup
@@ -51,6 +82,8 @@
 			font-size:1.5rem;
 		}
 	}
+
+
 }
 
 

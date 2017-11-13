@@ -98,12 +98,11 @@ add_shortcode("pull_quote", "pull_quote");
 add_filter( 'wp_nav_menu_items', 'add_social_icons', 10, 2 );
 function add_social_icons ( $items ) {
 		$items .= "<li class='social-icons nav-link'>
-						<a href='http://www.twitter.com/mpd_150'>
+						<a href='http://www.twitter.com/mpd_150' target='_blank'>
 							<i class='fa fa-twitter' aria-hidden='true'></i>
 						</a>
-				</li>
-				<li class='social-icons nav-link'>
-					<a href='www.facebook.com/mpd150'>
+
+					<a href='www.facebook.com/mpd150' target='_blank'>
 						<i class='fa fa-facebook'></i>
 					</a>
 				</li>";
