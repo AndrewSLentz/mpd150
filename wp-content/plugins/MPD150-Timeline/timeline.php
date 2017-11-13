@@ -67,16 +67,17 @@ function display_timeline_events() {
 			$date = new DateTime($date);
 			$year = $date->format('Y');
 
-			?>
+			?>	
 	
 			<div class='margin-xl'> <!--containing div for timeline gorilla -->
 			
 			
 				<div <?php post_class('preview_content')?> >
+				<h3 class='margin-none aligncenter text-center year'><?php echo $year ?></h3>
 					<div class='img-container margin-sm'>
 						<img src="<?php the_field('featured_image')?>">
 					</div>
-					<h4 class='margin-none aligncenter text-center'><?php echo $year ?></h4>
+					
 					<h4 class='margin-xs aligncenter text-center'><?php the_title() ?></h4>
 					<div class='summary aligncenter text-center margin-md'>
 						<?php the_field('summary'); ?>
