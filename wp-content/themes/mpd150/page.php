@@ -23,9 +23,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						
+						<div class='row color4 justify-content-center'>
 
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+							<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+
+						<div>
 
 						<?php
 						// If comments are open or we have at least one comment, load up the comment template.

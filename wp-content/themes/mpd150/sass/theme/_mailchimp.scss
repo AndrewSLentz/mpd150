@@ -3,16 +3,24 @@
 #general-signup-1 {
 	.label-inline {
 		width:33.33333%;
+		span {
+			font-weight:bold;
+
+		}
+
 	}
 
 	.submit-button-inline-label {
 		display:block;
 		margin:0 auto;
 		float:none;
+
+		
 	}
 
 	.yikes-easy-mc-submit-button {
-		background-color:#C8D3F4;
+		background-color:$white;
+		border:3px solid $font-black;
 		color:black;
 		padding: 11px 0 9px;
 		font-family:$Rubik;

@@ -37,7 +37,7 @@ body {
 	margin:auto 0;
 }
 
-.row.toprow {
+#content > .row, .row.toprow {
 	padding-top:0;
 }
 
@@ -53,6 +53,9 @@ body {
 	background-color:$theme-color-four;
 }
 
+body:not(.home) #main > div:first-child {
+	padding-top:2rem;
+}
 
 
 /* Margins + Padding + Border*/
@@ -196,7 +199,7 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 }
 
 .trans-white {
-	background-color:rgba($white, .3);
+	@include trans-white;
 	width:auto;
 	padding:1.5rem;
 }
@@ -275,9 +278,24 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 
 }
 
+.close {
+	font-size:3rem;
+}
+
+.modal.show .modal-dialog { /* center and keep fixed */
+	position:fixed;
+	left:50%;
+	transform:translateX(-50%);
+	max-width:none;
+}
+
 .modal-dialog {
 	background-color:white;
 	color:black;
+	height:90vh;
+	width:90vw;
+	overflow-y:auto;
+	
 
 	&.modal-full {
 	    max-width: 90%;
@@ -291,14 +309,26 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 
 /* buttons */
 
-.btn-default {
-	border:5px solid #514F4C;
-	background-color:rgba(255, 249, 242, 0.2);
+.btn {
 	line-height:1;
 	cursor:pointer;
 	padding: 12px 10px 8px 10px;
 }
 
+.btn-default {
+	border:5px solid #514F4C;
+	background-color:rgba(255, 249, 242, 0.2);
+}
+
+.btn-black {
+	background-color:rgba($font-black,.7);
+	color:white;
+}
+
+.btn-white {
+	background-color:$white;
+	border:5px solid #514F4C;
+}
 	
 /* Footer */
 #wrapper-footer-full {

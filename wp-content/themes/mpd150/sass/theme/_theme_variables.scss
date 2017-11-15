@@ -14,7 +14,7 @@ $font-black: #282826;
 
 $theme-color-one:#82d3a4;  //mint green
 $theme-color-two:#ffd0b1; //peach pink
-$theme-color-three:#b4726a; //bright red
+$theme-color-three:#b4726a; //wooden red
 $theme-color-four:#4090ff; //deep blue
 $theme-color-five:#f1cf69; //golden yellow
 $theme-color-six:#f1c5a8; //totally tan
@@ -31,3 +31,8 @@ $screen-md-min: 992px;
 $screen-sm-max: ($screen-md-min - 1);
 $screen-lg-min: 1200px;
 $screen-md-max: ($screen-lg-min - 1);
+
+@mixin trans-white {
+	background-color:rgba($white, .3);
+}
+

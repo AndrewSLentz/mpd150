@@ -6,4 +6,28 @@
 	.modal {
 		color:black;
 	}
+
+	.category {
+		display:block;
+		margin:2rem auto;
+	}
+
+	#message {
+		color:green;
+		clear:both;
+	}
+}
+
+#alternatives_form {
+
+	.acf-fields > .acf-field {
+		padding-top:0;
+		border-top:none;
+	}
+
+	.acf-label {
+		display:none;
+	}
+
+
 }

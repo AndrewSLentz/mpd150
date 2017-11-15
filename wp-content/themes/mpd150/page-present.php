@@ -13,17 +13,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12 content-area homepage-content" id="primary">
 
 				<main class="site-main" id="main" role="main">
-					<div id='main-heading-container'>
-						<div class='row justify-content-center'>
-							<div class='col-12 col-md-10 col-lg-8'>
-								<h1> <?php the_title() ?></h1>
-								<p class='aligncenter text-center margin-lg'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Elit scelerisque mauris pellentesque pulvinar pellentesque. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Elit scelerisque mauris pellentesque pulvinar pellentesque. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. In fermentum et sollicitudin ac orci phasellus egestas. Molestie ac feugiat sed lectus vestibulum </p>
-								
-							</div>
-							<div class='timeline-container margin-xl'>
-									<?php echo do_shortcode('[interviews]');?>
-							</div>
+					
+					<div class='row justify-content-center color4'>
+						<div class='col-12 col-md-10 col-lg-10'>
+							<h1> <?php the_title() ?></h1>
+							<p class='aligncenter text-center margin-lg trans-white'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Elit scelerisque mauris pellentesque pulvinar pellentesque. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Elit scelerisque mauris pellentesque pulvinar pellentesque. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. In fermentum et sollicitudin ac orci phasellus egestas. Molestie ac feugiat sed lectus vestibulum </p>		
 						</div>
+					</div>
+					
+						
+					<?php echo do_shortcode('[interviews]');?>
+
 						
 				</main><!-- #main -->
 
