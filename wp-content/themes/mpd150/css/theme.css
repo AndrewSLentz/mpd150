@@ -9162,7 +9162,7 @@ html {
   font-size: 16px; }
 
 body {
-  background-color: #f1c5a8;
+  background-color: #4090ff;
   font-family: "Karma", serif; }
 
 .aligncenter {
@@ -9530,15 +9530,20 @@ form#topics, form#roles {
 .main-heading {
   color: #FFF9F2;
   background-color: #514F4C;
-  padding: 1rem 2rem;
   border: 10px solid #FFF9F2; }
 
-.home .main-heading {
-  margin-top: 9rem; }
+div#landingPad {
+  height: 100vh;
+  background-color: #4090ff;
+  background: url(../img/textures/texture4.png);
+  background-position: left; }
 
-#tagline {
-  margin-bottom: 6rem;
-  margin-top: -2rem; }
+div.centering {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around; }
 
 body .ms-container {
   margin-bottom: 3rem; }
