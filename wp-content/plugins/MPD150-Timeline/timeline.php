@@ -82,7 +82,7 @@ function display_timeline_events() {
 					<div class='summary aligncenter text-center margin-md'>
 						<?php the_field('summary'); ?>
 					</div>
-					<button class='btn btn-default aligncenter margin-md' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
+					<button class='btn btn-black aligncenter margin-md' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
 						Read More
 					</button>
 				</div>
