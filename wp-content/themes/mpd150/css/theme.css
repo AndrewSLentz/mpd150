@@ -9615,14 +9615,9 @@ body .ms-container {
   .btn-default h3 {
     font-size: 1.5rem; } }
 
-/* contains styles for generic pages */
-/* Report Overview Page */
-/* #overview-container .col-md-4 {
-	border-bottom:5px solid $font-black;
-	border-left:5px solid $font-black;
-	border-top:5px solid $font-black;
-}
-
-#overview-container .col-md-4:last-child {  //preventing doubling borders
-	border-right:5px solid $font-black;
-} */
+.su-tooltip {
+  color: blue;
+  vertical-align: super;
+  font-size: .8rem;
+  font-style: italic;
+  font-weight: bold; }
