@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class='row justify-content-center color4'>
 						<div class='col-12 col-md-10 col-lg-10'>
 							<h1> <?php the_title() ?></h1>
-							<p class='aligncenter text-center margin-lg trans-white'><?php the_field('present_content') ?></p>		
+							<div class='aligncenter text-center margin-lg trans-white'><?php the_field('present_content') ?></div>		
 						</div>
 					</div>
 
