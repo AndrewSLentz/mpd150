@@ -79,7 +79,7 @@ function display_futures() {
         $name = $topic->name;
 
         $slug = $topic->slug;
-        ?> <div class='btn btn-info btn-lg category' class='topic' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
+        ?> <div class='btn btn-info btn-lg btn-default category col-8 col-md-6 col-lg-4' class='topic' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
             <h3> <?php echo $name ?> </h3>
             </div>
          <?php
@@ -90,10 +90,12 @@ function display_futures() {
     ?> </div> <?php
 }
 
+
+
 function build_modals($topic, $name, $slug) {
     setup_postdata($topic);
         ?>
-        <div id='<?php echo($slug); ?>' class='modal fade' role='dialog' data-backdrop='static'>
+        <div id='<?php echo($slug); ?>' class='modal fade' role='dialog'>
             <div class="modal-dialog modal-full">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -102,11 +104,12 @@ function build_modals($topic, $name, $slug) {
                     </h2>
                 </div>
                 <div class="modal-body">
-                    <h4> Existing Resources </h4>
+                    <h3> Existing Resources </h3>
                      <?php echo get_field('description', $topic); ?>
                      <div class="alternatives"> 
-                        <h4> Alternatives </h4>
-                        <h5> What do you want to see? </h5>
+                        <h3> Alternatives </h3>
+                           
+                        <h5 class='alignleft'> What do you want to see? </h5>
 
                         <?php
                           //form for users to submit alternatives online
@@ -124,6 +127,7 @@ function build_modals($topic, $name, $slug) {
                                 ),
                                 "submit_value"=>"Submit",
                                 'updated_message' => __("Your idea has been submitted and will be posted once approved by an editor", 'acf'),
+                                'html_submit_button'    => '<input type="submit" class="acf-button btn btn-white margin-lg aligncenter" value="%s" />'
                             );
                             acf_form($form_options);
 

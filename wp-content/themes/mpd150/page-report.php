@@ -16,11 +16,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<main class="site-main" id="main" role="main">
 
 						<div class='row justify-content-center color4'>
-							<div class='col-12 col-md-10 col-lg-8'>
+							<div class='col-12 col-md-12 col-lg-12'>
 								<h1 class='aligncenter'><?php the_field('report_title') ?></h1>
-								<p class= 'col-12 aligncenter text-center margin-lg trans-white'>
+								<div class= 'col-12 aligncenter text-center margin-lg trans-white'>
 									<?php the_field('report_summary') ?>
-								</p>
+								</div>
 							</div>
 							<div id='overview-container' class='col-12 nopadding color3'>
 								<div class='row'>

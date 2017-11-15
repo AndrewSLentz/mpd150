@@ -29,45 +29,46 @@ add_action( 'init', 'create_posttype_interview' );
 
 function display_codes() {
 
-    ?> <div id='interview-codes'> <?php
-    /* Get all topical codes */
-    $args = array(
-        'taxonomy' => 'excerpt-codes',
-        'exclude' => '29',
-        'exclude_tree' => '33' // excludes role and descendants
-    );
-    $topics = get_terms($args);
-    ?> <h3> Topics </h3>
-    <form id='topics'> <?php
-    foreach ($topics as $topic) {
-        $name = $topic->name;
-        $slug = $topic->slug;
-        echo sprintf("<div><input type='radio' id='%s' name='topic'><label for='%s'>%s</label></div>",$slug,$slug,$name);
-    }?>
-    </form>
-   <?php
+    ?> 
+    <div class='row justify-content-center color4'>
+        <div id='interview-codes'> <?php
+        /* Get all topical codes */
+        $args = array(
+            'taxonomy' => 'excerpt-codes',
+            'exclude' => '29',
+            'exclude_tree' => '33' // excludes role and descendants
+        );
+        $topics = get_terms($args);
+        ?> <h3> Topics </h3>
+        <form id='topics' class='trans-white margin-md'> <?php
+        foreach ($topics as $topic) {
+            $name = $topic->name;
+            $slug = $topic->slug;
+            echo sprintf("<div><input type='radio' id='%s' name='topic'><label for='%s'>%s</label></div>",$slug,$slug,$name);
+        }?>
+        </form>
+       <?php
 
-    /* Get all role codes */
-    $args = array(
-        'taxonomy' => 'excerpt-codes',
-        'parent' => '33'
-    );
+        /* Get all role codes */
+        $args = array(
+            'taxonomy' => 'excerpt-codes',
+            'parent' => '33'
+        );
 
-     $roles = get_terms($args);
-    ?> <h3> Roles </h3>
-    <form id='roles'> <?php
-    foreach ($roles as $role) {
-        $name = $role->name;
-        $slug = $role->slug;
-        echo sprintf("<div><input type='radio' id='%s' name='role'><label for='%s'>%s</label></div>",$slug,$slug,$name);
-    }?>
-    </form>
-    <button id="show-all" type="button" class='btn-default btn aligncenter margin-md'> Show All </button>
-    </div> <!-- interview codes -->
-    <script src="/wp-content/plugins/MPD150-Interviews/interviews.js"></script>
-
-    <?php
-
+         $roles = get_terms($args);
+        ?> <h3> Roles </h3>
+        <form id='roles' class='trans-white margin-md'> <?php
+        foreach ($roles as $role) {
+            $name = $role->name;
+            $slug = $role->slug;
+            echo sprintf("<div><input type='radio' id='%s' name='role'><label for='%s'>%s</label></div>",$slug,$slug,$name);
+        }?>
+        </form>
+        <button id="show-all" type="button" class='btn-default btn aligncenter margin-md'> Show All </button>
+        </div> <!-- interview codes -->
+        <script src="/wp-content/plugins/MPD150-Interviews/interviews.js"></script>
+    </div>
+        <?php
 }
 
 
@@ -84,55 +85,59 @@ function display_interviews() {
 
     ?>
     <!-- Created by MPD150-Timeline Plugin -->
-     <div class='card-container'><?php
+      <div class='row justify-content-center color3'>
+         <div class='card-container'><?php
 
-    if( $posts ): 
-        foreach( $posts as $post ):
+        if( $posts ): 
+            foreach( $posts as $post ):
 
-            setup_postdata($post); 
-            $slug = sanitize_title(get_the_title());
-            ?>
-                <div <?php post_class('card')?> >
-                    <div class='margin-md'><?php the_title()?></div>
-                    <?php 
-                    $interview_file_name_doc = get_field('media_title');
-                    $interview_file_name_txt = substr($interview_file_name_doc, 0, strpos($interview_file_name_doc,".")) . ".txt";
-                    $interview_file_name_txt = str_replace([" ", "#"], "", $interview_file_name_txt);
-                    $interview_file_name_txt = urlencode($interview_file_name_txt);
-                    $interview_url= $_SERVER['DOCUMENT_ROOT'] . "/wp-content/uploads/interviews/" . $interview_file_name_txt;
-                    $interview = file_exists($interview_url);
+                setup_postdata($post); 
+                $slug = sanitize_title(get_the_title());
+                ?>
+                    <div <?php post_class('card color6')?> >
+                        <div class='margin-md'><?php the_title()?></div>
+                        <?php 
+                        $interview_file_name_doc = get_field('media_title');
+                        $interview_file_name_txt = substr($interview_file_name_doc, 0, strpos($interview_file_name_doc,".")) . ".txt";
+                        $interview_file_name_txt = str_replace([" ", "#"], "", $interview_file_name_txt);
+                        $interview_file_name_txt = urlencode($interview_file_name_txt);
+                        $interview_url= $_SERVER['DOCUMENT_ROOT'] . "/wp-content/uploads/interviews/" . $interview_file_name_txt;
+                        $interview = file_exists($interview_url);
 
-                    if ($interview) {
-                        ?><h4 class="alignleft margin-xs" data-toggle='modal' data-target='#<?php echo $slug ?>'>Read full interview >
-                        </h4>
-                        <div id='<?php echo($slug); ?>' class='modal fade' role='dialog'>
-                            <div class="modal-dialog modal-full">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h2>
-                                        Full Interview Transcript
-                                    </h2>
-                                </div>
-                                <div class="modal-body">
-                                    <?php include($interview_url) ?>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        if ($interview) {
+                            ?><h4 class="alignleft margin-xs" data-toggle='modal' data-target='#<?php echo $slug ?>'>Read full interview >
+                            </h4>
+                            <div id='<?php echo($slug); ?>' class='modal fade' role='dialog'>
+                                <div class="modal-dialog modal-full">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2>
+                                            Full Interview Transcript
+                                        </h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <?php include($interview_url) ?>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                         <?php
-                    }
+                             <?php
+                        }
 
 
-                   
-                    ?>
+                       
+                        ?>
 
 
-                </div>
+                    </div>
         <?php endforeach;
     endif; 
-	
+        ?>
+        </div>
+    </div>
+	<?php
 }
 
 add_shortcode("interviews", "display_interviews");
