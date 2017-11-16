@@ -9136,6 +9136,10 @@ a.skip-link {
 .timeline {
   margin-top: 4rem; }
 
+.img-container {
+  display: flex;
+  justify-content: center; }
+
 .tg-content {
   background-color: rgba(255, 249, 242, 0.6);
   border: 3px solid #282826;
@@ -9436,6 +9440,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .timeline {
   margin-top: 4rem; }
+
+.img-container {
+  display: flex;
+  justify-content: center; }
 
 .tg-content {
   background-color: rgba(255, 249, 242, 0.6);
