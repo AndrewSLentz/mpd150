@@ -17,7 +17,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class='row justify-content-center'>
 							<div class='col-12 col-md-10 col-lg-10'>
 								<h1> <?php the_title() ?></h1>
-								<div class='aligncenter text-center margin-lg trans-white'><?php the_field('future_content') ?></div>
+								<div class='aligncenter text-left margin-lg trans-white'><?php the_field('future_summary') ?></div>
+								<div class='aligncenter text-left margin-lg trans-white content hidden'><?php the_field('future_content')?></div>
 								<div class='timeline-container margin-xl'>
 									<?php echo do_shortcode('[futures]');?>
 								</div>
