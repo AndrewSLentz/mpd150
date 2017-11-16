@@ -10,25 +10,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-md-12 content-area homepage-content" id="primary">
+			<div class="col-md-12 content-area homepage-content color4" id="primary">
 
 				<main class="site-main" id="main" role="main">
 
-					<div class='row justify-content-center color4'>
-						<div class='col-12 col-md-10 col-lg-10'>
-							<h1> <?php the_title() ?></h1>
-															<div class='aligncenter text-left margin-lg trans-white'><?php the_field('present_summary') ?></div>
-								<div class='aligncenter text-left margin-lg trans-white content hidden'><?php the_field('present_full_content')?></div>
-								<div class= 'report-button-container'>
-									<button class='read-more'>Read More</button>
-									<button class='view-feature'>View Timeline</button>
-								</div>
-	
+						<div class='aligncenter text-left margin-lg trans-white'>
+							<?php the_field('present_summary') ?>
+							<div class= 'report-button-container margin-lg'>
+								<button class='btn-default btn read-more'>Read More</button>
+								<button class='btn-default btn view-feature'>View Timeline</button>
+							</div>
+							<div class='hidden full-content'><?php the_field('present_full_content') ?></div>
 						</div>
+
+					<div class='feature' style="background-color:transparent">
+						<h1 class="margin-none"> Interviews </h1>
+						<?php echo do_shortcode('[interviews]');?>
 					</div>
-
-
-					<?php echo do_shortcode('[interviews]');?>
 
 
 				</main><!-- #main -->

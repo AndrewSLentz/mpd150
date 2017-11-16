@@ -20,6 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<h1 class='aligncenter'><?php the_field('report_title') ?></h1>
 								<div class= 'col-12 aligncenter text-left margin-lg trans-white'>
 									<?php the_field('report_summary') ?>
+									<h3 class='margin-none aligncenter font-weight-light'><a>Download the Report as PDF >></a></h3>
 								</div>
 							</div>
 							<div id='overview-container' class='col-12 nopadding color3'>
@@ -43,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<h4 class='alignleft'><a href='/future' class='font-black'>View Future Section ></a></h4>
 									</div>
 								</div>
-								<h3 class='margin-xxl aligncenter font-weight-light trans-white'><a>Download the Report as PDF >></a></h3>
+								
 							</div>
 
 						</div>

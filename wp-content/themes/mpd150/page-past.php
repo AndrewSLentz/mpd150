@@ -17,14 +17,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class='row justify-content-center'>
 							<div class='col-12 col-md-10 col-lg-10'>
 								<h1> <?php the_title() ?></h1>
-								<div class='aligncenter text-left margin-lg trans-white'><?php the_field('past_summary') ?></div>
-								<div class='aligncenter text-left margin-lg trans-white content hidden'><?php the_field('past_full_content')?></div>
-								<div class= 'report-button-container'>
-									<button class='read-more'>Read More</button>
-									<button class='view-feature'>View Timeline</button>
+								<div class='aligncenter text-left margin-lg trans-white'>
+									<?php the_field('past_summary') ?>
+									<div class= 'report-button-container margin-lg'>
+										<button class='btn-default btn read-more'>Read More</button>
+										<button class='btn-default btn view-feature'>View Interviews</button>
+									</div>
+									<div class='hidden full-content'><?php the_field('past_full_content') ?></div>
 								</div>
+							
+								
 
-								<div class='timeline-container margin-xl'>
+								<div class='feature timeline-container margin-xl'>
+									<h1>Timeline</h1>
 									<?php echo do_shortcode('[timeline]');?>
 								</div>
 							</div>
