@@ -18,15 +18,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		if (is_page('4655')) {
 					function my_kses_post( $value ) {
-				
+
 				// is array
 				if( is_array($value) ) {
-				
+
 					return array_map('my_kses_post', $value);
-				
+
 				}
-				
-				
+
+
 				// return
 				return wp_kses_post( $value );
 
@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			// Loading form submit code
 			acf_form_head();
 		}
-	?> 
+	?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -78,7 +78,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'theme_location'  => 'primary',
 							'container_class' => 'collapse navbar-collapse',
 							'container_id'    => 'navbarNavDropdown',
-							'menu_class'      => 'navbar-nav color6',
+							'menu_class'      => 'navbar-nav',
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu',
 							'walker'          => new WP_Bootstrap_Navwalker(),
