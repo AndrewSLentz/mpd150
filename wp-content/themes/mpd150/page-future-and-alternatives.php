@@ -19,6 +19,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<h1> <?php the_title() ?></h1>
 								<div class='aligncenter text-left margin-lg trans-white'><?php the_field('future_summary') ?></div>
 								<div class='aligncenter text-left margin-lg trans-white content hidden'><?php the_field('future_content')?></div>
+								<div class= 'report-button-container'>
+									<button class='read-more'>Read More</button>
+									<button class='view-feature'>View Timeline</button>
+								</div>
+	
 								<div class='timeline-container margin-xl'>
 									<?php echo do_shortcode('[futures]');?>
 								</div>
