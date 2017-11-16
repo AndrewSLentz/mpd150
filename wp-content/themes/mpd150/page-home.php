@@ -1,29 +1,37 @@
 <?php
 
-get_header();
+require( get_stylesheet_directory().'/header_home.php' );
+
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
-		<div class="row nopadding">
 
-			<div class="col-md-12 content-area homepage-content" id="primary">
 
-				<main class="site-main" id="main" role="main">
-					<div id='main-heading-container'>
-						<div class='row justify-content-center color4'>
-							<div class='col-12 col-md-10'>
+
 								<h3 id='tagline' class='text-center'><strong>
 									<?php the_field('tagline') ?>
 								</strong></h3>
+							</div>
+								<div>
 								<h2 id ='learn-more'>Learn More</h2>
 								<div class='learn-more-tri aligncenter margin-xl text-center'><img src='/wp-content/themes/mpd150/img/tri.svg'></div>
-
 							</div>
-						</div>
+
+					</div>
+					</div>
+
+						<div class="wrapper" id="full-width-page-wrapper">
+							<div class="<?php echo esc_attr( $container ); ?>" id="content">
+								<div class="row nopadding">
+									<div class="col-md-12 content-area homepage-content" id="primary">
+										<main class="site-main" id="main" role="main">
+											<div id='main-heading-container'>
+
+
+
+
 						<div class='row justify-content-center color1'>
 							<div class='col-12 col-md-10'>
 								<h1 id='report-title' class='margin-sm'><strong> <?php the_field('report_title') ?> </strong></h1>
