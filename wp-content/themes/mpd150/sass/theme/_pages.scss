@@ -5,3 +5,11 @@
     font-style: italic;
     font-weight: bold;
 }
+
+.modern-footnotes-footnote a:before {
+    content: "[";
+}
+
+.modern-footnotes-footnote a:after {
+    content: "]";
+}
