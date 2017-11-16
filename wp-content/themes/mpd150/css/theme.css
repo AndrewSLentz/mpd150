@@ -9626,3 +9626,9 @@ body .ms-container {
   font-size: .8rem;
   font-style: italic;
   font-weight: bold; }
+
+.modern-footnotes-footnote a:before {
+  content: "["; }
+
+.modern-footnotes-footnote a:after {
+  content: "]"; }
