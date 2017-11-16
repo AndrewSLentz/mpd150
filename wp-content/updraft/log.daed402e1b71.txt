@@ -1,0 +1,324 @@
+0000.001 (0) Opened log file at time: Fri, 10 Nov 2017 01:58:48 +0000 on http://mpd150.labsix.co
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.12 WP: 4.8.3 PHP: 7.0.19-1 (apache2handler, Linux mpd150 4.9.0-4-amd64 #1 SMP Debian 4.9.51-1 (2017-09-28) x86_64) MySQL: 5.5.5 WPLANG: en_US Server: Apache/2.4.25 (Debian) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.8M | 6M) multisite: N openssl: OpenSSL 1.1.0e  16 Feb 2017 mcrypt: N LANG: C ZipArchive::addFile: N
+0000.007 (0) Free space on disk containing Updraft's temporary directory: 26999.7 MB
+0000.012 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.014 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.019 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1510184445, seconds_ago=94683)
+0000.029 (0) Set semaphore last lock (fd) time to 2017-11-10 01:58:48
+0000.031 (0) Semaphore lock (fd) complete
+0000.039 (0) Backup run: resumption=0, nonce=daed402e1b71, begun at=1510279128 (0s ago), job type=backup
+0000.043 (0) Scheduling a resumption (1) after 300 seconds (1510279428) in case this run gets aborted
+0000.084 (0) Checking if we have a zip executable available
+0000.090 (0) Zip engine: ZipArchive is not available or is disabled (will use PclZip if needed)
+0000.092 (0) Creation of backups of directories: beginning
+0000.102 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.233 (0) Total entities for the zip file: 464 directories, 3060 files (0 skipped as non-modified), 52.8 MB
+0000.238 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 54033.4 KB, split: 409600 KB)
+0000.265 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.273 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.280 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.288 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.296 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.303 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.309 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.315 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.317 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.320 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.323 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1100 files added (on-disk size: 0 KB)
+0000.326 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1200 files added (on-disk size: 0 KB)
+0000.329 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1300 files added (on-disk size: 0 KB)
+0000.331 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1400 files added (on-disk size: 0 KB)
+0000.334 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1500 files added (on-disk size: 0 KB)
+0000.337 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1600 files added (on-disk size: 0 KB)
+0000.340 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1700 files added (on-disk size: 0 KB)
+0000.342 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1800 files added (on-disk size: 0 KB)
+0000.345 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 1900 files added (on-disk size: 0 KB)
+0000.348 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2000 files added (on-disk size: 0 KB)
+0000.350 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2100 files added (on-disk size: 0 KB)
+0000.353 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2200 files added (on-disk size: 0 KB)
+0000.356 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2300 files added (on-disk size: 0 KB)
+0000.358 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2400 files added (on-disk size: 0 KB)
+0000.361 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2500 files added (on-disk size: 0 KB)
+0000.364 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2600 files added (on-disk size: 0 KB)
+0000.367 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2700 files added (on-disk size: 0 KB)
+0000.370 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2800 files added (on-disk size: 0 KB)
+0000.372 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 2900 files added (on-disk size: 0 KB)
+0000.375 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip.tmp: 3000 files added (on-disk size: 0 KB)
+0011.172 (0) Created plugins zip (0) - 19291.9 KB in 11.1 s (1743.5 KB/s) (sha1: 21db55dcc8616913fb326fee1a66dd0feeace1e5, sha256: 17d664b626bb7305010b5a51e346eb5516dc043b78538b2ac028addb5753df2e)
+0011.175 (0) Beginning creation of dump of themes (split every: 400 MB)
+0011.501 (0) Total entities for the zip file: 2375 directories, 13206 files (0 skipped as non-modified), 82.5 MB
+0011.515 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 84488.6 KB, split: 409600 KB)
+0011.523 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0011.529 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0011.537 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0011.545 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0011.552 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0011.558 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0011.564 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0011.571 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0011.577 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0011.585 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0011.592 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1100 files added (on-disk size: 0 KB)
+0011.599 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1200 files added (on-disk size: 0 KB)
+0011.605 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1300 files added (on-disk size: 0 KB)
+0011.612 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1400 files added (on-disk size: 0 KB)
+0011.618 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1500 files added (on-disk size: 0 KB)
+0011.626 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1600 files added (on-disk size: 0 KB)
+0011.633 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1700 files added (on-disk size: 0 KB)
+0011.643 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1800 files added (on-disk size: 0 KB)
+0011.656 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 1900 files added (on-disk size: 0 KB)
+0011.664 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2000 files added (on-disk size: 0 KB)
+0011.673 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2100 files added (on-disk size: 0 KB)
+0011.680 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2200 files added (on-disk size: 0 KB)
+0011.688 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2300 files added (on-disk size: 0 KB)
+0011.695 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2400 files added (on-disk size: 0 KB)
+0011.702 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2500 files added (on-disk size: 0 KB)
+0011.710 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2600 files added (on-disk size: 0 KB)
+0011.716 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2700 files added (on-disk size: 0 KB)
+0011.723 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2800 files added (on-disk size: 0 KB)
+0011.733 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 2900 files added (on-disk size: 0 KB)
+0011.740 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3000 files added (on-disk size: 0 KB)
+0011.750 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3100 files added (on-disk size: 0 KB)
+0011.757 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3200 files added (on-disk size: 0 KB)
+0011.766 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3300 files added (on-disk size: 0 KB)
+0011.773 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3400 files added (on-disk size: 0 KB)
+0011.785 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3500 files added (on-disk size: 0 KB)
+0011.793 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3600 files added (on-disk size: 0 KB)
+0011.800 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3700 files added (on-disk size: 0 KB)
+0011.808 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3800 files added (on-disk size: 0 KB)
+0011.814 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 3900 files added (on-disk size: 0 KB)
+0011.817 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4000 files added (on-disk size: 0 KB)
+0011.820 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4100 files added (on-disk size: 0 KB)
+0011.823 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4200 files added (on-disk size: 0 KB)
+0011.826 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4300 files added (on-disk size: 0 KB)
+0011.829 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4400 files added (on-disk size: 0 KB)
+0011.832 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4500 files added (on-disk size: 0 KB)
+0011.837 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4600 files added (on-disk size: 0 KB)
+0011.841 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4700 files added (on-disk size: 0 KB)
+0011.845 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4800 files added (on-disk size: 0 KB)
+0011.849 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 4900 files added (on-disk size: 0 KB)
+0011.855 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5000 files added (on-disk size: 0 KB)
+0011.858 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5100 files added (on-disk size: 0 KB)
+0011.861 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5200 files added (on-disk size: 0 KB)
+0011.864 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5300 files added (on-disk size: 0 KB)
+0011.866 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5400 files added (on-disk size: 0 KB)
+0011.869 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5500 files added (on-disk size: 0 KB)
+0011.872 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5600 files added (on-disk size: 0 KB)
+0011.875 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5700 files added (on-disk size: 0 KB)
+0011.877 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5800 files added (on-disk size: 0 KB)
+0011.880 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 5900 files added (on-disk size: 0 KB)
+0011.885 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6000 files added (on-disk size: 0 KB)
+0011.891 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6100 files added (on-disk size: 0 KB)
+0011.897 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6200 files added (on-disk size: 0 KB)
+0011.903 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6300 files added (on-disk size: 0 KB)
+0011.909 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6400 files added (on-disk size: 0 KB)
+0011.915 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6500 files added (on-disk size: 0 KB)
+0011.919 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6600 files added (on-disk size: 0 KB)
+0011.922 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6700 files added (on-disk size: 0 KB)
+0011.926 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6800 files added (on-disk size: 0 KB)
+0011.932 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 6900 files added (on-disk size: 0 KB)
+0011.939 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7000 files added (on-disk size: 0 KB)
+0011.942 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7100 files added (on-disk size: 0 KB)
+0011.945 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7200 files added (on-disk size: 0 KB)
+0011.948 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7300 files added (on-disk size: 0 KB)
+0011.951 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7400 files added (on-disk size: 0 KB)
+0011.953 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7500 files added (on-disk size: 0 KB)
+0011.956 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7600 files added (on-disk size: 0 KB)
+0011.959 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7700 files added (on-disk size: 0 KB)
+0011.962 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7800 files added (on-disk size: 0 KB)
+0011.964 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 7900 files added (on-disk size: 0 KB)
+0011.967 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8000 files added (on-disk size: 0 KB)
+0011.970 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8100 files added (on-disk size: 0 KB)
+0011.973 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8200 files added (on-disk size: 0 KB)
+0011.976 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8300 files added (on-disk size: 0 KB)
+0011.979 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8400 files added (on-disk size: 0 KB)
+0011.981 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8500 files added (on-disk size: 0 KB)
+0011.984 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8600 files added (on-disk size: 0 KB)
+0011.987 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8700 files added (on-disk size: 0 KB)
+0011.990 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8800 files added (on-disk size: 0 KB)
+0011.993 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 8900 files added (on-disk size: 0 KB)
+0011.996 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9000 files added (on-disk size: 0 KB)
+0011.999 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9100 files added (on-disk size: 0 KB)
+0012.002 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9200 files added (on-disk size: 0 KB)
+0012.005 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9300 files added (on-disk size: 0 KB)
+0012.008 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9400 files added (on-disk size: 0 KB)
+0012.010 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9500 files added (on-disk size: 0 KB)
+0012.013 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9600 files added (on-disk size: 0 KB)
+0012.016 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9700 files added (on-disk size: 0 KB)
+0012.019 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9800 files added (on-disk size: 0 KB)
+0012.021 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 9900 files added (on-disk size: 0 KB)
+0012.024 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10000 files added (on-disk size: 0 KB)
+0012.027 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10100 files added (on-disk size: 0 KB)
+0012.030 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10200 files added (on-disk size: 0 KB)
+0012.032 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10300 files added (on-disk size: 0 KB)
+0012.035 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10400 files added (on-disk size: 0 KB)
+0012.040 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10500 files added (on-disk size: 0 KB)
+0012.044 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10600 files added (on-disk size: 0 KB)
+0012.047 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10700 files added (on-disk size: 0 KB)
+0012.049 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10800 files added (on-disk size: 0 KB)
+0012.052 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 10900 files added (on-disk size: 0 KB)
+0012.055 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11000 files added (on-disk size: 0 KB)
+0012.058 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11100 files added (on-disk size: 0 KB)
+0012.061 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11200 files added (on-disk size: 0 KB)
+0012.064 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11300 files added (on-disk size: 0 KB)
+0012.068 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11400 files added (on-disk size: 0 KB)
+0012.071 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11500 files added (on-disk size: 0 KB)
+0012.075 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11600 files added (on-disk size: 0 KB)
+0012.080 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11700 files added (on-disk size: 0 KB)
+0012.084 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11800 files added (on-disk size: 0 KB)
+0012.088 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 11900 files added (on-disk size: 0 KB)
+0012.091 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12000 files added (on-disk size: 0 KB)
+0012.095 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12100 files added (on-disk size: 0 KB)
+0012.098 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12200 files added (on-disk size: 0 KB)
+0012.101 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12300 files added (on-disk size: 0 KB)
+0012.105 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12400 files added (on-disk size: 0 KB)
+0012.109 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12500 files added (on-disk size: 0 KB)
+0012.113 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12600 files added (on-disk size: 0 KB)
+0012.116 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12700 files added (on-disk size: 0 KB)
+0012.123 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12800 files added (on-disk size: 0 KB)
+0012.126 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 12900 files added (on-disk size: 0 KB)
+0012.130 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 13000 files added (on-disk size: 0 KB)
+0012.133 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 13100 files added (on-disk size: 0 KB)
+0012.137 (0) Zip: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip.tmp: 13200 files added (on-disk size: 0 KB)
+0119.750 (0) Created themes zip (0) - 29991 KB in 108.6 s (276.2 KB/s) (sha1: cff55ce2d4852128de66c6a7f1b52fa65b82d9e7, sha256: 12ad73c9bee8a49afa53fe95fe4620283501a146c4c5d96f8cb0fe86aebd7623)
+0119.753 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0119.754 (0) Looking for candidates to back up in: /var/www/html/wp-content/uploads
+0119.754 (0) finding files: interviews: adding to list (1)
+0119.755 (0) finding files: 2014: adding to list (2)
+0119.756 (0) finding files: 2017: adding to list (3)
+0119.757 (0) finding files: masterslider: adding to list (4)
+0119.757 (0) finding files: wp-sync-db: adding to list (5)
+0119.758 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0119.762 (0) Total entities for the zip file: 8 directories, 17 files (0 skipped as non-modified), 1.1 MB
+0119.762 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 1176.8 KB, split: 409600 KB)
+0119.843 (0) Created uploads zip (0) - 1096.7 KB in 0.1 s (13101 KB/s) (sha1: 80adb6d87951c14270cdb0b13604c15c921ee65a, sha256: 9ccdb082c2a170c6f7fbb5870235729ecf9d96c0a4644658da48c87235d3c84b)
+0119.845 (0) Beginning backup of other directories found in the content directory (index: 0)
+0119.846 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0119.847 (0) Looking for candidates to back up in: /var/www/html/wp-content
+0119.848 (0) finding files: cache: skipping: excluded by options
+0119.849 (0) finding files: upgrade: skipping: excluded by options
+0119.849 (0) finding files: plugins: skipping: this is the plugins directory
+0119.850 (0) finding files: index.php: adding to list (1)
+0119.851 (0) finding files: themes: skipping: this is the themes directory
+0119.851 (0) finding files: uploads: skipping: this is the uploads directory
+0119.852 (0) finding files: updraft: skipping: this is the updraft directory
+0119.855 (0) Total entities for the zip file: 0 directories, 1 files (0 skipped as non-modified), 0 MB
+0119.855 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 0 KB, split: 409600 KB)
+0119.861 (0) Created others zip (0) - 0.1 KB in 0 s (19.9 KB/s) (sha1: 2d1ef51493f7b15c700dfccc61e240bdcd875214, sha256: 9fb2755f4b9255ef5c412b825d9608ad928752c151fd3e89300221cf188cc4ab)
+0119.865 (0) Saving backup status to database (elements: 8)
+0119.867 (0) Beginning creation of database dump (WordPress DB)
+0119.870 (0) Testing: /usr/bin/mysqldump
+0119.914 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wpmpd_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\n (truncated - 1207 bytes total)
+0119.918 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0119.924 (0) Table wpmpd_options: Total expected rows (approximate): 359
+0119.961 (0) Table wpmpd_options: Total rows added: 363 in 0.04 seconds
+0119.964 (0) Table wpmpd_options: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_options.table.gz - 146.4 KB)
+0119.968 (0) Table wpmpd_users: Total expected rows (approximate): 6
+0119.970 (0) Table wpmpd_users: Total rows added: 6 in 0.00 seconds
+0119.971 (0) Table wpmpd_users: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_users.table.gz - 1 KB)
+0119.975 (0) Table wpmpd_usermeta: Total expected rows (approximate): 96
+0119.977 (0) Table wpmpd_usermeta: Total rows added: 96 in 0.00 seconds
+0119.978 (0) Table wpmpd_usermeta: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_usermeta.table.gz - 2.1 KB)
+0119.982 (0) Table wpmpd_commentmeta: Total expected rows (approximate): 0
+0119.983 (0) Table wpmpd_commentmeta: Total rows added: 0 in 0.00 seconds
+0119.985 (0) Table wpmpd_commentmeta: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_commentmeta.table.gz - 0.4 KB)
+0119.988 (0) Table wpmpd_comments: Total expected rows (approximate): 0
+0119.990 (0) Table wpmpd_comments: Total rows added: 1 in 0.00 seconds
+0119.991 (0) Table wpmpd_comments: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_comments.table.gz - 0.7 KB)
+0119.995 (0) Table wpmpd_links: Total expected rows (approximate): 0
+0119.997 (0) Table wpmpd_links: Total rows added: 0 in 0.00 seconds
+0119.998 (0) Table wpmpd_links: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_links.table.gz - 0.4 KB)
+0120.002 (0) Table wpmpd_postmeta: Total expected rows (approximate): 11515
+0120.111 (0) Table wpmpd_postmeta: binary mysqldump finished (writes: 33) in 0.11 seconds
+0120.113 (0) Table wpmpd_postmeta: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_postmeta.table.gz - 294.3 KB)
+0120.117 (0) Table wpmpd_posts: Total expected rows (approximate): 4843
+0120.253 (0) Table wpmpd_posts: Total rows added: 4713 in 0.13 seconds
+0120.255 (0) Table wpmpd_posts: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_posts.table.gz - 289.9 KB)
+0120.258 (0) Table wpmpd_term_relationships: Total expected rows (approximate): 2488
+0120.266 (0) Table wpmpd_term_relationships: Total rows added: 2488 in 0.01 seconds
+0120.268 (0) Table wpmpd_term_relationships: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_term_relationships.table.gz - 7 KB)
+0120.272 (0) Table wpmpd_term_taxonomy: Total expected rows (approximate): 50
+0120.274 (0) Table wpmpd_term_taxonomy: Total rows added: 50 in 0.00 seconds
+0120.275 (0) Table wpmpd_term_taxonomy: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_term_taxonomy.table.gz - 0.8 KB)
+0120.279 (0) Table wpmpd_termmeta: Total expected rows (approximate): 10
+0120.281 (0) Table wpmpd_termmeta: Total rows added: 10 in 0.00 seconds
+0120.282 (0) Table wpmpd_termmeta: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_termmeta.table.gz - 0.5 KB)
+0120.286 (0) Table wpmpd_terms: Total expected rows (approximate): 50
+0120.288 (0) Table wpmpd_terms: Total rows added: 50 in 0.00 seconds
+0120.289 (0) Table wpmpd_terms: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_terms.table.gz - 1.1 KB)
+0120.293 (0) Table wpmpd_give_customermeta: Total expected rows (approximate): 0
+0120.295 (0) Table wpmpd_give_customermeta: Total rows added: 0 in 0.00 seconds
+0120.297 (0) Table wpmpd_give_customermeta: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_give_customermeta.table.gz - 0.3 KB)
+0120.300 (0) Table wpmpd_give_customers: Total expected rows (approximate): 0
+0120.302 (0) Table wpmpd_give_customers: Total rows added: 0 in 0.00 seconds
+0120.303 (0) Table wpmpd_give_customers: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_give_customers.table.gz - 0.4 KB)
+0120.307 (0) Table wpmpd_masterslider_options: Total expected rows (approximate): 5
+0120.310 (0) Table wpmpd_masterslider_options: Total rows added: 5 in 0.00 seconds
+0120.311 (0) Table wpmpd_masterslider_options: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_masterslider_options.table.gz - 6.3 KB)
+0120.315 (0) Table wpmpd_masterslider_sliders: Total expected rows (approximate): 1
+0120.320 (0) Table wpmpd_masterslider_sliders: Total rows added: 1 in 0.00 seconds
+0120.323 (0) Table wpmpd_masterslider_sliders: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_masterslider_sliders.table.gz - 1.7 KB)
+0120.332 (0) Table wpmpd_seamless_donations_audit: Total expected rows (approximate): 0
+0120.337 (0) Table wpmpd_seamless_donations_audit: Total rows added: 0 in 0.00 seconds
+0120.339 (0) Table wpmpd_seamless_donations_audit: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_seamless_donations_audit.table.gz - 0.5 KB)
+0120.349 (0) Table wpmpd_yikes_easy_mc_forms: Total expected rows (approximate): 0
+0120.353 (0) Table wpmpd_yikes_easy_mc_forms: Total rows added: 0 in 0.00 seconds
+0120.356 (0) Table wpmpd_yikes_easy_mc_forms: finishing file (backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_yikes_easy_mc_forms.table.gz - 0.4 KB)
+0120.365 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_options.table.gz (1/18): adding to final database dump
+0120.431 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_users.table.gz (2/18): adding to final database dump
+0120.434 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_usermeta.table.gz (3/18): adding to final database dump
+0120.439 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_commentmeta.table.gz (4/18): adding to final database dump
+0120.444 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_comments.table.gz (5/18): adding to final database dump
+0120.446 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_links.table.gz (6/18): adding to final database dump
+0120.449 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_postmeta.table.gz (7/18): adding to final database dump
+0120.596 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_posts.table.gz (8/18): adding to final database dump
+0120.770 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_term_relationships.table.gz (9/18): adding to final database dump
+0120.779 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_term_taxonomy.table.gz (10/18): adding to final database dump
+0120.782 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_termmeta.table.gz (11/18): adding to final database dump
+0120.784 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_terms.table.gz (12/18): adding to final database dump
+0120.787 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_give_customermeta.table.gz (13/18): adding to final database dump
+0120.790 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_give_customers.table.gz (14/18): adding to final database dump
+0120.792 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_masterslider_options.table.gz (15/18): adding to final database dump
+0120.797 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_masterslider_sliders.table.gz (16/18): adding to final database dump
+0120.800 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_seamless_donations_audit.table.gz (17/18): adding to final database dump
+0120.803 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db-table-wpmpd_yikes_easy_mc_forms.table.gz (18/18): adding to final database dump
+0120.804 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db.gz: finished writing out complete database file (728 KB)
+0120.834 (0) Total database tables backed up: 18 (backup_2017-11-10-0158_MPD150_daed402e1b71-db.gz, size: 770915, sha256)
+0120.848 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0120.850 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0120.852 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0120.855 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-others.zip: others: This file has not yet been successfully uploaded: will queue
+0120.856 (0) backup_2017-11-10-0158_MPD150_daed402e1b71-db.gz: db: This file has not yet been successfully uploaded: will queue
+0120.858 (0) Saving backup history. Total backup size: 49.9 MB
+0120.862 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0120.865 (0) Cloud backup selection (1/1):  (last)
+0120.866 (0) No remote despatch: user chose no remote backup service
+0120.868 (0) Recording as successfully uploaded: backup_2017-11-10-0158_MPD150_daed402e1b71-plugins.zip (29265df6a95d34e401a886c1e50d4d76)
+0120.874 (0) Recording as successfully uploaded: backup_2017-11-10-0158_MPD150_daed402e1b71-themes.zip (b744d615ac2f901a07558f55730f7819)
+0120.879 (0) Recording as successfully uploaded: backup_2017-11-10-0158_MPD150_daed402e1b71-uploads.zip (79d9f2657ee5281fc611dd4d06ee1dd2)
+0120.885 (0) Recording as successfully uploaded: backup_2017-11-10-0158_MPD150_daed402e1b71-others.zip (6793fdf588980419d5e5f876a8e5c053)
+0120.894 (0) Recording as successfully uploaded: backup_2017-11-10-0158_MPD150_daed402e1b71-db.gz (20bc54b19a2250b17a0d68d5fb20ab62)
+0120.903 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=4, retain_db=4
+0120.905 (0) Number of backup sets in history: 2; groups (db): 1
+0120.907 (0) Examining (for databases) backup set with group_id=0, nonce=daed402e1b71, datestamp=1510279128 (Nov 10 2017 01:58:48)
+0120.909 (0) This backup set is the backup set just made, so will not be deleted.
+0120.909 (0) Examining (for databases) backup set with group_id=0, nonce=ae5a58dcbb91, datestamp=1510184445 (Nov 08 2017 23:40:45)
+0120.909 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0120.910 (0) Number of backup sets in history: 2; groups (files): 1
+0120.912 (0) Examining (for files) backup set with nonce=daed402e1b71, datestamp=1510279128 (Nov 10 2017 01:58:48)
+0120.912 (0) This backup set is the backup set just made, so will not be deleted.
+0120.915 (0) This backup set is the backup set just made, so will not be deleted.
+0120.915 (0) This backup set is the backup set just made, so will not be deleted.
+0120.915 (0) This backup set is the backup set just made, so will not be deleted.
+0120.915 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0120.917 (0) Examining (for files) backup set with nonce=ae5a58dcbb91, datestamp=1510184445 (Nov 08 2017 23:40:45)
+0120.917 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0120.918 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0120.922 (0) Resume backup (daed402e1b71, 0): finish run
+0120.926 (0) Decremented the semaphore (fd) by 1
+0120.931 (0) Semaphore (fd) unlocked
+0120.933 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0120.939 (0) Fetching RSS news feed
+0121.063 (0) Fetched RSS news feed; result is a: SimplePie
+0121.122 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: peter...
+0121.227 (0) The backup apparently succeeded and is now complete

@@ -1,0 +1,30 @@
+.card-container {
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+
+	.card-container .card {
+		margin:20px;
+		padding:20px;
+		background-color:$theme-color-three;
+		color:white;
+	}
+
+@media(min-width:$screen-lg-min) {
+	.card-container .card {
+		width:28%;
+	}
+}
+
+@media(min-width:$screen-md-min) and (max-width:$screen-md-max) {
+	.card-container .card {
+		width:45%;
+	}
+}
+
+@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max) {
+	.card-container .card {
+		width:90%;
+	}
+}

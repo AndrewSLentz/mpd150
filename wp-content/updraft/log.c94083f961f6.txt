@@ -1,0 +1,6 @@
+0000.000 (0) Opened log file at time: Thu, 16 Nov 2017 18:39:30 +0000 on http://mpd150.labsix.co
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.12 WP: 4.9 PHP: 7.0.19-1 (apache2handler, Linux mpd150 4.9.0-4-amd64 #1 SMP Debian 4.9.51-1 (2017-09-28) x86_64) MySQL: 5.5.5 WPLANG: en_US Server: Apache/2.4.25 (Debian) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5M | 2M) multisite: N openssl: OpenSSL 1.1.0e  16 Feb 2017 mcrypt: N LANG: C ZipArchive::addFile: N
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 26767.5 MB
+0000.004 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: every4hours)
+0000.005 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.006 (0) Scheduled backup aborted - another backup of this type was apparently invoked by the WordPress scheduler only 108 seconds ago - the WordPress scheduler invoking events multiple times usually indicates a very overloaded server (or other plugins that mis-use the scheduler)
