@@ -17,3 +17,12 @@
 #overview-container {
 	padding-bottom:2rem;
 }
+
+#main figure.wp-caption {  //styles for captioned images
+	@include trans-white;
+	padding: .5rem 1.5rem;
+		.wp-caption-text {
+			font-size:.8rem;
+		}
+
+}
