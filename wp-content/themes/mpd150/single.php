@@ -40,13 +40,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- #primary -->
 
-		<!-- Do the right sidebar check -->
-		<?php if ( 'right' === $sidebar_pos || 'both' === $sidebar_pos ) : ?>
-
-			<?php get_sidebar( 'right' ); ?>
-
-		<?php endif; ?>
-
 	</div><!-- .row -->
 
 </div><!-- Container end -->
