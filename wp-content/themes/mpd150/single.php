@@ -13,10 +13,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
-		<div class="row">
+		<div class="row twoRem">
 
 
-			<div class="col-12 col-md-10 col-lg-10 centerMargins">
+			<div class="col-12 col-md-10 col-lg-10 centerMargins twoRem trans-white">
 
 			<main class="site-main" id="main">
 

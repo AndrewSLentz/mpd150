@@ -9189,7 +9189,7 @@ body {
   padding-top: 2rem;
   margin: auto 0; }
 
-#content > .row, .row.toprow {
+#content ~ .row, .row.toprow {
   padding-top: 0; }
 
 .nopadding {
@@ -9564,8 +9564,10 @@ body .ms-container {
   margin-bottom: 3rem; }
 
 .centerMargins {
-  margin: 0 auto;
-  padding-top: 4em; }
+  margin: 0 auto; }
+
+.twoRem, div.twoRem {
+  padding-top: 2rem; }
 
 .form-submit {
   text-align: center; }

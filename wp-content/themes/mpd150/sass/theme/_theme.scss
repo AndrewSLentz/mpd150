@@ -37,7 +37,7 @@ body {
 	margin:auto 0;
 }
 
-#content > .row, .row.toprow {
+#content ~ .row, .row.toprow {
 	padding-top:0;
 }
 
