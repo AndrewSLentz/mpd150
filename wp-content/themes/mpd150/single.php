@@ -13,10 +13,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
-		<div class="row">
+		<div class="row twoRem">
 
 
-			<div class="col-12 col-md-10 col-lg-10 centerMargins">
+			<div class="col-12 col-md-10 col-lg-10 centerMargins twoRem trans-white">
 
 			<main class="site-main" id="main">
 
@@ -39,13 +39,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div>
 
 		</div><!-- #primary -->
-
-		<!-- Do the right sidebar check -->
-		<?php if ( 'right' === $sidebar_pos || 'both' === $sidebar_pos ) : ?>
-
-			<?php get_sidebar( 'right' ); ?>
-
-		<?php endif; ?>
 
 	</div><!-- .row -->
 

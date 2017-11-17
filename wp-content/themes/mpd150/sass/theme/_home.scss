@@ -25,7 +25,10 @@ body .ms-container {
 
 .centerMargins {
 	margin: 0 auto;
-	padding-top: 4em;
+}
+
+.twoRem, div.twoRem {
+	padding-top: 2rem;
 }
 
 .form-submit {
