@@ -63,7 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<nav class="navbar navbar-expand-md">
 
 			<?php if ( 'container' == $container ) : ?>
-				<div class="container">
+				<div class="container color4">
 			<?php endif; ?>
 
 					<button class="navbar-toggler aligncenter" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
