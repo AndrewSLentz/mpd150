@@ -9545,7 +9545,8 @@ form#topics, form#roles {
 .main-heading {
   color: #FFF9F2;
   background-color: #514F4C;
-  border: 10px solid #FFF9F2; }
+  border: 10px solid #FFF9F2;
+  padding: 0 6rem; }
 
 div#landingPad {
   height: 100vh;
