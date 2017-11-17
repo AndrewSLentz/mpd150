@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 								<div>
 								<h2 id ='learn-more'>Learn More</h2>
-								<div class='learn-more-tri aligncenter margin-xl text-center'><img src='/wp-content/themes/mpd150/img/tri.svg'></div>
+								<div class='learn-more-tri aligncenter text-center'><img src='/wp-content/themes/mpd150/img/tri.svg'></div>
 							</div>
 
 					</div>

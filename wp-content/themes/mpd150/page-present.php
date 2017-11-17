@@ -17,8 +17,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class='aligncenter text-left margin-lg trans-white'>
 							<?php the_field('present_summary') ?>
 							<div class= 'report-button-container margin-lg'>
-								<button class='btn-default btn read-more'>Read More</button>
-								<button class='btn-default btn view-feature'>View Timeline</button>
+								<button class='btn-default btn read-more read'>Read More</button>
+								<button class='btn-default btn view-feature'>View Interviews</button>
 							</div>
 							<div class='hidden full-content'><?php the_field('present_full_content') ?></div>
 						</div>
