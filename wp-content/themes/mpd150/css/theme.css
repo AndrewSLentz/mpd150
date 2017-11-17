@@ -9559,6 +9559,20 @@ div.centering {
 body .ms-container {
   margin-bottom: 3rem; }
 
+.centerMargins {
+  margin: 0 auto;
+  padding-top: 4em; }
+
+.form-submit {
+  text-align: center; }
+
+.entry-content {
+  text-align: left;
+  margin-top: 2rem; }
+
+article {
+  text-align: center; }
+
 #report-title {
   font-size: 3.5rem; }
 

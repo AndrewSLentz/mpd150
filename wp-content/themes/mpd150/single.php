@@ -7,17 +7,16 @@
 
 get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
-$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
-<div class="wrapper" id="single-wrapper">
+<div class="wrapper color4" id="full-width-page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
+
+			<div class="col-12 col-md-10 col-lg-10 centerMargins">
 
 			<main class="site-main" id="main">
 
@@ -37,6 +36,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<?php endwhile; // end of the loop. ?>
 
 			</main><!-- #main -->
+		</div>
 
 		</div><!-- #primary -->
 
