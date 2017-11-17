@@ -9666,3 +9666,9 @@ article {
 
 #overview-container {
   padding-bottom: 2rem; }
+
+#main figure.wp-caption {
+  background-color: rgba(255, 249, 242, 0.3);
+  padding: .5rem 1.5rem; }
+  #main figure.wp-caption .wp-caption-text {
+    font-size: .8rem; }
