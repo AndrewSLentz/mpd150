@@ -72,22 +72,39 @@ function display_futures() {
     );
     $topics = get_terms($args);
     $modals='';
+    $loop = 0;
     ?>
     <div id='futures'>
+        <div class="row">
     <script src='/wp-content/plugins/MPD150-Futures/futures.js'></script> <?php
     foreach ($topics as $topic) {
         $name = $topic->name;
 
         $slug = $topic->slug;
-        ?> <div class='btn btn-info btn-lg btn-default category col-8 col-md-6 col-lg-4' class='topic' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
-            <h3> <?php echo $name ?> </h3>
+        ?>
+        <div class="col-md-6 col-lg-4">
+            <div class='category alternative topic' data-toggle='modal' data-target='#<?php echo($slug); ?>'>
+                <h3> <?php echo $name ?> </h3>
             </div>
+        </div>
+        
          <?php
-
-        build_modals($topic,$name, $slug);
+         $loop++;
+        if( $loop % 3 == 0 && $loop != sizeof($topics) ) {
+         ?></div><div class="row"><?php
+        } else if ( $loop == sizeof( $topics) ) {
+            ?></div><?php
+        }
         ?>  <?php
     }
     ?> </div> <?php
+    
+    foreach( $topics as $topic ) {
+        $name = $topic->name;
+        $slug = $topic->slug;
+        build_modals($topic,$name, $slug);
+        
+    }
 }
 
 
@@ -96,7 +113,7 @@ function build_modals($topic, $name, $slug) {
     setup_postdata($topic);
         ?>
         <div id='<?php echo($slug); ?>' class='modal fade' role='dialog'>
-            <div class="modal-dialog modal-full">
+            <div class="modal-dialog modal-full alternative-modal">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h2>
@@ -104,12 +121,36 @@ function build_modals($topic, $name, $slug) {
                     </h2>
                 </div>
                 <div class="modal-body">
-                    <h3> Existing Resources </h3>
-                     <?php echo get_field('description', $topic); ?>
-                     <div class="alternatives"> 
-                        <h3> Alternatives </h3>
-                           
-                        <h5 class='alignleft'> What do you want to see? </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3> Existing Resources </h3>
+                            <?php echo get_field('description', $topic); ?>
+                        </div>
+                        <div class="col-md-6">
+                            <h3> Alternatives </h3>
+                            <?php
+                            // displaying submitted and published alternatives
+                            $args = array(
+                                "post_type"=>"futures",
+                                "numberposts"=>-1,
+                                "tax_query"=>array(
+                                    array(
+                                        "taxonomy"=>"future_categories",
+                                        "field" => "slug",
+                                        "terms" => $slug
+                                    )
+                                )
+                            );
+                            $posts = get_posts($args);
+                            foreach ($posts as $post) {
+                                echo "<div class='alternative_post'>" . get_field("content",$post) . "</div>";
+                            }
+                        ?>
+                        </div>
+                    </div>
+                    <!--div class="row">
+                        <div class="col-md-12">
+                            <h5 class='alignleft'> What do you want to see? </h5>
 
                         <?php
                           //form for users to submit alternatives online
@@ -133,27 +174,7 @@ function build_modals($topic, $name, $slug) {
 
                 
                         ?>
-                        <ul>
-
-                        <?php
-                            // displaying submitted and published alternatives
-                            $args = array(
-                                "post_type"=>"futures",
-                                "numberposts"=>-1,
-                                "tax_query"=>array(
-                                    array(
-                                        "taxonomy"=>"future_categories",
-                                        "field" => "slug",
-                                        "terms" => $slug
-                                    )
-                                )
-                            );
-                            $posts = get_posts($args);
-                            foreach ($posts as $post) {
-                                echo "<li>" . get_field("content",$post) . "</li>";
-                            }
-                        ?>
-                        </ul>
+                        </div-->
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -1,8 +1,8 @@
 <?php
-
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/alternatives.css">
 
 <div class="wrapper" id="full-width-page-wrapper">
 
