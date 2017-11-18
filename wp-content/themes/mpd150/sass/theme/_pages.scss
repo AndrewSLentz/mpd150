@@ -41,3 +41,19 @@ body .wpcf7 input[type=submit], body .wpcf7 input[type=submit]:hover {
 
 // read more buttons on report
 
+.report-button-container {
+	transition: height 1s ease;
+	height:46px;
+}
+
+.report-button-container.fixed {
+	position: fixed;
+    bottom: 0;
+    margin-bottom:0;
+    transition: height .5s ease;
+}
+
+.report-button-container button {
+	background-color:$white;
+}
+
