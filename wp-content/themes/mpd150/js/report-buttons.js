@@ -1,6 +1,5 @@
 jQuery(document).ready( function($) {
 	$(".report-button-container .read").click(function(){
-		console.log($(this).hasClass('read-more'));
 		if ($(this).hasClass('read-more')) {
 			$(".full-content.hidden").removeClass("hidden");
 			$(this).removeClass("read-more");
@@ -22,12 +21,20 @@ jQuery(document).ready( function($) {
 
 	
     $(window).scroll(function() {
-    	if ($(".report-button-container").hasClass("fixed")) { 
-	    	var featureTop = $(".feature").offset().top;
-	        if($(window).scrollTop() + $(window).height() > featureTop) { //scrolled past the other div?
-	        	console.log('test');
-	            $(".report-button-container").css("height",0); //reached the desired point -- hide div
-	        }
+    	if ($(".report-button-container").hasClass("fixed")) {
+    		if ($(".report-button-container").css("height")=="46px") {
+		    	var featureTop = $(".feature").offset().top;
+
+		        if($(window).scrollTop() + $(window).height() > featureTop) { //scrolled past the other div?     
+		            $(".report-button-container").css("height",0); //reached the desired point -- hide div
+		        }
+		    } else {
+		    	var featureTop = $(".feature").offset().top;
+		    	 if($(window).scrollTop() + $(window).height() < featureTop) { //scrolled past the other div?     
+		            $(".report-button-container").css("height","46px"); //reached the desired point -- hide div
+		        }
+
+		    }
 	    }
     });
 
