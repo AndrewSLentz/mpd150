@@ -15,6 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<main class="site-main" id="main" role="main">
 
 						<div class='aligncenter text-left margin-lg trans-white col-12 col-md-10'>
+							<h1> <?php the_title() ?></h1>
 							<?php the_field('present_summary') ?>
 							<div class= 'report-button-container margin-lg'>
 								<button class='btn-default btn read-more read'>Read More</button>

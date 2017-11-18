@@ -16,8 +16,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div id='main-heading-container'>
 						<div class='row justify-content-center'>
 							<div class='col-12 col-md-10 col-lg-10'>
-								<h1> <?php the_title() ?></h1>
 								<div class='aligncenter text-left margin-lg trans-white'>
+									<h1> <?php the_title() ?></h1>
 									<?php the_field('past_summary') ?>
 									<div class= 'report-button-container margin-lg'>
 										<button class='btn-default btn read-more read'>Read More</button>

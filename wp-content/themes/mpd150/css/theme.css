@@ -9515,26 +9515,31 @@ form#topics, form#roles {
   .card-container .card {
     width: 90%; } }
 
-.acf-field--post-title, .acf-field-taxonomy {
-  display: none; }
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
-#futures .modal {
-  color: black; }
+.card-container .card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #b4726a;
+  color: white; }
 
-#futures .category {
-  display: block;
-  margin: 2rem auto; }
+#futures {
+  margin-bottom: 8rem; }
 
-#futures #message {
-  color: green;
-  clear: both; }
+@media (min-width: 1200px) {
+  .card-container .card {
+    width: 28%; } }
 
-#alternatives_form .acf-fields > .acf-field {
-  padding-top: 0;
-  border-top: none; }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card-container .card {
+    width: 45%; } }
 
-#alternatives_form .acf-label {
-  display: none; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-container .card {
+    width: 90%; } }
 
 #general-signup-1 .label-inline {
   width: 33.33333%; }

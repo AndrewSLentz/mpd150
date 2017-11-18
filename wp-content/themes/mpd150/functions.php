@@ -105,6 +105,9 @@ function add_social_icons ( $items ) {
 					<a href='www.facebook.com/mpd150' target='_blank'>
 						<i class='fa fa-facebook'></i>
 					</a>
+					<a href='https://www.instagram.com/mpd_150/'>
+						<i class='fa fa-instagram' aria-hidden='true'>
+					</a>
 				</li>";
 
 		return $items;
