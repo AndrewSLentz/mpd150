@@ -9553,6 +9553,40 @@ form#topics, form#roles {
   #general-signup-1 .yikes-easy-mc-submit-button:hover {
     background-color: #FFF9F2; }
 
+#signup-form-2 label.label-inline {
+  width: 33%; }
+
+#signup-form-2 .yikes-easy-mc-checkbox-label {
+  font-size: 12px; }
+
+#signup-form-2 .fbb8087422-label .yikes-easy-mc-checkbox-label {
+  width: 45%;
+  margin-bottom: 0; }
+
+#yikes-mailchimp-container-2 {
+  color: white;
+  padding: 20px; }
+
+#yikes-mailchimp-container-2 .yikes-easy-mc-form label {
+  margin-bottom: 1.5em; }
+
+#yikes-mailchimp-container-2 label.label-inline > span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block; }
+
+#yikes-mailchimp-container-2 .submit-button-inline-label {
+  width: 33%;
+  text-align: center; }
+
+#yikes-mailchimp-container-2 .yikes-easy-mc-submit-button {
+  display: block;
+  width: 33%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: bold; }
+
 .main-heading {
   color: #FFF9F2;
   background-color: #514F4C;
@@ -9698,6 +9732,19 @@ body .dgx-donate-form-section {
 
 body .wpcf7 input[type=submit], body .wpcf7 input[type=submit]:hover {
   color: #282826; }
+
+.report-button-container {
+  transition: height 1s ease;
+  height: 46px; }
+
+.report-button-container.fixed {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  transition: height .5s ease; }
+
+.report-button-container button {
+  background-color: #FFF9F2; }
 
 #overview-container img {
   display: block;
