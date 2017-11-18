@@ -9276,7 +9276,7 @@ h4 {
   font-size: 1.5rem; }
 
 p {
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
 .pull-quote {
   display: block !important;
@@ -9413,6 +9413,13 @@ h1, h2, h3, h4, h5, h6 {
 .btn-white {
   background-color: #FFF9F2 !important;
   border: 5px solid #514F4C !important; }
+
+.btn-white-thin-border {
+  background-color: #FFF9F2 !important;
+  border: 1px solid #514F4C !important; }
+
+.btn-primary {
+  border-color: #282826; }
 
 /* Footer */
 #wrapper-footer-full {
@@ -9688,6 +9695,9 @@ body .dgx-donate-form-section {
 #dgx-donate-form-payment-section input[type=image] {
   width: 120px;
   border: none; }
+
+body .wpcf7 input[type=submit], body .wpcf7 input[type=submit]:hover {
+  color: #282826; }
 
 #overview-container img {
   display: block;

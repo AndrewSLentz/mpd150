@@ -35,5 +35,9 @@ body .dgx-donate-form-section {
 	border:none
 }
 
+body .wpcf7 input[type=submit], body .wpcf7 input[type=submit]:hover {
+	color:$font-black;
+}
+
 // read more buttons on report
 
