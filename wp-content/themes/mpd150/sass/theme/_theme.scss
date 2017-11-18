@@ -248,7 +248,7 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 .social-icons a {
 	color:$font-black;
 	font-size: 1.5rem;
-	margin: 0 2rem;
+	margin: 0 1rem;
 
 	&:hover {
 		text-decoration:none!important;
@@ -335,8 +335,8 @@ h1,h2,h3,h4,h5,h6 {  //Center headers by default
 }
 
 .btn-white {
-	background-color:$white;
-	border:5px solid #514F4C;
+	background-color:$white!important;
+	border:5px solid #514F4C!important;
 }
 
 /* Footer */

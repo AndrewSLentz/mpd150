@@ -9346,7 +9346,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-icons a {
   color: #282826;
   font-size: 1.5rem;
-  margin: 0 2rem; }
+  margin: 0 1rem; }
   .social-icons a:hover {
     text-decoration: none !important; }
 
@@ -9411,8 +9411,8 @@ h1, h2, h3, h4, h5, h6 {
   color: white; }
 
 .btn-white {
-  background-color: #FFF9F2;
-  border: 5px solid #514F4C; }
+  background-color: #FFF9F2 !important;
+  border: 5px solid #514F4C !important; }
 
 /* Footer */
 #wrapper-footer-full {
@@ -9563,7 +9563,7 @@ div.centering {
   display: flex;
   flex-direction: column;
   height: 90%;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
 
 body .ms-container {
   margin-bottom: 3rem; }
@@ -9656,6 +9656,10 @@ article {
   .btn-default h3 {
     font-size: 1.5rem; } }
 
+@media (max-height: 600px) {
+  #learn-more-container {
+    display: none; } }
+
 .su-tooltip {
   color: blue;
   vertical-align: super;
@@ -9677,6 +9681,13 @@ article {
   padding: .5rem 1.5rem; }
   #main figure.wp-caption .wp-caption-text {
     font-size: .8rem; }
+
+body .dgx-donate-form-section {
+  border: 1px solid #282826 !important; }
+
+#dgx-donate-form-payment-section input[type=image] {
+  width: 120px;
+  border: none; }
 
 #overview-container img {
   display: block;

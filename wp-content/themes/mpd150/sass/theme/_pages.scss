@@ -24,7 +24,15 @@
 		.wp-caption-text {
 			font-size:.8rem;
 		}
+}
 
+body .dgx-donate-form-section {
+	border:1px solid $font-black!important;
+}
+
+#dgx-donate-form-payment-section input[type=image] {
+	width:120px;
+	border:none
 }
 
 // read more buttons on report
