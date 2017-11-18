@@ -95,6 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   		</div><!-- .wrapper-navbar end -->
   	</div>
     <div class='centering'>
+      <div></div> 
       <div>
   			<h1 class="main-heading text-center">
   				MPD150

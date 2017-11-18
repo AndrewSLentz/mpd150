@@ -17,7 +17,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class='row justify-content-center color4'>
 							<div class='col-12 col-md-12 col-lg-12'>
-								<h1 class='aligncenter'><?php the_field('report_title') ?></h1>
+								<div class='text-center'>
+									<h1 class='aligncenter d-inline-block trans-white'><?php the_field('report_title') ?></h1>
+								</div>
 								<div class= 'col-12 aligncenter text-left margin-lg trans-white'>
 									<?php the_field('report_summary') ?>
 									<h3 class='margin-none aligncenter font-weight-light'><a>Download the Report as PDF >></a></h3>
@@ -26,22 +28,34 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div id='overview-container' class='col-12 nopadding color3'>
 								<div class='row'>
 									<div class='col-12 col-md-4'>
-										<h2>Past</h2>
+										<div class='text-center margin-xs'>
+											<h2 class="d-inline-block trans-white">Past</h2>
+										</div>
 										<img src='<?php the_field('past_image') ?>' class='border-black margin-md'>
-										<p><?php the_field('past_summary') ?></p>
-										<h4 class='alignleft'><a href='/history' class='font-black'>View History Section ></a></h4>
+										<div class='trans-white'>
+											<p><?php the_field('past_summary') ?></p>
+											<h4 class='text-left'><a href='/history' class='font-black'>View History Section ></a></h4>
+										</div>
 									</div>
 									<div class='col-12 col-md-4'>
-										<h2>Present</h2>
+										<div class='text-center margin-xs'>
+											<h2 class="d-inline-block trans-white">Present</h2>
+										</div>
 										<img src='<?php the_field('present_image') ?>' class='border-black margin-md'>
-										<p><?php the_field('present_summary') ?></p>
-										<h4 class='alignleft'><a href='/present' class='font-black'>View Present Section ></a></h4>
+										<div class='trans-white'>
+											<p><?php the_field('present_summary') ?></p>
+											<h4 class='text-left'><a href='/present' class='font-black'>View Present Section ></a></h4>
+										</div>
 									</div>
 									<div class='col-12 col-md-4 margin-xl'>
-										<h2>Future</h2>
+										<div class='text-center margin-xs'>
+											<h2 class="d-inline-block trans-white">Future</h2>
+										</div>
 										<img src='<?php the_field('future_image') ?>' class='border-black margin-md'>
-										<p><?php the_field('future_summary') ?></p>
-										<h4 class='alignleft'><a href='/future' class='font-black'>View Future Section ></a></h4>
+										<div class='trans-white'>
+											<p><?php the_field('future_summary') ?></p>
+											<h4 class='text-left'><a href='/future' class='font-black'>View Future Section ></a></h4>
+										</div>
 									</div>
 								</div>
 								

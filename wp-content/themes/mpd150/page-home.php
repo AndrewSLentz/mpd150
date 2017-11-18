@@ -18,6 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<h2 id ='learn-more'>Learn More</h2>
 								<div class='learn-more-tri aligncenter text-center'><img src='/wp-content/themes/mpd150/img/tri.svg'></div>
 							</div>
+							<div></div>
 
 					</div>
 					</div>
@@ -34,9 +35,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class='row justify-content-center color1'>
 							<div class='col-12 col-md-10'>
-								<h1 id='report-title' class='margin-sm'><strong> <?php the_field('report_title') ?> </strong></h1>
+								<h1 id='report-title' class='margin-sm'><?php the_field('report_title') ?> </h1>
 								<img id= 'report-title-img' src='<?php the_field('report_image') ?>' class="col-10 col-md-8 col-lg-4 margin-sm aligncenter border-black padding-none">
-								<p class='aligncenter text-center'>
+								<p class='aligncenter text-center trans-white'>
 									<?php the_field('report_summary') ?>
 								</p>
 								<div id='read-the-report' class='text-center'>
@@ -48,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class='row justify-content-center color3'>
 							<div class='col-12 col-md-10'>
-								<h2 class='margin-xs'> News </h2>
+								<h1 class='margin-xs'> News </h1>
 								<div id='news-slider' class='margin-none'>
 									<?php masterslider(1);?>
 								</div>

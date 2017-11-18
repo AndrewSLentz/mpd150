@@ -10,11 +10,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row color4">
 
-			<div class="col-md-12 content-area homepage-content color4" id="primary">
+			<div class="col-md-12 content-area homepage-content color4 justify-content-center" id="primary">
 
 				<main class="site-main" id="main" role="main">
 
-						<div class='aligncenter text-left margin-lg trans-white'>
+						<div class='aligncenter text-left margin-lg trans-white col-12 col-md-10'>
 							<?php the_field('present_summary') ?>
 							<div class= 'report-button-container margin-lg'>
 								<button class='btn-default btn read-more read'>Read More</button>
@@ -22,11 +22,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							<div class='hidden full-content'><?php the_field('present_full_content') ?></div>
 						</div>
-
-					<div class='feature' style="background-color:transparent">
-						<h1 class="margin-none"> Interviews </h1>
-						<?php echo do_shortcode('[interviews]');?>
-					</div>
+				</main>
+			</div>
+		</div>
+			<div class='row color3'>
+				<div class='feature' style="background-color:transparent">
+					<h1 class="margin-none"> Interviews </h1>
+					<?php echo do_shortcode('[interviews]');?>
+				</div>
+			</div>
 
 
 				</main><!-- #main -->
