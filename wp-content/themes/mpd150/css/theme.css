@@ -9698,13 +9698,26 @@ article {
 
 @media (max-width: 575px) {
   .main-heading {
-    font-size: 4rem; }
+    font-size: 3rem;
+    padding: 0; }
+  #report-title {
+    font-size: 2.5rem; }
   .btn-default h3 {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .row.color1, .centering {
+    padding: 0 10px; } }
 
 @media (max-height: 600px) {
   #learn-more-container {
-    display: none; } }
+    display: none; }
+  div.centering, div#landingPad {
+    height: auto; }
+  div.centering {
+    justify-content: start; }
+  #tagline {
+    margin-bottom: 4rem; }
+  .main-heading {
+    margin-top: 4rem; } }
 
 .su-tooltip {
   color: blue;
