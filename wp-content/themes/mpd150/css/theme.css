@@ -9523,8 +9523,7 @@ form#topics, form#roles {
 .card-container .card {
   margin: 20px;
   padding: 20px;
-  background-color: #b4726a;
-  color: white; }
+  background-color: #b4726a; }
 
 #futures {
   margin-bottom: 8rem; }
