@@ -1,0 +1,1 @@
+[21-Nov-2017 11:57:12 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14

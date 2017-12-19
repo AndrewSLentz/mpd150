@@ -1,0 +1,491 @@
+[08-Jul-2017 20:50:52 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/15698ae2d71e51b022232b63ab4af456/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[10-Jul-2017 23:33:40 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/2ee95597f8f13c56e8da2d50fdeae966/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[11-Jul-2017 15:16:28 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/e92057b5ee32ea390044f49086c634c1/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[13-Jul-2017 03:37:28 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/f50b8050f252044b092b7df62ebec525/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[16-Jul-2017 01:19:54 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/1dac77e8c0f665283a61e0a8624017fb/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[16-Jul-2017 16:30:37 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#807 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#781 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/55dc17161415b646902d421397a20747/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[17-Jul-2017 17:38:35 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/f81c0e746f00dd6d35a4f0ec68edc6bb/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[18-Jul-2017 03:48:20 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/ea65e1ab4ea413c2d765b26db1fce920/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[19-Jul-2017 19:50:08 UTC] HTTPInterface.php:373 -> _log_failed_request(): ET_Core_HTTPInterface ERROR :: Remote request failed...
+
+Details: object(ET_Core_HTTPInterface)#806 (2) {
+  ["REQUEST"]=>
+  object(ET_Core_HTTPRequest)#234 (6) {
+    ["ARGS"]=>
+    array(7) {
+      ["blocking"]=>
+      bool(true)
+      ["body"]=>
+      string(34) "{"note":"Subscribed via ET_Core."}"
+      ["cookies"]=>
+      array(0) {
+      }
+      ["headers"]=>
+      array(2) {
+        ["Authorization"]=>
+        string(66) "Basic RVRfQ29yZTo0ZDBjMzAxM2VlOTUzYjk2MGE1ZmYxNjk2NzlhZDUyYy11czE2"
+        ["Accept"]=>
+        string(16) "application/json"
+      }
+      ["method"]=>
+      string(4) "POST"
+      ["sslverify"]=>
+      bool(true)
+      ["user-agent"]=>
+      string(52) "WordPress/4.8; ET_Core/3.0.60; http://www.mpd150.com"
+    }
+    ["URL"]=>
+    string(98) "https://us16.api.mailchimp.com/3.0/lists/94b0328c5d/members/448862e18d19b7a28327e492f7b2a0c5/notes"
+    ["METHOD"]=>
+    string(4) "POST"
+    ["BODY"]=>
+    string(34) "{"note":"Subscribed via ET_Core."}"
+    ["IS_AUTH"]=>
+    bool(false)
+    ["OWNER"]=>
+    string(7) "ET_Core"
+  }
+  ["RESPONSE"]=>
+  object(ET_Core_HTTPResponse)#816 (5) {
+    ["STATUS_CODE"]=>
+    int(404)
+    ["STATUS_MESSAGE"]=>
+    string(9) "Not Found"
+    ["ERROR"]=>
+    bool(true)
+    ["ERROR_MESSAGE"]=>
+    string(9) "Not Found"
+    ["DATA"]=>
+    string(198) "{"type":"http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/","title":"Resource Not Found","status":404,"detail":"The requested resource could not be found.","instance":""}"
+  }
+}
+
+[18-Aug-2017 17:10:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/peterbre/public_html/mpd150/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-settings.php on line 392
+[26-Aug-2017 01:26:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/peterbre/public_html/mpd150/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/classes/process/class.process_form_submission_handler.php on line 1398
+[05-Sep-2017 20:48:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/peterbre/public_html/mpd150/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/classes/process/class.process_form_submission_handler.php on line 1398
+[16-Sep-2017 22:42:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/peterbre/public_html/mpd150/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/classes/process/class.process_form_submission_handler.php on line 1398
+[19-Oct-2017 19:48:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/peterbre/public_html/mpd150/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/classes/process/class.process_form_submission_handler.php on line 1401

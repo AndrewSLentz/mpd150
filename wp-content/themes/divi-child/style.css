@@ -1,0 +1,198 @@
+/*
+ Theme Name:   Divi Child
+ Description:  A child theme for Divi
+ Author:       Big River Web Design
+ Author URI:   http://bigriverwebdesign.com;
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         bigriver
+ Text Domain:  divi
+*/
+a {
+    color: #4b7eff;
+    text-decoration: underline;
+}
+
+h2 {
+	line-height:1.5em;
+}
+
+h3 {
+	margin:0;
+}
+
+#main-content {
+	min-height:600px;/* Stops footer from jumping up if there isn't much page content */
+}
+
+.et_pb_section {
+    padding: 0; /*removed gap at top of page, should also reduce space between rows */
+}
+
+.et_pb_row {
+	padding:13.5px 0; /*helps make vertical gaps even*/
+}
+
+.background-blue1 {
+	background-color:#2E4172;
+}
+
+
+.align-center {
+	text-align:center;
+}
+
+
+
+/* Header/Nav */
+
+.et-cart-info {
+	display:none;
+}
+
+.et-social-icons {
+	transform: translateY(-1px);
+}
+
+.et-social-icons .icon {
+	font-size:18px;
+}
+
+#logo {
+	display:none;
+}
+
+#top-menu li li a {
+	line-height:1.4;
+}
+
+/* Front Page Blurbs */
+
+.et_pb_main_blurb_image {
+	margin-bottom:15px;
+}
+
+.et-pb-icon {
+	transform: translateX(2px); /* fix icon alignment bug*/
+	font-size:70px;
+}
+
+/* Misc. front page */
+
+.et_always_center_on_mobile {
+	margin-left:auto!important;/*fix image centering bug*/
+	margin-right:auto!important
+}
+
+/* Mailchimp signup form styles */
+
+#signup-form-1 label.label-inline {
+	width:33%;
+}
+
+#signup-form-1 .yikes-easy-mc-checkbox-label {
+	font-size:12px;
+}
+
+#signup-form-1 .fbb8087422-label .yikes-easy-mc-checkbox-label {
+	width:45%;
+	margin-bottom:0;
+}
+
+#yikes-mailchimp-container-1 {
+	color:white;
+	padding:20px;
+} 
+
+#yikes-mailchimp-container-1 .yikes-easy-mc-form label {
+	margin-bottom:1.5em;
+}
+
+#yikes-mailchimp-container-1 label.label-inline > span {
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:5px;
+	display:block;
+}
+
+#yikes-mailchimp-container-1 .submit-button-inline-label {
+	width:33%;
+	text-align:center;
+
+}
+
+#yikes-mailchimp-container-1 .yikes-easy-mc-submit-button {
+	display: block;
+    width: 33%;
+    margin: auto;
+    font-size:16px;
+	font-weight:bold;
+}
+
+/* Cops startled*/
+#cops-startled-text {
+	margin-top:19%;
+}
+
+/* Fundraiser */
+
+/*body .wpneo-wrapper ul.discs {
+	list-style:disc;
+	margin-left:13px;
+}
+
+.wpneo-author-info, #campaign_loved_html, #campaign-210 > div.wpneo-campaign-summary > div > div.wpneo-campaign-creator-info-wrapper {
+	display:none;
+}
+
+.wpneo-post-img {
+	max-width: 350px;
+    display: block;
+    margin: auto;
+}*/
+
+/* Donate Page */
+
+.give-form-title, #give-final-total-wrap {
+	display:none;
+}
+
+#give-form-content-461 img {
+	margin-right:50px;
+	margin-bottom:20px;
+}
+
+#give_purchase_form_wrap {
+	margin-top:20px;
+}
+
+@media (max-width:780px) {
+	#give-form-content-461 img {
+		float:none;
+		display:block;
+		margin:0 auto 20px auto;
+	}
+}
+
+/* Mobile Styles */
+@media (max-width:1100px) {
+	#signup-form-1 label.label-inline, #yikes-mailchimp-container-1 .yikes-easy-mc-submit-button {
+		width:50%;
+	}
+}
+
+@media (max-width:983px) { /*Divi Mobile Breakpoint */
+	.et-social-icons {
+    	transform: translate(-22px,6px);
+	}
+}
+
+@media (max-width:400px) {
+	#signup-form-1 label.label-inline, 
+	#signup-form-1 .fbb8087422-label .yikes-easy-mc-checkbox-label,
+	#yikes-mailchimp-container-1 .yikes-easy-mc-submit-button {
+		width:100%;
+	}
+}

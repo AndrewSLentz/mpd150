@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 			<div class='row color3'>
 				<div class='feature' style="background-color:transparent">
-					
+					<h1 class="margin-none"> Interviews </h1>
 					<?php echo do_shortcode('[interviews]');?>
 				</div>
 			</div>

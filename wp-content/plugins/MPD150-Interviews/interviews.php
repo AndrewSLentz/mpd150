@@ -30,17 +30,17 @@ add_action( 'init', 'create_posttype_interview' );
 function display_codes() {
 
     ?> 
-    <div class='row justify-content-center color4'>
+    <div class='row justify-content-center color3'>
         <div id='interview-codes'> <?php
         /* Get all topical codes */
         $args = array(
             'taxonomy' => 'excerpt-codes',
-            'exclude' => '29',
-            'exclude_tree' => '33' // excludes role and descendants
+            'include' => '10,9, 16, 28, 20'
         );
         $topics = get_terms($args);
-        ?> <h3> Topics </h3>
-        <form id='topics' class='trans-white margin-md'> <?php
+        ?>
+        <form id='topics' class='trans-white margin-md'>
+         <h3> Topics </h3> <?php
         foreach ($topics as $topic) {
             $name = $topic->name;
             $slug = $topic->slug;
@@ -49,21 +49,8 @@ function display_codes() {
         </form>
        <?php
 
-        /* Get all role codes */
-        $args = array(
-            'taxonomy' => 'excerpt-codes',
-            'parent' => '33'
-        );
-
-         $roles = get_terms($args);
-        ?> <h3> Roles </h3>
-        <form id='roles' class='trans-white margin-md'> <?php
-        foreach ($roles as $role) {
-            $name = $role->name;
-            $slug = $role->slug;
-            echo sprintf("<div><input type='radio' id='%s' name='role'><label for='%s'>%s</label></div>",$slug,$slug,$name);
-        }?>
-        </form>
+        /* Removed roles */
+        ?>
         <button id="show-all" type="button" class='btn-default btn aligncenter margin-md'> Show All </button>
         </div> <!-- interview codes -->
         <script src="/wp-content/plugins/MPD150-Interviews/interviews.js"></script>
@@ -80,6 +67,13 @@ function display_interviews() {
     $posts = get_posts(array(
         'posts_per_page'    => -1,
         'post_type'         => 'interviewexcerpts',
+         'tax_query' => array(
+                array(
+                    'taxonomy' => 'excerpt-codes',
+                    'field' => 'slug',
+                    'terms' => array("solutions","strong-quotes","police-community-relationship","wishlistdream-resources","existing-resource") //the taxonomy terms I'd like to dynamically query
+                ),
+        ),
     ));
 
 
@@ -102,7 +96,8 @@ function display_interviews() {
                         $interview_file_name_txt = str_replace([" ", "#"], "", $interview_file_name_txt);
                         $interview_file_name_txt = urlencode($interview_file_name_txt);
                         $interview_url= $_SERVER['DOCUMENT_ROOT'] . "/wp-content/uploads/interviews/" . $interview_file_name_txt;
-                        $interview = file_exists($interview_url);
+                        /*$interview = file_exists($interview_url);*/
+                        $interview=false;
 
                         if ($interview) {
                             ?><h4 class="alignleft margin-xs" data-toggle='modal' data-target='#<?php echo $slug ?>'>Read full interview >

@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</div>
 								<div class= 'col-12 aligncenter text-left margin-lg trans-white'>
 									<?php the_field('report_summary') ?>
-									<h3 class='margin-none aligncenter font-weight-light'><a>Download the Report as PDF >></a></h3>
+									<h3 class='margin-none aligncenter font-weight-light'><a href="http://www.mpd150.com/wp-content/uploads/MPD150_Report.pdf" target="_blank" title="MPD150 Report Download Link">Download the Report as PDF >></a></h3>
 								</div>
 							</div>
 							<div id='overview-container' class='col-12 nopadding color3'>
@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<img src='<?php the_field('past_image') ?>' class='border-black margin-md'>
 										<div class='trans-white'>
 											<p><?php the_field('past_summary') ?></p>
-											<h4 class='text-left'><a href='/history' class='font-black'>View History Section ></a></h4>
+											<h4 class='text-left'><a href='/past' class='font-black'>View History Section ></a></h4>
 										</div>
 									</div>
 									<div class='col-12 col-md-4'>

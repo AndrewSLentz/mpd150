@@ -41,7 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</p>
 								<div id='read-the-report' class='text-center'>
 									<button type='button' class='btn btn-default col-12 col-lg-6 margin-lg'>
-										<h3 class='margin-none'>Read the Report</h3>
+										<a href="/report"> <h3 class='margin-none'>Read the Report >></h3></a>
 									</button>
 								</div>
 							</div>
