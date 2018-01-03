@@ -1,1 +1,4 @@
 [21-Nov-2017 11:57:12 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14
+[22-Dec-2017 10:45:39 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14
+[22-Dec-2017 12:52:31 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14
+[22-Dec-2017 14:21:06 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14

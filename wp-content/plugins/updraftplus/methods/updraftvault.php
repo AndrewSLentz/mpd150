@@ -235,6 +235,15 @@ class UpdraftPlus_BackupModule_updraftvault extends UpdraftPlus_BackupModule_s3 
 		return $config;
 	}
 
+	/**
+	 * Whether to always use server-side encryption - which, with Vault, we do (and our marketing says so).
+	 *
+	 * @return Boolean
+	 */
+	protected function use_sse() {
+		return true;
+	}
+	
 	public function vault_translate_remote_message($message, $code) {
 		switch ($code) {
 			case 'premium_overdue':
@@ -262,6 +271,15 @@ class UpdraftPlus_BackupModule_updraftvault extends UpdraftPlus_BackupModule_s3 
 	 */
 	public function print_shared_settings_fields() {
 		return false;
+	}
+
+	/**
+	 * Get the pre configuration template
+	 *
+	 * @return Void - currently does not have a pre config template, this method is needed to stop it taking it's parents
+	 */
+	public function get_pre_configuration_template() {
+
 	}
 
 	/**
@@ -355,7 +373,7 @@ class UpdraftPlus_BackupModule_updraftvault extends UpdraftPlus_BackupModule_s3 
 	}
 
 	/**
-	 * Get the patial configuration template for connected html
+	 * Get the partial configuration template for connected html
 	 *
 	 * @return String - the partial template, ready for substitutions to be carried out
 	 */
@@ -379,7 +397,7 @@ class UpdraftPlus_BackupModule_updraftvault extends UpdraftPlus_BackupModule_s3 
 	 * @param array $opts
 	 * @return array - Modified handerbar template options
 	 */
-	protected function transform_options_for_template($opts) {
+	public function transform_options_for_template($opts) {
 		if (!empty($opts['token']) || !empty($opts['email'])) {
 			$opts['is_connected'] = true;
 		}
@@ -391,6 +409,20 @@ class UpdraftPlus_BackupModule_updraftvault extends UpdraftPlus_BackupModule_s3 
 		return $opts;
 	}
 	
+	/**
+	 * Gives settings keys which values should not passed to handlebarsjs context.
+	 * The settings stored in UD in the database sometimes also include internal information that it would be best not to send to the front-end (so that it can't be stolen by a man-in-the-middle attacker)
+	 *
+	 * @return array - Settings array keys which should be filtered
+	 */
+	public function filter_frontend_settings_keys() {
+		return array(
+			'last_config',
+			'quota',
+			'quota_root',
+			'token',
+		);
+	}
 	
 	private function connected_html($vault_settings = false) {
 		if (!is_array($vault_settings)) {
@@ -450,7 +482,7 @@ class UpdraftPlus_BackupModule_updraftvault extends UpdraftPlus_BackupModule_s3 
 	}
 	
 	/**
-	 * THis function will return the S3 quota Information
+	 * This function will return the S3 quota Information
 	 *
 	 * @param  string|integer $format n numeric, returns an integer or false for an error (never returns an error)
 	 * @param  integer        $quota  S3 quota information

@@ -187,6 +187,7 @@ class UpdraftPlus_Commands {
 	}
 	
 	public function get_settings($options) {
+		global $updraftplus;
 		if (false === ($updraftplus_admin = $this->_load_ud_admin()) || false === ($updraftplus = $this->_load_ud())) return new WP_Error('no_updraftplus');
 		
 		if (!UpdraftPlus_Options::user_can_manage()) return new WP_Error('updraftplus_permission_denied');
@@ -196,8 +197,11 @@ class UpdraftPlus_Commands {
 		$output = ob_get_contents();
 		ob_end_clean();
 		
+		$remote_storage_options_and_templates = $updraftplus->get_remote_storage_options_and_templates();
 		return array(
 			'settings' => $output,
+			'remote_storage_options' => $remote_storage_options_and_templates['options'],
+			'remote_storage_templates' => $remote_storage_options_and_templates['templates'],
 			'meta' => apply_filters('updraftplus_get_settings_meta', array()),
 			'updraftplus_version' => $updraftplus->version,
 		);
@@ -377,10 +381,10 @@ class UpdraftPlus_Commands {
 					$error = true;
 					$output = 'cloudfiles_addon_not_found';
 			} else {
-								$output = array(
+				$output = array(
 					'accounts' => $updraftplus_addon_cloudfilesenhanced->account_options(),
 					'regions' => $updraftplus_addon_cloudfilesenhanced->region_options(),
-								);
+				);
 			}
 				break;
 				
@@ -442,11 +446,8 @@ class UpdraftPlus_Commands {
 		if (isset($response_decode->e)) {
 		  return new WP_Error('error', '', htmlspecialchars($response_decode->e));
 		}
-	
-			 return array(
-			'status' => $response_decode->code,
-			'response' => $response_decode->html_response
-		);
+
+		return array('status' => $response_decode->code, 'response' => $response_decode->html_response);
 	}
 
 	/**

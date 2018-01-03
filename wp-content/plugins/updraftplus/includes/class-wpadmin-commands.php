@@ -224,7 +224,14 @@ class UpdraftPlus_WPAdmin_Commands extends UpdraftPlus_Commands {
 			
 			do_action_ref_array('updraftplus_restore_all_downloaded_postscan', array($backups, $timestamp, $elements, &$info, &$mess, &$warn, &$err));
 
-			return array('m' => '<p>'.$mess_first.'</p>'.implode('<br>', $mess), 'w' => implode('<br>', $warn), 'e' => implode('<br>', $err), 'i' => json_encode($info));
+			$warn_result = '';
+			foreach ($warn as $warning) {
+				if (!$warn_result) $warn_result = '<ul id="updraft_restore_warnings">';
+				$warn_result .= '<li>'.$warning.'</li>';
+			}
+			if ($warn_result) $warn_result .= '</ul>';
+			
+			return array('m' => '<p>'.$mess_first.'</p>'.implode('<br>', $mess), 'w' => $warn_result, 'e' => implode('<br>', $err), 'i' => json_encode($info));
 		}
 	
 	}
@@ -419,7 +426,7 @@ class UpdraftPlus_WPAdmin_Commands extends UpdraftPlus_Commands {
 						);
 					} else {
 						$node_array[] = array(
-'text' => $value,
+							'text' => $value,
 							'children' => false,
 							'id' => $path . DIRECTORY_SEPARATOR . $value,
 							'type' => 'file',
@@ -554,7 +561,7 @@ class UpdraftPlus_WPAdmin_Commands extends UpdraftPlus_Commands {
 							'icon' => 'jstree-file',
 							'li_attr' => array(
 								'path' => $parent_name . DIRECTORY_SEPARATOR . $si['name'],
-'size' => $updraftplus->convert_numeric_size_to_text($si['size'])
+								'size' => $updraftplus->convert_numeric_size_to_text($si['size'])
 							)
 						);
 					}

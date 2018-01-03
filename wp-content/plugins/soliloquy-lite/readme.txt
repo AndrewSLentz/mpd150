@@ -2,7 +2,7 @@
 Contributors: griffinjt, smub
 Tags: slider, image slider, video slider, responsive slider, gallery slider, post slider, photo slider, youtube slider, wordpress slider, woocommerce slider, product slider, image carousel, carousel slider, pdf slider, fullscreen slider, mobile slider, best slider, content slider, wistia slider, slideshow, html5 slider, thumbnail slider, instagram slider, best responsive slider, testimonial slider, custom post types slider, javascript slider
 Requires at least: 4.0.0
-Tested up to: 4.7.1
+Tested up to: 4.9.0
 Stable tag: trunk
 License: GNU General Public License v2.0 or later
 
@@ -311,6 +311,11 @@ In v2.0 of Soliloquy Slider Lite, it includes a big plugin architecture change. 
 The pro version of Soliloquy slider has many more features and enables you to do so much more than Soliloquy slider lite, such as add images from your Media Library and use your own custom videos from YouTube, Vimeo and Wistia!
 
 == Changelog ==
+
+
+= 2.5.2 =
+* Fix: Duplicate images showing in admin
+* Fix: Minor bug fixes
 
 = 2.5.1.3 =
 * Fix: Minor bug fixes

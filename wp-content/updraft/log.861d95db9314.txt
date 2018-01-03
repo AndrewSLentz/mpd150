@@ -1,0 +1,227 @@
+0000.000 (0) Opened log file at time: Tue, 02 Jan 2018 11:25:02 +0000 on http://www.mpd150.com
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.2 WP: 4.9.1 PHP: 5.6.32 (cgi-fcgi, Linux m22.siteground.biz 3.12.18-clouder0 #85 SMP Mon Apr 3 10:28:14 EEST 2017 x86_64) MySQL: 5.6.36 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 768M (used: 38.7M | 39.8M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.015 (0) Free space on disk containing Updraft's temporary directory: 787727.3 MB
+0000.018 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: every4hours)
+0000.020 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.023 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1514875990, seconds_ago=16312)
+0000.025 (0) Set semaphore last lock (d) time to 2018-01-02 11:25:02
+0000.026 (0) Semaphore lock (d) complete
+0000.032 (0) Backup run: resumption=0, nonce=861d95db9314, begun at=1514892302 (0s ago), job type=backup
+0000.035 (0) Scheduling a resumption (1) after 300 seconds (1514892602) in case this run gets aborted
+0000.050 (0) This backup run is not intended for files - skipping
+0000.051 (0) Beginning creation of database dump (WordPress DB)
+0000.053 (0) Testing: /usr/bin/mysqldump
+0000.097 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wpmpd_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\n (truncated - 1205 bytes total)
+0000.100 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.150 (0) Table wpmpd_options: Total expected rows (approximate): 415
+0000.167 (0) Table wpmpd_options: Total rows added: 419 in 0.02 seconds
+0000.168 (0) Table wpmpd_options: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_options.table.gz - 26.2 KB)
+0000.171 (0) Table wpmpd_users: Total expected rows (approximate): 13
+0000.174 (0) Table wpmpd_users: Total rows added: 13 in 0.00 seconds
+0000.175 (0) Table wpmpd_users: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_users.table.gz - 1.4 KB)
+0000.177 (0) Table wpmpd_usermeta: Total expected rows (approximate): 251
+0000.183 (0) Table wpmpd_usermeta: Total rows added: 251 in 0.00 seconds
+0000.184 (0) Table wpmpd_usermeta: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_usermeta.table.gz - 4.3 KB)
+0000.189 (0) Table wpmpd_commentmeta: Total expected rows (approximate): 4
+0000.194 (0) Table wpmpd_commentmeta: Total rows added: 4 in 0.00 seconds
+0000.195 (0) Table wpmpd_commentmeta: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_commentmeta.table.gz - 0.4 KB)
+0000.204 (0) Table wpmpd_comments: Total expected rows (approximate): 5
+0000.210 (0) Table wpmpd_comments: Total rows added: 6 in 0.00 seconds
+0000.211 (0) Table wpmpd_comments: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_comments.table.gz - 1.8 KB)
+0000.218 (0) Table wpmpd_links: Total expected rows (approximate): 0
+0000.222 (0) Table wpmpd_links: Total rows added: 0 in 0.00 seconds
+0000.223 (0) Table wpmpd_links: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_links.table.gz - 0.4 KB)
+0000.226 (0) Table wpmpd_postmeta: Total expected rows (approximate): 5230
+0000.464 (0) Table wpmpd_postmeta: Total rows added: 5171 in 0.24 seconds
+0000.465 (0) Table wpmpd_postmeta: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_postmeta.table.gz - 497.9 KB)
+0000.469 (0) Table wpmpd_posts: Total expected rows (approximate): 3759
+0000.829 (0) Table wpmpd_posts: Total rows added: 3914 in 0.36 seconds
+0000.831 (0) Table wpmpd_posts: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_posts.table.gz - 141.7 KB)
+0000.835 (0) Table wpmpd_term_relationships: Total expected rows (approximate): 657
+0000.849 (0) Table wpmpd_term_relationships: Total rows added: 646 in 0.01 seconds
+0000.851 (0) Table wpmpd_term_relationships: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_term_relationships.table.gz - 2.1 KB)
+0000.854 (0) Table wpmpd_term_taxonomy: Total expected rows (approximate): 51
+0000.860 (0) Table wpmpd_term_taxonomy: Total rows added: 51 in 0.00 seconds
+0000.861 (0) Table wpmpd_term_taxonomy: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_term_taxonomy.table.gz - 0.8 KB)
+0000.871 (0) Table wpmpd_termmeta: Total expected rows (approximate): 12
+0000.877 (0) Table wpmpd_termmeta: Total rows added: 12 in 0.00 seconds
+0000.879 (0) Table wpmpd_termmeta: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_termmeta.table.gz - 3.8 KB)
+0000.893 (0) Table wpmpd_terms: Total expected rows (approximate): 51
+0000.897 (0) Table wpmpd_terms: Total rows added: 51 in 0.00 seconds
+0000.897 (0) Table wpmpd_terms: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_terms.table.gz - 1.2 KB)
+0000.903 (0) Table wpmpd_give_customermeta: Total expected rows (approximate): 0
+0000.906 (0) Table wpmpd_give_customermeta: Total rows added: 0 in 0.00 seconds
+0000.908 (0) Table wpmpd_give_customermeta: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_give_customermeta.table.gz - 0.3 KB)
+0000.914 (0) Table wpmpd_give_customers: Total expected rows (approximate): 0
+0000.916 (0) Table wpmpd_give_customers: Total rows added: 0 in 0.00 seconds
+0000.917 (0) Table wpmpd_give_customers: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_give_customers.table.gz - 0.4 KB)
+0000.919 (0) Table wpmpd_masterslider_options: Total expected rows (approximate): 7
+0000.924 (0) Table wpmpd_masterslider_options: Total rows added: 7 in 0.00 seconds
+0000.927 (0) Table wpmpd_masterslider_options: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_masterslider_options.table.gz - 13.8 KB)
+0000.930 (0) Table wpmpd_masterslider_sliders: Total expected rows (approximate): 4
+0000.934 (0) Table wpmpd_masterslider_sliders: Total rows added: 4 in 0.00 seconds
+0000.936 (0) Table wpmpd_masterslider_sliders: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_masterslider_sliders.table.gz - 3.3 KB)
+0000.944 (0) Table wpmpd_nextend2_image_storage: Total expected rows (approximate): 0
+0000.947 (0) Table wpmpd_nextend2_image_storage: Total rows added: 0 in 0.00 seconds
+0000.949 (0) Table wpmpd_nextend2_image_storage: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_image_storage.table.gz - 0.3 KB)
+0000.961 (0) Table wpmpd_nextend2_section_storage: Total expected rows (approximate): 0
+0000.968 (0) Table wpmpd_nextend2_section_storage: Total rows added: 1 in 0.01 seconds
+0000.968 (0) Table wpmpd_nextend2_section_storage: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_section_storage.table.gz - 0.4 KB)
+0000.975 (0) Table wpmpd_nextend2_smartslider3_generators: Total expected rows (approximate): 0
+0000.978 (0) Table wpmpd_nextend2_smartslider3_generators: Total rows added: 0 in 0.00 seconds
+0000.979 (0) Table wpmpd_nextend2_smartslider3_generators: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_generators.table.gz - 0.3 KB)
+0000.989 (0) Table wpmpd_nextend2_smartslider3_sliders: Total expected rows (approximate): 2
+0000.996 (0) Table wpmpd_nextend2_smartslider3_sliders: Total rows added: 2 in 0.01 seconds
+0000.998 (0) Table wpmpd_nextend2_smartslider3_sliders: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_sliders.table.gz - 2.4 KB)
+0001.007 (0) Table wpmpd_nextend2_smartslider3_sliders_xref: Total expected rows (approximate): 0
+0001.011 (0) Table wpmpd_nextend2_smartslider3_sliders_xref: Total rows added: 1 in 0.00 seconds
+0001.013 (0) Table wpmpd_nextend2_smartslider3_sliders_xref: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_sliders_xref.table.gz - 0.3 KB)
+0001.030 (0) Table wpmpd_nextend2_smartslider3_slides: Total expected rows (approximate): 3
+0001.037 (0) Table wpmpd_nextend2_smartslider3_slides: Total rows added: 3 in 0.00 seconds
+0001.039 (0) Table wpmpd_nextend2_smartslider3_slides: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_slides.table.gz - 2.1 KB)
+0001.048 (0) Table wpmpd_seamless_donations_audit: Total expected rows (approximate): 10
+0001.054 (0) Table wpmpd_seamless_donations_audit: Total rows added: 14 in 0.01 seconds
+0001.056 (0) Table wpmpd_seamless_donations_audit: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_seamless_donations_audit.table.gz - 2.3 KB)
+0001.064 (0) Table wpmpd_wpsdb_alter_statements: Total expected rows (approximate): 0
+0001.067 (0) Table wpmpd_wpsdb_alter_statements: Total rows added: 0 in 0.00 seconds
+0001.070 (0) Table wpmpd_wpsdb_alter_statements: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_wpsdb_alter_statements.table.gz - 0.2 KB)
+0001.080 (0) Table wpmpd_yikes_easy_mc_forms: Total expected rows (approximate): 0
+0001.084 (0) Table wpmpd_yikes_easy_mc_forms: Total rows added: 0 in 0.00 seconds
+0001.085 (0) Table wpmpd_yikes_easy_mc_forms: finishing file (backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_yikes_easy_mc_forms.table.gz - 0.4 KB)
+0001.088 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_commentmeta
+0001.090 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_comments
+0001.091 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_give_customermeta
+0001.091 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_give_customers
+0001.092 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_links
+0001.093 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_loginizer_logs
+0001.094 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_masterslider_options
+0001.094 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_masterslider_sliders
+0001.095 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_options
+0001.095 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_postmeta
+0001.096 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_posts
+0001.096 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_seamless_donations_audit
+0001.097 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_term_relationships
+0001.097 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_term_taxonomy
+0001.098 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_termmeta
+0001.098 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_terms
+0001.099 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_usermeta
+0001.100 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_users
+0001.100 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_api_keys
+0001.101 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_attribute_taxonomies
+0001.101 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_downloadable_product_permissions
+0001.102 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_log
+0001.102 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_order_itemmeta
+0001.103 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_order_items
+0001.103 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_payment_tokenmeta
+0001.104 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_payment_tokens
+0001.104 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_sessions
+0001.105 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_shipping_zone_locations
+0001.106 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_shipping_zone_methods
+0001.106 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_shipping_zones
+0001.107 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_tax_rate_locations
+0001.107 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_woocommerce_tax_rates
+0001.108 (0) Skipping table (lacks our prefix (wpmpd_)): wpra_yikes_easy_mc_forms
+0001.110 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_options.table.gz (1/58): adding to final database dump
+0001.119 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_users.table.gz (2/58): adding to final database dump
+0001.121 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_usermeta.table.gz (3/58): adding to final database dump
+0001.124 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_commentmeta.table.gz (4/58): adding to final database dump
+0001.126 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_comments.table.gz (5/58): adding to final database dump
+0001.128 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_links.table.gz (6/58): adding to final database dump
+0001.132 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_postmeta.table.gz (7/58): adding to final database dump
+0001.309 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_posts.table.gz (8/58): adding to final database dump
+0001.373 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_term_relationships.table.gz (9/58): adding to final database dump
+0001.378 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_term_taxonomy.table.gz (10/58): adding to final database dump
+0001.379 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_termmeta.table.gz (11/58): adding to final database dump
+0001.380 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_terms.table.gz (12/58): adding to final database dump
+0001.382 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_give_customermeta.table.gz (13/58): adding to final database dump
+0001.382 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_give_customers.table.gz (14/58): adding to final database dump
+0001.383 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_masterslider_options.table.gz (15/58): adding to final database dump
+0001.387 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_masterslider_sliders.table.gz (16/58): adding to final database dump
+0001.388 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_image_storage.table.gz (17/58): adding to final database dump
+0001.388 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_section_storage.table.gz (18/58): adding to final database dump
+0001.389 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_generators.table.gz (19/58): adding to final database dump
+0001.390 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_sliders.table.gz (20/58): adding to final database dump
+0001.391 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_sliders_xref.table.gz (21/58): adding to final database dump
+0001.392 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_nextend2_smartslider3_slides.table.gz (22/58): adding to final database dump
+0001.393 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_seamless_donations_audit.table.gz (23/58): adding to final database dump
+0001.394 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_wpsdb_alter_statements.table.gz (24/58): adding to final database dump
+0001.395 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db-table-wpmpd_yikes_easy_mc_forms.table.gz (25/58): adding to final database dump
+0001.396 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db.gz: finished writing out complete database file (672 KB)
+0001.407 (0) Total database tables backed up: 25 (backup_2018-01-02-1125_MPD150_861d95db9314-db.gz, size: 720658, sha256)
+0001.418 (0) backup_2018-01-02-1125_MPD150_861d95db9314-db.gz: db: This file has not yet been successfully uploaded: will queue
+0001.419 (0) Saving backup history. Total backup size: 703.8 KB
+0001.422 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0001.424 (0) Cloud backup selection (1/1):  with instance (1/1) (last)
+0001.424 (0) No remote despatch: user chose no remote backup service
+0001.425 (0) Recording as successfully uploaded: backup_2018-01-02-1125_MPD150_861d95db9314-db.gz (69834c3c946ca1c0d35806b326e9623f)
+0001.428 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=12
+0001.429 (0) Number of backup sets in history: 15; groups (db): 1
+0001.431 (0) Examining (for databases) backup set with group_id=0, nonce=861d95db9314, datestamp=1514892302 (Jan 02 2018 11:25:02)
+0001.432 (0) This backup set is the backup set just made, so will not be deleted.
+0001.432 (0) Examining (for databases) backup set with group_id=0, nonce=176faef054dd, datestamp=1514875990 (Jan 02 2018 06:53:10)
+0001.432 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.432 (0) Examining (for databases) backup set with group_id=0, nonce=276634931946, datestamp=1514861001 (Jan 02 2018 02:43:21)
+0001.432 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.432 (0) Examining (for databases) backup set with group_id=0, nonce=cd8b88a709a2, datestamp=1514846606 (Jan 01 2018 22:43:26)
+0001.432 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.433 (0) Examining (for databases) backup set with group_id=0, nonce=081c4cc0ca6b, datestamp=1514832468 (Jan 01 2018 18:47:48)
+0001.433 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.433 (0) Examining (for databases) backup set with group_id=0, nonce=6aff961a72e3, datestamp=1514818038 (Jan 01 2018 14:47:18)
+0001.433 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.433 (0) Examining (for databases) backup set with group_id=0, nonce=654930338127, datestamp=1514805398 (Jan 01 2018 11:16:38)
+0001.433 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.433 (0) Examining (for databases) backup set with group_id=0, nonce=d3fb627fe2d9, datestamp=1514789032 (Jan 01 2018 06:43:52)
+0001.433 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.433 (0) Examining (for databases) backup set with group_id=0, nonce=75bdbfd5c07b, datestamp=1514774874 (Jan 01 2018 02:47:54)
+0001.433 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.433 (0) Examining (for databases) backup set with group_id=0, nonce=b0b3be58d894, datestamp=1514759980 (Dec 31 2017 22:39:40)
+0001.433 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.434 (0) Examining (for databases) backup set with group_id=0, nonce=6a02a6151d87, datestamp=1514747223 (Dec 31 2017 19:07:03)
+0001.434 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.434 (0) Examining (for databases) backup set with group_id=0, nonce=5b218c3428ff, datestamp=1514731316 (Dec 31 2017 14:41:56)
+0001.434 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.434 (0) Examining (for databases) backup set with group_id=0, nonce=703b73f3a761, datestamp=1514717071 (Dec 31 2017 10:44:31)
+0001.434 (0) 1514717071: db: this set includes a database (backup_2017-12-31-1044_MPD150_703b73f3a761-db.gz); db count is now 12
+0001.434 (0) 1514717071: db: over retain limit (12); will delete this database
+0001.434 (0) Delete file: backup_2017-12-31-1044_MPD150_703b73f3a761-db.gz, service=none
+0001.434 (0) Deleting local copy (backup_2017-12-31-1044_MPD150_703b73f3a761-db.gz)
+0001.436 (0) This backup set is now empty; will remove from history
+0001.436 (0) Deleting log file (log.703b73f3a761.txt)
+0001.437 (0) Examining (for databases) backup set with group_id=0, nonce=daed402e1b71, datestamp=1510279080 (Nov 10 2017 01:58:00)
+0001.437 (0) Examining (for databases) backup set with group_id=0, nonce=ae5a58dcbb91, datestamp=1510184400 (Nov 08 2017 23:40:00)
+0001.437 (0) Number of backup sets in history: 14; groups (files): 1
+0001.438 (0) Examining (for files) backup set with nonce=861d95db9314, datestamp=1514892302 (Jan 02 2018 11:25:02)
+0001.438 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.438 (0) Examining (for files) backup set with nonce=176faef054dd, datestamp=1514875990 (Jan 02 2018 06:53:10)
+0001.438 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.438 (0) Examining (for files) backup set with nonce=276634931946, datestamp=1514861001 (Jan 02 2018 02:43:21)
+0001.438 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.438 (0) Examining (for files) backup set with nonce=cd8b88a709a2, datestamp=1514846606 (Jan 01 2018 22:43:26)
+0001.438 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.439 (0) Examining (for files) backup set with nonce=081c4cc0ca6b, datestamp=1514832468 (Jan 01 2018 18:47:48)
+0001.439 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.439 (0) Examining (for files) backup set with nonce=6aff961a72e3, datestamp=1514818038 (Jan 01 2018 14:47:18)
+0001.439 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.439 (0) Examining (for files) backup set with nonce=654930338127, datestamp=1514805398 (Jan 01 2018 11:16:38)
+0001.439 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.439 (0) Examining (for files) backup set with nonce=d3fb627fe2d9, datestamp=1514789032 (Jan 01 2018 06:43:52)
+0001.439 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.439 (0) Examining (for files) backup set with nonce=75bdbfd5c07b, datestamp=1514774874 (Jan 01 2018 02:47:54)
+0001.439 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.439 (0) Examining (for files) backup set with nonce=b0b3be58d894, datestamp=1514759980 (Dec 31 2017 22:39:40)
+0001.439 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.439 (0) Examining (for files) backup set with nonce=6a02a6151d87, datestamp=1514747223 (Dec 31 2017 19:07:03)
+0001.439 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.440 (0) Examining (for files) backup set with nonce=5b218c3428ff, datestamp=1514731316 (Dec 31 2017 14:41:56)
+0001.440 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.440 (0) Examining (for files) backup set with nonce=daed402e1b71, datestamp=1510279080 (Nov 10 2017 01:58:00)
+0001.440 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0001.440 (0) Examining (for files) backup set with nonce=ae5a58dcbb91, datestamp=1510184400 (Nov 08 2017 23:40:00)
+0001.440 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0001.440 (0) Retain: saving new backup history (sets now: 14) and finishing retain operation
+0001.445 (0) Resume backup (861d95db9314, 0): finish run
+0001.446 (0) Decremented the semaphore (d) by 1
+0001.447 (0) Semaphore (d) unlocked
+0001.447 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0001.450 (0) No email will/can be sent - the user has not configured an email address.
+0001.450 (0) The backup apparently succeeded and is now complete

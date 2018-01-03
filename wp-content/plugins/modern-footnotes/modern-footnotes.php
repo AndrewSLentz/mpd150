@@ -3,7 +3,7 @@
 Plugin Name: Modern Footnotes
 Plugin URI:  http://prismtechstudios.com/modern-footnotes
 Description: Add inline footnotes to your post via the footnote icon on the toolbar for editing posts and pages. Or, use the [mfn] or [modern_footnote] shortcodes [mfn]like this[/mfn].
-Version:     1.1.0
+Version:     1.1.1
 Author:      Prism Tech Studios
 Author URI:  http://prismtechstudios.com/
 License:     Lesser GPL3
@@ -38,13 +38,8 @@ add_shortcode('modern_footnote', 'modern_footnotes_func');
 add_shortcode('mfn', 'modern_footnotes_func');
 add_filter('the_post', 'modern_footnotes_reset_count');
 
-
-function mf_enqueue_scripts() {
-	wp_enqueue_style('modern_footnotes', plugin_dir_url(__FILE__) . 'styles.min.css', array(), '1.1.0'); 
-	wp_enqueue_script('modern_footnotes', plugin_dir_url(__FILE__) . 'modern-footnotes.min.js', array('jquery'), '1.1.0', TRUE);
-}
-
-add_action('wp_enqueue_scripts', 'mf_enqueue_scripts');
+wp_enqueue_style('modern_footnotes', plugin_dir_url(__FILE__) . 'styles.min.css', array(), '1.1.0'); 
+wp_enqueue_script('modern_footnotes', plugin_dir_url(__FILE__) . 'modern-footnotes.min.js', array('jquery'), '1.1.0', TRUE);
 
 //
 //modify the admin
@@ -74,7 +69,7 @@ function modern_footnotes_register_settings() { // whitelist options
 				array(
 					'type' => 'boolean',
 					'default' => FALSE,
-					'sanitize_callback' => function($plugin_options) {  return $plugin_options;}
+					'sanitize_callback' => 'modern_footnotes_sanitize_callback'
 				));
 	add_settings_section(
 		'modern_footnotes_option_group_section',
@@ -89,6 +84,10 @@ function modern_footnotes_register_settings() { // whitelist options
 		__FILE__,
 		'modern_footnotes_option_group_section'
 	);
+}
+
+function modern_footnotes_sanitize_callback($plugin_options) {  
+	return $plugin_options;
 }
 
 function modern_footnotes_use_expandable_footnotes_on_desktop_instead_of_tooltips_element_callback() {
