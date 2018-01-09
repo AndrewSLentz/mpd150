@@ -68,7 +68,7 @@ add_action( 'init', 'futures_taxonomy', 0 );
 function display_futures() {
      $args = array(
         'taxonomy' => 'future_categories',
-        'hide_empty' => 'false'
+        'hide_empty' => false
     );
     $topics = get_terms($args);
     $modals='';
