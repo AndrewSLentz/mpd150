@@ -38,8 +38,12 @@ add_shortcode('modern_footnote', 'modern_footnotes_func');
 add_shortcode('mfn', 'modern_footnotes_func');
 add_filter('the_post', 'modern_footnotes_reset_count');
 
-wp_enqueue_style('modern_footnotes', plugin_dir_url(__FILE__) . 'styles.min.css', array(), '1.1.0'); 
-wp_enqueue_script('modern_footnotes', plugin_dir_url(__FILE__) . 'modern-footnotes.min.js', array('jquery'), '1.1.0', TRUE);
+
+add_action('enqueue', 'wp_enqueue_scripts');
+function enqueue() {
+	wp_enqueue_style('modern_footnotes', plugin_dir_url(__FILE__) . 'styles.min.css', array(), '1.1.0'); 
+	wp_enqueue_script('modern_footnotes', plugin_dir_url(__FILE__) . 'modern-footnotes.min.js', array('jquery'), '1.1.0', TRUE);
+}
 
 //
 //modify the admin
