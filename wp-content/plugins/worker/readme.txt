@@ -1,9 +1,8 @@
 === ManageWP Worker ===
 Contributors: managewp,freediver
-Donate link: https://www.networkforgood.org/donation/MakeDonation.aspx?ORGID2=520781390
 Tags: manage multiple sites, backup, security, migrate, performance, analytics, Manage WordPress, Managed WordPress, WordPress management, WordPress manager, WordPress management, site management, control multiple sites, WordPress management dashboard, administration, automate, automatic, comments, clone, dashboard, duplicate, google analytics, login, manage, managewp, multiple, multisite, remote, seo, spam
 Requires at least: 3.1
-Tested up to: 4.8
+Tested up to: 4.9
 Stable tag: trunk
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/quick-guide-gplv3.html
@@ -56,6 +55,25 @@ Check out the [ManageWP promo video](https://vimeo.com/220647227).
 https://vimeo.com/220647227
 
 == Changelog ==
+
+= 4.4.0 =
+
+- Fix: Communication failing with a website behind CloudFlare, that has warnings turned on, and currently has warnings.
+
+= 4.3.4 =
+
+- Improvement: The Worker plugin can now only be activated network wide on multisite installs.
+- Fix: Edge cases where the connection key was not visible.
+- Fix: Edge cases with Multisite communication failure.
+
+= 4.3.3 =
+
+- Improvement: Always force the correct charset for database backups.
+- Improvement: The Worker plugin is now fully compatible with WordPress 4.9.
+
+= 4.3.2 =
+
+- Fix: The Worker plugin threw an exception while recovering from failed update.
 
 = 4.3.1 =
 

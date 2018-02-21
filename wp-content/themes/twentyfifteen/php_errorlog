@@ -1,0 +1,4 @@
+[13-Feb-2018 23:05:35 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/twentyfifteen/index.php on line 17
+[13-Feb-2018 23:05:36 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/twentyfifteen/index.php on line 17
+[13-Feb-2018 23:23:41 CST6CDT] PHP Fatal error:  Call to undefined function post_password_required() in /home/peterbre/public_html/mpd150/wp-content/themes/twentyfifteen/comments.php on line 18
+[13-Feb-2018 23:23:43 CST6CDT] PHP Fatal error:  Call to undefined function post_password_required() in /home/peterbre/public_html/mpd150/wp-content/themes/twentyfifteen/comments.php on line 18

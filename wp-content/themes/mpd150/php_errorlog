@@ -2,3 +2,13 @@
 [22-Dec-2017 10:45:39 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14
 [22-Dec-2017 12:52:31 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14
 [22-Dec-2017 14:21:06 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/index.php on line 14
+[07-Feb-2018 15:12:16 CST6CDT] PHP Fatal error:  Call to undefined function wp_get_theme() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/footer.php on line 10
+[07-Feb-2018 15:12:17 CST6CDT] PHP Fatal error:  Call to undefined function wp_get_theme() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/footer.php on line 10
+[07-Feb-2018 18:08:28 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/archive.php on line 10
+[07-Feb-2018 18:08:29 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/archive.php on line 10
+[13-Feb-2018 23:05:24 CST6CDT] PHP Fatal error:  Call to undefined function get_theme_mod() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/header.php on line 10
+[13-Feb-2018 23:05:24 CST6CDT] PHP Fatal error:  Call to undefined function get_theme_mod() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/header.php on line 10
+[13-Feb-2018 23:23:04 CST6CDT] PHP Fatal error:  Call to undefined function get_template_directory() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/functions.php on line 11
+[13-Feb-2018 23:23:04 CST6CDT] PHP Fatal error:  Call to undefined function get_template_directory() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/functions.php on line 11
+[13-Feb-2018 23:23:33 CST6CDT] PHP Fatal error:  Call to undefined function wp_get_theme() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/footer.php on line 10
+[13-Feb-2018 23:23:34 CST6CDT] PHP Fatal error:  Call to undefined function wp_get_theme() in /home/peterbre/public_html/mpd150/wp-content/themes/mpd150/footer.php on line 10
