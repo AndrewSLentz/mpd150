@@ -9607,6 +9607,9 @@ form#topics, form#roles {
   color: #000;
   background-color: #e6d49e; }
 
+#working-group-signup-2 [for=fbb8087422-0], #working-group-signup-2 [for=fbb8087422-1], #working-group-signup-2 [for=fbb8087422-4], #working-group-signup-2 [for=fbb8087422-9] {
+  display: none; }
+
 .main-heading {
   color: #FFF9F2;
   background-color: #514F4C;

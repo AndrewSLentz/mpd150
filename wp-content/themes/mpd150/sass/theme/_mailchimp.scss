@@ -93,4 +93,10 @@
     background-color: #e6d49e;
 }
 
+//hiding some mailchimp fields manually
 
+#working-group-signup-2 {
+	[for=fbb8087422-0],[for=fbb8087422-1], [for=fbb8087422-4], [for=fbb8087422-9] {
+		display:none,
+	}
+}
