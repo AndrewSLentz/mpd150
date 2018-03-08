@@ -9610,6 +9610,17 @@ form#topics, form#roles {
 #working-group-signup-2 [for=fbb8087422-0], #working-group-signup-2 [for=fbb8087422-1], #working-group-signup-2 [for=fbb8087422-4], #working-group-signup-2 [for=fbb8087422-9] {
   display: none; }
 
+@media screen and (max-width: 767px) {
+  .working-group-descriptions > div > div {
+    min-height: 0 !important; }
+  #yikes-mailchimp-container-2 .yikes-easy-mc-form .fbb8087422-label .yikes-easy-mc-checkbox-label {
+    width: 50%; } }
+
+@media screen and (max-width: 500px) {
+  #yikes-mailchimp-container-2 .yikes-easy-mc-form .fbb8087422-label .yikes-easy-mc-checkbox-label,
+  .yikes-easy-mc-form label.label-inline {
+    width: 100%; } }
+
 .main-heading {
   color: #FFF9F2;
   background-color: #514F4C;
