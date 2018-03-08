@@ -9619,7 +9619,7 @@ form#topics, form#roles {
 @media screen and (max-width: 500px) {
   #yikes-mailchimp-container-2 .yikes-easy-mc-form .fbb8087422-label .yikes-easy-mc-checkbox-label,
   .yikes-easy-mc-form label.label-inline {
-    width: 100%; } }
+    width: 100% !important; } }
 
 .main-heading {
   color: #FFF9F2;
